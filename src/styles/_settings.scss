@@ -1,0 +1,27 @@
+$primary-color:#000;
+
+$font1: 100;
+$font2: 200;
+$font3: 300;
+$font4: 400;
+
+$sizeTitle1: 5em;
+$sizeTitle2: 4em;
+$sizeTitle3: 3em;
+$sizeTitle4: 2em;
+
+$sizeP:1.2em;
+$sizeP2:2em;
+$sizeP3:3em;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito Sans', sans-serif;
+}
