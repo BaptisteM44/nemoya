@@ -1,1 +1,169 @@
-/* No CSS *//*# sourceMappingURL=footer.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+section {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.page-contact {
+  height: auto;
+  background-color: #eae9e4;
+}
+
+.contact-title {
+  padding: 2em 0;
+  font-size: 2em;
+}
+
+.contact-form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 25em;
+}
+
+.contact-form-content .contact-form {
+  height: 100%;
+  width: 40%;
+}
+
+.contact-form-content label {
+  display: none;
+}
+
+.contact-form-content textarea,
+.contact-form-content input {
+  width: 100%;
+  height: 3.8vw;
+  background: transparent;
+  color: #000;
+  -webkit-transition: none !important;
+  transition: none !important;
+  font-weight: 500;
+  font-size: 2em;
+  border: none;
+  border-bottom: 0.1vw solid rgba(0, 0, 0, 0.16);
+}
+
+.contact-form-content textarea {
+  min-height: 13vw;
+  resize: vertical;
+  padding-top: 0.8858vw;
+  overflow: auto;
+}
+
+.contact-form-content .form-button {
+  cursor: pointer;
+}
+
+.contact-form-content .form-button value {
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+}
+
+.contact-form-content .form-button:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+}
+
+.contact-form-content .contact-info {
+  padding-left: 10em;
+  width: 60%;
+}
+
+.contact-form-content .contact-info .contact-email,
+.contact-form-content .contact-info .contact-num {
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+.contact-form-content .contact-info .contact-email a,
+.contact-form-content .contact-info .contact-num a {
+  color: #000;
+}
+
+.footer {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-credits {
+  width: 40vw;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 4em;
+}
+
+.footer-credits .footer-credits-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-credits .footer-credits-content .credits-title {
+  font-size: 12px;
+}
+
+.footer-credits .footer-credits-content .credits-entreprise {
+  font-size: 10px;
+}
+
+.footer-credits .footer-link-content,
+.footer-credits .footer-slogan-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-credits .footer-link-content .slogan-title,
+.footer-credits .footer-slogan-content .slogan-title {
+  font-size: 12px;
+}
+
+.footer-credits .footer-link-content .slogan2023,
+.footer-credits .footer-slogan-content .slogan2023 {
+  font-size: 10px;
+}
+
+.footer-link-content a {
+  color: #000;
+}
+/*# sourceMappingURL=footer.css.map */

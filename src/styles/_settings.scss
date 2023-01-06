@@ -1,4 +1,11 @@
 $primary-color:#000;
+$secondary-color:#FFF;
+$third-color:#d1c5b6;
+$fourth-color: #707070;
+$fifth-color: #eae8d0;
+$six-color: #eae9e4;
+
+
 
 $font1: 100;
 $font2: 200;
@@ -24,4 +31,8 @@ $sizeP3:3em;
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Nunito Sans', sans-serif;
+}
+section{
+    padding-left: 3em;
+    padding-right: 3em;
 }

@@ -2,7 +2,7 @@
 
 .page-presentation{
     height: 100vh;
-    background-color: rgb(197, 84, 69);
+    background-color: $third-color;
 }
 .presentation-content{
     height: 100%;
@@ -27,21 +27,27 @@
 
 .page-do{
     height: 150vh;
-    background-color: rgb(109, 184, 187);
+    background-color: $secondary-color;
 }
+.contact-title-content,
+.nous-title-content,
 .do-title-content,
 .precision-title-content{
-    background-color: #6db8bb;
+    // background-color: $secondary-color;
+    mix-blend-mode: multiply;
     width: 100%;
     height: auto;
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 100000;
+    .contact-title,
+    .nous-title,
     .do-title,
     .precision-title{
-        font-size: $sizeTitle3;
+        font-size: $sizeTitle4;
         text-transform: uppercase;
-        padding: 10px;
+        padding: 6px;
     }
 }
 .do-what-content{
@@ -78,7 +84,7 @@
 }
 .page-precision{
     height: auto;
-    background-color: #aecba9;
+    background-color: $six-color;
 }
 .precision-slogan{
     .precision-slogan-content{
@@ -102,17 +108,16 @@
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         height: 100vh;
-        margin: 0 50px;
-        padding: 20px;
+        padding-bottom: 20px;
         .grid-commun{
             border-radius: 20px;
-            background-color: white;
+            background-color: $secondary-color;
         }
         .div1 {
             grid-area: 1 / 1 / 5 / 3;
             width: auto;
             height: auto;
-            background-color: #434248;
+            background-color: $secondary-color;
          }
         .div2 { 
             grid-area: 5 / 1 / 7 / 3;
@@ -121,29 +126,28 @@
                 justify-content: space-around;
                 height: 100%;
                 img{
-                    margin: 50px;
-                    height: 50%;
+                    margin: 30px;
                 }
             }
          }
         .div3 { 
             grid-area: 1 / 3 / 7 / 5;
-            
-         }
-         .div3-img-content{
-            height: 100%;
-            text-align: center;
-            img{
-                height: 276px; 
+            .grid3-img-content{
+                height: 100%;
+                text-align: center;
+                img{
+                    height: 100%;
+                    border-radius: 25px;
+                }
             }
-        }
+         }
         .div4 { 
             grid-area: 7 / 3 / 11 / 5;
-            background-color: #e7eadc;
+            background-color: $secondary-color;
          }
         .div5 { 
             grid-area: 7 / 1 / 12 / 2;
-            background-color: #d6d4d5;
+            background-color: $secondary-color;
          }
          .gridtext-content{
             margin: 20px;
@@ -161,11 +165,11 @@
          }
         .div6{
             grid-area: 7 / 2 / 12 / 3;
-            background-color: #d6d4d5;
+            background-color: $secondary-color;
         }
         .div7 {
             grid-area: 11 / 3 / 12 / 5;
-            background-color: #595d73;
+            background-color: $secondary-color;
             .grid-number{
                 display: flex;
                 flex-direction: column;
@@ -189,3 +193,62 @@
         }
         
 }
+.page-nous{
+    height: auto;
+    background-color: $secondary-color;
+}
+.page-text{
+    height: 20vh;
+    h2{
+        font-size: $sizeTitle2;
+    }
+    p{
+        font-size: $sizeP2;
+    }
+}
+.page-parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0 auto;
+    width: 70vw;
+    height: 150vh;
+    .page-grid-content{
+        // background-color: $third-color;
+        // box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        img{
+            height: 70%;
+            width: 100%;
+            object-fit: cover;    
+        }
+        .page-who{
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            h3{
+                font-size: $sizeTitle3;
+            }
+            p{
+                font-size: $sizeP;
+                font-weight: $font1;
+            }
+        }
+        
+    }
+    .page-grid1 { 
+        grid-area: 1 / 1 / 6 / 3;
+        height: auto;
+        
+    }
+    .page-grid2 { 
+        grid-area: 4 / 5 / 9 / 7;
+        height: auto;
+     }
+    .page-grid3 { 
+        grid-area: 7 / 2 / 12 / 4;
+        height: auto;
+     }
+    }

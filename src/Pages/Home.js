@@ -1,13 +1,15 @@
 import React from 'react';
 import '../styles/index.scss'
+import Navbar from '../components/Header/Navbar'
+import Footer from '../components/Footer/footer'
 
 import Logo from '../styles/assets/img/logo.png'
-import Navbar from '../components/Header/Navbar'
 import Google from '../styles/assets/img/google.svg'
 import Facebook from "../styles/assets/img/facebook-squared.svg"
 import Instagram from '../styles/assets/img/instagram.svg'
 import Tiktok from '../styles/assets/img/tiktok.svg'
 import Imgcomputer from '../styles/assets/img/computer.jpg'
+
 
 function Home() {
     return (
@@ -83,7 +85,7 @@ function Home() {
             <div class="parent">
               <div class="div1 grid-commun">ok </div>
               <div class="div2 grid-commun">
-                <div className="div2-img-content">
+                <div className="grid2-img-content">
                   <img  src={Facebook} alt="facebook-squared.svg" />
                   <img  src={Tiktok} alt="tiktok.svg" />
                   <img  src={Google} alt="google.svg" /> 
@@ -110,10 +112,6 @@ function Home() {
                     <h2>Augmentez votre nombre de prospects</h2>
                     <p>Aujourd’hui il est possible d’attirer des prospects ultra qualifiés simplement grâce à des stratégies digitales efficaces. Nous mettons en place des stratégies afin d’augmenter votre nombre de leads journalier.</p>
                   </div>
-                  {/* <div className="grid-number-content">
-                    <h2>4</h2>
-                    <p>Nombre de Clients satisfaits</p>
-                  </div>   */}
               </div>
               <div class="div7 grid-commun">
                 <div className="grid-number">
@@ -126,13 +124,42 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className="page-precision">
-          <div className="precision-title-content">
-            <h2 className="precision-title">Nous</h2>
+        <section className="page-nous">
+          <div className="nous-title-content">
+            <h2 className="nous-title">Nous</h2>
+          </div>
+          <div className="page-text">
+            <h2>Notre équipe pour vous accompagner</h2>
+            <p>Notre métier consiste à développer votre marketing digital, 
+            votre présence sur internet et ainsi, vous apporter de la visibilité.
+            </p>          
+          </div>
+          <div class="page-parent">
+            <div class="page-grid1 page-grid-content">
+              <img src="https://picsum.photos/200/300" alt="" />
+              <div className="page-who">
+                <h3>Julien</h3>
+                <p>Fondateur et gestion des publicités</p>
+              </div>
+            </div>
+            <div class="page-grid2 page-grid-content">
+              <img src="https://picsum.photos/200/300" alt="" />
+              <div className="page-who">
+                <h3>Elisa</h3>
+                <p>Gestion des réseaux et création de contenus</p>
+              </div>
+            </div>
+            <div class="page-grid3 page-grid-content">
+              <img src="https://picsum.photos/200/300" alt="" />
+              <div className="page-who">
+                <h3>Baptiste</h3>
+                <p>Développeur Web</p>
+              </div>
+            </div>
           </div>
           
-          
         </section>
+        <Footer />
       </div>
       
     );
