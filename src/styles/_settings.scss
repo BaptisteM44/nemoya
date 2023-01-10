@@ -4,7 +4,8 @@ $third-color:#d1c5b6;
 $fourth-color: #707070;
 $fifth-color: #eae8d0;
 $six-color: #eae9e4;
-
+$seven-color: #b55c31;
+$height-color:#f5e8e1;
 
 
 $font1: 100;
@@ -16,6 +17,7 @@ $sizeTitle1: 5em;
 $sizeTitle2: 4em;
 $sizeTitle3: 3em;
 $sizeTitle4: 2em;
+$sizeTitle5: 6em;
 
 $sizeP:1.2em;
 $sizeP2:2em;
@@ -31,7 +33,10 @@ $sizeP3:3em;
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
+.navbar,
 section{
     padding-left: 3em;
     padding-right: 3em;

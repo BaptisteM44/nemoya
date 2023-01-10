@@ -1,13 +1,15 @@
 import React from 'react';
 import '../styles/pages/about.scss'
 import Navbar from '../components/Header/Navbar'
+import Footer from '../components/Footer/footer'
+
 function About() {
     return (
       
-      <div>
+      <div className="about">
         <Navbar />
-        <h1 className="title">Bienvenue sur ma landing page</h1>
-        <p>Voici du contenu</p>
+
+        <Footer />
       </div>
     );
   }

@@ -1,7 +1,7 @@
 @import '../../styles/settings';
 
 .page-contact{
-    height: auto;
+    min-height: 100vh;
     background-color: $six-color;
 }
 .contact-title{
@@ -11,7 +11,7 @@
 .contact-form-content{
     display: flex;
     width: 100%;
-    height: 25em;
+    height: auto;
     .contact-form{
         height: 100%;
         width: 40%;
@@ -65,7 +65,7 @@
 
 }
 .footer{
-    width: 100vw;
+    padding-top: 9em;
     display: flex;
     justify-content: space-between;
 }

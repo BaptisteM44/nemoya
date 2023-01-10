@@ -16,13 +16,10 @@ function Footer() {
     return (
         <section className="page-contact">
             <div className="contact-title-content">
-                <h2 className="contact-title">Contact</h2>
+                <h2 className="contact-title">Commencer un projet !</h2>
             </div>
             <footer>
                 <div className="contact">
-                    <div className="contact-title">
-                        <h2>Commencer un projet</h2>    
-                    </div>
                     <div className="contact-form-content">
                         <form className="contact-form" onSubmit={handleSubmit}>
                             <div className="form-name">

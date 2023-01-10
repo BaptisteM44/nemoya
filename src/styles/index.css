@@ -9,8 +9,11 @@
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.navbar,
 section {
   padding-left: 3em;
   padding-right: 3em;
@@ -27,8 +30,38 @@ section {
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.navbar,
+section {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.about {
+  height: 100vh;
+  padding-top: 10vh;
+  background-color: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.navbar,
 section {
   padding-left: 3em;
   padding-right: 3em;
@@ -79,59 +112,86 @@ section {
 }
 
 .page-do {
-  height: 150vh;
+  height: 100vh;
   background-color: #FFF;
 }
 
-.contact-title-content,
-.nous-title-content,
-.do-title-content,
-.precision-title-content {
-  mix-blend-mode: multiply;
-  width: 100%;
-  height: auto;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 100000;
+.do-title-content {
+  margin-bottom: 5vh;
+  position: relative;
+  height: 10vh;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.contact-title-content .contact-title,
-.contact-title-content .nous-title,
-.contact-title-content .do-title,
-.contact-title-content .precision-title,
-.nous-title-content .contact-title,
-.nous-title-content .nous-title,
-.nous-title-content .do-title,
-.nous-title-content .precision-title,
-.do-title-content .contact-title,
-.do-title-content .nous-title,
-.do-title-content .do-title,
-.do-title-content .precision-title,
-.precision-title-content .contact-title,
-.precision-title-content .nous-title,
-.precision-title-content .do-title,
-.precision-title-content .precision-title {
-  font-size: 2em;
-  text-transform: uppercase;
-  padding: 6px;
+.do-title-content .do-title-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
+  position: absolute;
+  -webkit-animation: do-title 22s infinite linear;
+          animation: do-title 22s infinite linear;
+}
+
+.do-title-content .do-title-row .do-title {
+  font-size: 5em;
+  line-height: 100%;
+  letter-spacing: -0.033em;
+  margin-right: 3.8vw;
+  position: relative;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes do-title {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes do-title {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 .do-what-content {
-  height: 90vh;
+  height: auto;
   width: 80vw;
-  margin: 6em auto;
+  margin: 0 auto;
 }
 
 .do-what-content .do-what {
-  height: 300px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #000;
 }
 
 .do-what-content .do-what-num {
@@ -193,7 +253,7 @@ section {
 }
 
 .precision-slogan .precision-slogan-content p {
-  font-size: 2em;
+  font-size: 1.2em;
   width: 50%;
   margin: 0 auto;
 }
@@ -225,6 +285,30 @@ section {
   width: auto;
   height: auto;
   background-color: #FFF;
+}
+
+.precision-slogan .parent .div1 .grid2-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+  text-align: center;
+}
+
+.precision-slogan .parent .div1 .grid2-content h2 {
+  font-size: 2em;
+}
+
+.precision-slogan .parent .div1 .grid2-content p {
+  padding: 2em;
+  font-size: 1.2em;
 }
 
 .precision-slogan .parent .div2 {
@@ -262,7 +346,10 @@ section {
 }
 
 .precision-slogan .parent .div3 .grid3-img-content img {
+  width: 100%;
   height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 25px;
 }
 
@@ -393,11 +480,6 @@ section {
   height: 150vh;
 }
 
-.page-parent .page-grid-content {
-  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-
 .page-parent .page-grid-content img {
   height: 70%;
   width: 100%;
@@ -421,7 +503,7 @@ section {
 }
 
 .page-parent .page-grid-content .page-who p {
-  font-size: 2em;
+  font-size: 1.2em;
   font-weight: 100;
 }
 
@@ -463,8 +545,11 @@ section {
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.navbar,
 section {
   padding-left: 3em;
   padding-right: 3em;
@@ -552,20 +637,24 @@ section {
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.navbar,
 section {
   padding-left: 3em;
   padding-right: 3em;
 }
 
 .page-contact {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #eae9e4;
 }
 
 .contact-title {
-  font-size: 3em;
+  padding: 2em 0;
+  font-size: 2em;
 }
 
 .contact-form-content {
@@ -600,7 +689,7 @@ section {
 }
 
 .contact-form-content textarea {
-  min-height: 16.3vw;
+  min-height: 13vw;
   resize: vertical;
   padding-top: 0.8858vw;
   overflow: auto;
@@ -623,6 +712,43 @@ section {
 }
 
 .contact-form-content .contact-info {
+  padding-left: 10em;
+  width: 60%;
+}
+
+.contact-form-content .contact-info .contact-email,
+.contact-form-content .contact-info .contact-num {
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+.contact-form-content .contact-info .contact-email a,
+.contact-form-content .contact-info .contact-num a {
+  color: #000;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-credits {
+  width: 40vw;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 4em;
+}
+
+.footer-credits .footer-credits-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,13 +756,44 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.contact-form-content .contact-info .contact-email,
-.contact-form-content .contact-info .contact-num {
-  font-size: 2em;
-  padding: 1em;
-  margin: 0 auto;
+.footer-credits .footer-credits-content .credits-title {
+  font-size: 12px;
+}
+
+.footer-credits .footer-credits-content .credits-entreprise {
+  font-size: 10px;
+}
+
+.footer-credits .footer-link-content,
+.footer-credits .footer-slogan-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-credits .footer-link-content .slogan-title,
+.footer-credits .footer-slogan-content .slogan-title {
+  font-size: 12px;
+}
+
+.footer-credits .footer-link-content .slogan2023,
+.footer-credits .footer-slogan-content .slogan2023 {
+  font-size: 10px;
+}
+
+.footer-link-content a {
+  color: #000;
 }
 /*# sourceMappingURL=index.css.map */

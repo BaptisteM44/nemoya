@@ -9,8 +9,11 @@
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.navbar,
 section {
   padding-left: 3em;
   padding-right: 3em;
@@ -50,7 +53,7 @@ section {
 }
 
 .presentation-content .presentation-logo {
-  height: 25%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,68 +64,94 @@ section {
 }
 
 .page-do {
-  height: 150vh;
+  height: 80vh;
   background-color: #FFF;
 }
 
-.contact-title-content,
-.nous-title-content,
-.do-title-content,
-.precision-title-content {
-  mix-blend-mode: multiply;
-  width: 100%;
-  height: auto;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 100000;
+.do-title-content {
+  background-color: #FFF;
+  position: relative;
+  height: 20vh;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.contact-title-content .contact-title,
-.contact-title-content .nous-title,
-.contact-title-content .do-title,
-.contact-title-content .precision-title,
-.nous-title-content .contact-title,
-.nous-title-content .nous-title,
-.nous-title-content .do-title,
-.nous-title-content .precision-title,
-.do-title-content .contact-title,
-.do-title-content .nous-title,
-.do-title-content .do-title,
-.do-title-content .precision-title,
-.precision-title-content .contact-title,
-.precision-title-content .nous-title,
-.precision-title-content .do-title,
-.precision-title-content .precision-title {
-  font-size: 2em;
-  text-transform: uppercase;
-  padding: 6px;
-}
-
-.do-what-content {
-  height: 90vh;
-  width: 80vw;
-  margin: 6em auto;
-}
-
-.do-what-content .do-what {
-  height: 300px;
+.do-title-content .do-title-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
+  position: absolute;
+  -webkit-animation: do-title 25s infinite linear;
+          animation: do-title 25s infinite linear;
+}
+
+.do-title-content .do-title-row .do-title {
+  font-size: 10em;
+  line-height: 100%;
+  letter-spacing: -0.033em;
+  margin-right: 3.8vw;
+  position: relative;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes do-title {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes do-title {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.do-what-content {
+  height: 100%;
+  max-width: 80vw;
+}
+
+.do-what-content .do-what {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  color: #000;
 }
 
 .do-what-content .do-what-num {
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 3em;
 }
 
 .do-what-content .do-what-title-content {
-  margin: auto 0;
+  margin: 0 5em;
 }
 
 .do-what-content .do-what-title-content .do-what-title {
@@ -140,7 +169,7 @@ section {
 }
 
 .do-what-content .do-what-exemples {
-  font-size: 2em;
+  font-size: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,7 +204,7 @@ section {
 }
 
 .precision-slogan .precision-slogan-content p {
-  font-size: 2em;
+  font-size: 1.2em;
   width: 50%;
   margin: 0 auto;
 }
@@ -189,7 +218,6 @@ section {
       grid-template-rows: repeat(11, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  height: 100vh;
   padding-bottom: 20px;
 }
 
@@ -209,6 +237,30 @@ section {
   background-color: #FFF;
 }
 
+.precision-slogan .parent .div1 .grid2-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+  text-align: center;
+}
+
+.precision-slogan .parent .div1 .grid2-content h2 {
+  font-size: 2em;
+}
+
+.precision-slogan .parent .div1 .grid2-content p {
+  padding: 2em;
+  font-size: 1.2em;
+}
+
 .precision-slogan .parent .div2 {
   -ms-grid-row: 5;
   -ms-grid-row-span: 2;
@@ -221,13 +273,16 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  margin-top: 20px;
 }
 
 .precision-slogan .parent .div2 .grid2-img-content img {
   margin: 30px;
+  width: -webkit-fill-available;
 }
 
 .precision-slogan .parent .div3 {
@@ -244,7 +299,10 @@ section {
 }
 
 .precision-slogan .parent .div3 .grid3-img-content img {
+  width: 100%;
   height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 25px;
 }
 
@@ -286,6 +344,13 @@ section {
 
 .precision-slogan .parent .gridtext-content p {
   font-size: 1.2em;
+}
+
+.precision-slogan .parent .gridtext-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .precision-slogan .parent .div6 {
@@ -350,7 +415,8 @@ section {
 }
 
 .page-text {
-  height: 20vh;
+  height: auto;
+  margin: 3em 0;
 }
 
 .page-text h2 {
@@ -359,6 +425,7 @@ section {
 
 .page-text p {
   font-size: 2em;
+  width: 50%;
 }
 
 .page-parent {
@@ -373,11 +440,6 @@ section {
   margin: 0 auto;
   width: 70vw;
   height: 150vh;
-}
-
-.page-parent .page-grid-content {
-  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .page-parent .page-grid-content img {
