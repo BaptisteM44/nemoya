@@ -1,12 +1,15 @@
-$primary-color:#000;
-$secondary-color:#FFF;
-$third-color:#d1c5b6;
-$fourth-color: #707070;
-$fifth-color: #eae8d0;
-$six-color: #eae9e4;
-$seven-color: #b55c31;
-$height-color:#f5e8e1;
+@font-face {
+    font-family: 'GallientRegular';
+    src: local('GallientRegular'), url('/styles/fonts/GallientRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
+$primary-color:#343434;
+$secondary-color:#FFF;
+$third-color:#efcda3;
+$fourth-color: #9e9e9e;
+$fifth-color: #b75d32;
 
 $font1: 100;
 $font2: 200;

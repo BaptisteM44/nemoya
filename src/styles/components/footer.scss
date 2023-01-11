@@ -1,0 +1,54 @@
+@import '../settings';
+
+.page-contact{
+    min-height: 100vh;
+    background-color: $fourth-color;
+}
+.contact-title-content{
+    width: 50vw;
+    .contact-title{
+        padding: 2em 0;
+        font-size: $sizeTitle4;
+    }    
+}
+
+.footer{
+    padding-top: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-credits{
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4em;
+    .footer-credits-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .credits-title{
+            font-size: 12px;
+        }
+        .credits-entreprise{
+            font-size: 10px;
+        }
+    }
+    .footer-link-content,
+    .footer-slogan-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .slogan-title{
+            font-size: 12px;
+        }
+        .slogan2023{
+            font-size: 10px;
+        }
+    }
+}
+.footer-link-content{
+    a{
+        color: $primary-color;
+    }
+}

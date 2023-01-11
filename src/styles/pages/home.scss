@@ -1,6 +1,7 @@
 @import '../settings';
 
 .page-presentation{
+    font-family: "GallientRegular";
     height: 100vh;
     background-color: $third-color;
 }
@@ -10,7 +11,9 @@
     flex-direction: column;
     justify-content: center;
     .presentation-title{
-        font-size: 2em;
+        font-family: "GallientRegular";
+        font-size: $sizeTitle1;
+        font-weight: $font1;
         display: flex;
         justify-content: center;
         margin: 0 auto;
@@ -106,7 +109,7 @@
 }
 .page-precision{
     height: auto;
-    background-color: $six-color;
+    background-color: $fourth-color;
 }
 .precision-slogan{
     .precision-slogan-content{

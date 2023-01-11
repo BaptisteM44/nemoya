@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'GallientRegular';
+  src: local("GallientRegular"), url("/styles/fonts/GallientRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;

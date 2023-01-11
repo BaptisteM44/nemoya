@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'GallientRegular';
+  src: local("GallientRegular"), url("/styles/fonts/GallientRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,76 +34,6 @@ section {
 .contact-title {
   padding: 2em 0;
   font-size: 2em;
-}
-
-.contact-form-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: auto;
-}
-
-.contact-form-content .contact-form {
-  height: 100%;
-  width: 40%;
-}
-
-.contact-form-content label {
-  display: none;
-}
-
-.contact-form-content textarea,
-.contact-form-content input {
-  width: 100%;
-  height: 3.8vw;
-  background: transparent;
-  color: #000;
-  -webkit-transition: none !important;
-  transition: none !important;
-  font-weight: 500;
-  font-size: 2em;
-  border: none;
-  border-bottom: 0.1vw solid rgba(0, 0, 0, 0.16);
-}
-
-.contact-form-content textarea {
-  min-height: 13vw;
-  resize: vertical;
-  padding-top: 0.8858vw;
-  overflow: auto;
-}
-
-.contact-form-content .form-button {
-  cursor: pointer;
-}
-
-.contact-form-content .form-button value {
-  -webkit-transform: 0.5s;
-          transform: 0.5s;
-}
-
-.contact-form-content .form-button:hover {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
-  -webkit-transition: 1.4s;
-  transition: 1.4s;
-}
-
-.contact-form-content .contact-info {
-  padding-left: 10em;
-  width: 60%;
-}
-
-.contact-form-content .contact-info .contact-email,
-.contact-form-content .contact-info .contact-num {
-  font-size: 2em;
-  margin: 0 auto;
-}
-
-.contact-form-content .contact-info .contact-email a,
-.contact-form-content .contact-info .contact-num a {
-  color: #000;
 }
 
 .footer {

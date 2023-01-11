@@ -1,0 +1,59 @@
+@import '../settings';
+
+
+.contact-form-content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    .contact-form{
+        height: 100%;
+        width: 40%;
+    }
+    label{
+        
+        display: none;
+    }
+    textarea,
+    input{
+        width: 100%;
+        height: 3.8vw;
+        background: transparent;
+        color: $primary-color;
+        transition: none !important;
+        font-weight: 500;
+        font-size: $sizeP2;
+        border: none;
+        border-bottom: 0.1vw solid rgba(0,0,0,0.16);
+    }
+    textarea{
+        min-height: 13vw;
+        resize: vertical;
+        padding-top: 0.8858vw;
+        overflow: auto;
+    }
+    .form-button{
+        transition: 1s;
+        .form-button-send{
+            cursor: pointer;
+        }
+        
+        &:hover{
+            transform: translateX(10px);
+            transition: 1s;
+        }
+    }
+    .contact-info{
+        padding-left: 10em;
+        width: 60%;
+        .contact-email,
+        .contact-num{
+            font-size: $sizeTitle4;
+            margin: 0 auto;
+            a{
+              color: $primary-color;  
+            }
+            
+        }
+    }
+
+}

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'GallientRegular';
+  src: local("GallientRegular"), url("/styles/fonts/GallientRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +24,13 @@
 section {
   padding-left: 3em;
   padding-right: 3em;
+}
+
+@font-face {
+  font-family: 'GallientRegular';
+  src: local("GallientRegular"), url("/styles/fonts/GallientRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -46,6 +60,13 @@ section {
   background-color: #FFF;
 }
 
+@font-face {
+  font-family: 'GallientRegular';
+  src: local("GallientRegular"), url("/styles/fonts/GallientRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -68,6 +89,7 @@ section {
 }
 
 .page-presentation {
+  font-family: "GallientRegular";
   height: 100vh;
   background-color: #d1c5b6;
 }
@@ -101,7 +123,7 @@ section {
 }
 
 .presentation-content .presentation-logo {
-  height: 25%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,14 +134,14 @@ section {
 }
 
 .page-do {
-  height: 100vh;
+  height: 80vh;
   background-color: #FFF;
 }
 
 .do-title-content {
-  margin-bottom: 5vh;
+  background-color: #FFF;
   position: relative;
-  height: 10vh;
+  height: 20vh;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -142,12 +164,12 @@ section {
   top: 0;
   opacity: 0.3;
   position: absolute;
-  -webkit-animation: do-title 22s infinite linear;
-          animation: do-title 22s infinite linear;
+  -webkit-animation: do-title 25s infinite linear;
+          animation: do-title 25s infinite linear;
 }
 
 .do-title-content .do-title-row .do-title {
-  font-size: 5em;
+  font-size: 10em;
   line-height: 100%;
   letter-spacing: -0.033em;
   margin-right: 3.8vw;
@@ -178,29 +200,28 @@ section {
 }
 
 .do-what-content {
-  height: auto;
-  width: 80vw;
-  margin: 0 auto;
+  height: 100%;
+  max-width: 80vw;
 }
 
 .do-what-content .do-what {
-  height: auto;
+  height: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   color: #000;
 }
 
 .do-what-content .do-what-num {
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 3em;
 }
 
 .do-what-content .do-what-title-content {
-  margin: auto 0;
+  margin: 0 5em;
 }
 
 .do-what-content .do-what-title-content .do-what-title {
@@ -218,7 +239,7 @@ section {
 }
 
 .do-what-content .do-what-exemples {
-  font-size: 2em;
+  font-size: 1.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,7 +288,6 @@ section {
       grid-template-rows: repeat(11, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  height: 100vh;
   padding-bottom: 20px;
 }
 
@@ -323,13 +343,16 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  margin-top: 20px;
 }
 
 .precision-slogan .parent .div2 .grid2-img-content img {
   margin: 30px;
+  width: -webkit-fill-available;
 }
 
 .precision-slogan .parent .div3 {
@@ -391,6 +414,13 @@ section {
 
 .precision-slogan .parent .gridtext-content p {
   font-size: 1.2em;
+}
+
+.precision-slogan .parent .gridtext-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .precision-slogan .parent .div6 {
@@ -455,7 +485,8 @@ section {
 }
 
 .page-text {
-  height: 20vh;
+  height: auto;
+  margin: 3em 0;
 }
 
 .page-text h2 {
@@ -464,6 +495,7 @@ section {
 
 .page-text p {
   font-size: 2em;
+  width: 50%;
 }
 
 .page-parent {
@@ -532,6 +564,13 @@ section {
   -ms-grid-column-span: 2;
   grid-area: 7 / 2 / 12 / 4;
   height: auto;
+}
+
+@font-face {
+  font-family: 'GallientRegular';
+  src: local("GallientRegular"), url("/styles/fonts/GallientRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -626,6 +665,13 @@ section {
   color: #333333;
 }
 
+@font-face {
+  font-family: 'GallientRegular';
+  src: local("GallientRegular"), url("/styles/fonts/GallientRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -657,77 +703,8 @@ section {
   font-size: 2em;
 }
 
-.contact-form-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 25em;
-}
-
-.contact-form-content .contact-form {
-  height: 100%;
-  width: 40%;
-}
-
-.contact-form-content label {
-  display: none;
-}
-
-.contact-form-content textarea,
-.contact-form-content input {
-  width: 100%;
-  height: 3.8vw;
-  background: transparent;
-  color: #000;
-  -webkit-transition: none !important;
-  transition: none !important;
-  font-weight: 500;
-  font-size: 2em;
-  border: none;
-  border-bottom: 0.1vw solid rgba(0, 0, 0, 0.16);
-}
-
-.contact-form-content textarea {
-  min-height: 13vw;
-  resize: vertical;
-  padding-top: 0.8858vw;
-  overflow: auto;
-}
-
-.contact-form-content .form-button {
-  cursor: pointer;
-}
-
-.contact-form-content .form-button value {
-  -webkit-transform: 0.5s;
-          transform: 0.5s;
-}
-
-.contact-form-content .form-button:hover {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
-  -webkit-transition: 1.4s;
-  transition: 1.4s;
-}
-
-.contact-form-content .contact-info {
-  padding-left: 10em;
-  width: 60%;
-}
-
-.contact-form-content .contact-info .contact-email,
-.contact-form-content .contact-info .contact-num {
-  font-size: 2em;
-  margin: 0 auto;
-}
-
-.contact-form-content .contact-info .contact-email a,
-.contact-form-content .contact-info .contact-num a {
-  color: #000;
-}
-
 .footer {
+  padding-top: 9em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,6 +771,104 @@ section {
 }
 
 .footer-link-content a {
+  color: #000;
+}
+
+@font-face {
+  font-family: 'GallientRegular';
+  src: local("GallientRegular"), url("/styles/fonts/GallientRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.navbar,
+section {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.contact-form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.contact-form-content .contact-form {
+  height: 100%;
+  width: 40%;
+}
+
+.contact-form-content label {
+  display: none;
+}
+
+.contact-form-content textarea,
+.contact-form-content input {
+  width: 100%;
+  height: 3.8vw;
+  background: transparent;
+  color: #000;
+  -webkit-transition: none !important;
+  transition: none !important;
+  font-weight: 500;
+  font-size: 2em;
+  border: none;
+  border-bottom: 0.1vw solid rgba(0, 0, 0, 0.16);
+}
+
+.contact-form-content textarea {
+  min-height: 13vw;
+  resize: vertical;
+  padding-top: 0.8858vw;
+  overflow: auto;
+}
+
+.contact-form-content .form-button {
+  cursor: pointer;
+}
+
+.contact-form-content .form-button value {
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+}
+
+.contact-form-content .form-button:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
+}
+
+.contact-form-content .contact-info {
+  padding-left: 10em;
+  width: 60%;
+}
+
+.contact-form-content .contact-info .contact-email,
+.contact-form-content .contact-info .contact-num {
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+.contact-form-content .contact-info .contact-email a,
+.contact-form-content .contact-info .contact-num a {
   color: #000;
 }
 /*# sourceMappingURL=index.css.map */
