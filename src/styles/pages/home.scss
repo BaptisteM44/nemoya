@@ -3,7 +3,53 @@
 .page-presentation{
     font-family: "GallientRegular";
     height: 100vh;
-    background-color: $third-color;
+    background-color: $secondary-color;
+    .page-presentation-left{
+        width: 32%;
+        height: 100%;
+        border-right: 1px solid $primary-color;
+    }
+    .presentation-footer{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 12vh;
+        width: 100%;
+        border-top: 1px solid $primary-color;
+        .footer-scroll{
+            padding-left: 1.2em;
+            display: flex;
+            align-items: center;
+            font-size: $size8;
+            font-weight: $font1;
+        }
+        .footer-names{
+            display: flex;
+            align-items: center;
+            font-size: $size8;
+            font-weight: $font1;
+            padding-right: 6em;
+        }
+        .arrow-circle1{
+            position: absolute;
+            bottom: 0.9em;
+            left: 30em;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid $primary-color;
+            float: right;
+        }
+        .arrow1{
+            position: absolute;
+            font-size: 3em;
+            top: 17%;
+            left: 33%;
+            transform: rotate(90deg);  
+        }
+    }
 }
 .presentation-content{
     height: 100%;
@@ -12,7 +58,7 @@
     justify-content: center;
     .presentation-title{
         font-family: "GallientRegular";
-        font-size: $sizeTitle1;
+        font-size: $size3;
         font-weight: $font1;
         display: flex;
         justify-content: center;
@@ -30,10 +76,10 @@
 
 .page-do{
     height: 80vh;
-    background-color: $secondary-color;
+    background-color: $fourth-color;
 }
 .do-title-content{
-    background-color: $secondary-color;
+    background-color: $fourth-color;
     position: relative;
     height: 20vh;
     white-space: nowrap;
@@ -47,7 +93,7 @@
         top: 0;
         opacity: 0.3;
         position: absolute;
-        animation: do-title 25s infinite linear;
+        animation: do-title 45s infinite linear;
     .do-title{
         font-size: 10em;
         line-height: 100%;
@@ -78,30 +124,32 @@
     height: 100%;
     max-width: 80vw;
     .do-what{
-        height: 25%;
+        padding-left: 3em;
+        height: 33%;
         display: flex;
         justify-content: start;
         color: $primary-color;
     }
     .do-what-num{
-        font-size: $sizeP;
+        font-size: $size5;
         padding: 3em;
     }
     .do-what-title-content{
-        margin: 0 5em;
+        padding: 0 10em;
+        min-width: 4em;
+        align-self: center;
     .do-what-title{
-        
         display: flex;
         justify-content: left;
         height: 100%;
-        width: 30vw;
-        font-size: 4.5em;
+        min-width: 7em;
+        font-size: $size11;
         align-self: center;
     }    
     }
     
     .do-what-exemples{
-        font-size: $sizeP;
+        font-size: $size5;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -118,10 +166,10 @@
         flex-direction: column;
         text-align: center;
         h2{
-            font-size: $sizeTitle1;
+            font-size: $size11;
         }
         p{
-            font-size: $sizeP;
+            font-size: $size5;
             width: 50%;
             margin: 0 auto;
         }
@@ -150,11 +198,11 @@
                 padding: 1em;
                 text-align: center;
                 h2{
-                    font-size: $sizeTitle4;    
+                    font-size: $size7;    
                 }
                 p{
                     padding:2em;
-                    font-size: $sizeP;
+                    font-size: $size5;
                 }
             }
          }
@@ -198,12 +246,12 @@
             text-align: center;
             flex-direction: column;
             h2{
-                font-size: $sizeTitle4;
+                font-size: $size7;
                 font-weight: $font4;
                 margin: 10px auto;
             }
             p{
-                font-size: $sizeP;
+                font-size: $size5;
             }
             img{
                 width: 100%;
@@ -230,10 +278,10 @@
                     align-items: center;
                     justify-content: space-between;
                     h2{
-                        font-size: $sizeTitle3;
+                        font-size: $size9;
                     }
                     p{
-                        font-size: $sizeP;
+                        font-size: $size5;
                     }
                 }
             }
@@ -249,10 +297,10 @@
     height: auto;
     margin: 3em 0;
     h2{
-        font-size: $sizeTitle2;
+        font-size: $size10;
     }
     p{
-        font-size: $sizeP2;
+        font-size: $size7;
         width: 50%;
     }
 }
@@ -276,10 +324,10 @@
             flex-direction: column;
             padding: 15px;
             h3{
-                font-size: $sizeTitle3;
+                font-size: $size9;
             }
             p{
-                font-size: $sizeP;
+                font-size: $size5;
                 font-weight: $font1;
             }
         }

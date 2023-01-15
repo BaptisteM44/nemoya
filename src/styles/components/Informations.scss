@@ -1,0 +1,93 @@
+@import '../settings';
+
+.page-informations{
+    min-height: 150vh;
+    background-color: $third-color;
+    .info2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .informations-content{
+        padding: 2em 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-bottom: 1px solid $primary-color;
+        .informations-content-bloc{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            .content-bloc{
+                width: 440px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: auto 0;
+                .bloc{
+                    height: 220px;
+                    width: 220px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                    img{
+                        height: 40%;
+                        align-self: center;
+                    }
+                    h2{
+                        font-weight: $font4;
+                    }
+                    p{
+                        font-weight: $font1;
+                        font-size: $size3;
+                    }
+                }
+                .bloc1{
+                    img{
+                        height: 50%;
+                    }
+                }
+            }
+        }
+        .informations-content-article{
+            margin: 0 auto;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1{
+                margin: 0 auto;
+                width: 55%;
+                font-size: $size9;
+                color: $primary-color;
+                font-family: "GallientRegular";
+            }
+            p{
+                padding-top: 1em;
+                margin: 0 auto;
+                width: 55%;
+                font-size: $size7;
+                color: $primary-color;
+                font-weight: $font1;
+            }
+        }
+        
+    }
+}
+.arrow-circle {
+            position: absolute;
+            bottom: 2em;
+            right: 0px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid $primary-color;
+            float: right;
+          }
+          .arrow {
+            position: absolute;
+            font-size: 3em;
+            top: 8%;
+            left: 25%;
+          }

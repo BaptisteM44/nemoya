@@ -1,91 +1,85 @@
 import React from 'react';
 import '../styles/index.scss'
 import Footer from '../components/Footer/footer'
-
-import Iphone from '../styles/assets/img/iphone.png'
-import Google from '../styles/assets/img/google.svg'
-import Facebook from "../styles/assets/img/facebook-squared.svg"
-import Instagram from '../styles/assets/img/instagram.svg'
-import Tiktok from '../styles/assets/img/tiktok.svg'
-import Imgcomputer from '../styles/assets/img/computer.jpg'
-import NavbarScroll from '../components/Utils/NavbarScroll';
+import Navbar from '../components/Header/Navbar';
+import Informations from '../components/Informations';
 
 function Home() {
     return (
       
       <div className="body">
-        <NavbarScroll />
+        
+        <Navbar />
         <section className="page-presentation">
-          
+          <div className="page-presentation-left">
+            
+          </div>
+          <div className="presentation-footer">
+            <div className="arrow-circle1">
+                <div className="arrow1">⟶</div>
+            </div>
+            <div className="footer-scroll">
+              <p>Scroll pour continuer</p>
+            </div>
+            <div className="footer-names">
+              <p>Site internet | Publicités | Médias sociaux </p>
+            </div>
+          </div>
         </section>
-
         <div className="do-title-content">
             <div className="do-title-row">
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>
-              <h2 className="do-title">On fait quoi</h2>  
+              <h2 className="do-title">Site internet</h2>
+              <h2 className="do-title">Publicités</h2>
+              <h2 className="do-title">Médias sociaux</h2>
+              <h2 className="do-title">Site internet</h2>
+              <h2 className="do-title">Publicités</h2>
+              <h2 className="do-title">Médias sociaux</h2>
+              <h2 className="do-title">Site internet</h2>
+              <h2 className="do-title">Publicités</h2>
+              <h2 className="do-title">Médias sociaux</h2>
+              <h2 className="do-title">Site internet</h2>
+              <h2 className="do-title">Publicités</h2>
+              <h2 className="do-title">Médias sociaux</h2> 
             </div>
           </div>
         <section className="page-do">
           <div className="do-what-content">
-            <div>
-              
-            </div>
             <div className="do-what">
               <h3 className="do-what-num">01</h3>
               <div className="do-what-title-content">
-                <p className="do-what-title">Web</p>
+                <p className="do-what-title">Site internet </p>
               </div>
               <div className="do-what-exemples">
-                <span>Création</span>
-                <span>Refonte</span>
-                <span>Sur-mesure</span>  
+                <span>Visibilité</span>
+                <span>Identité</span>
+                <span>Développement</span>  
               </div>
             </div>
             <div className="do-what">
               <h3 className="do-what-num">02</h3>
               <div className="do-what-title-content">
-                <p className="do-what-title">Digital</p>
+                <p className="do-what-title">Médias Sociaux</p>
               </div>
               <div className="do-what-exemples">
-                <span>Stratégie</span>
-                <span>Identité</span>
-                <span>Rebrand</span>  
+                <span>Gestion</span>
+                <span>Interaction</span>
+                <span>Communauté</span>  
               </div>
             </div><div className="do-what">
               <h3 className="do-what-num">03</h3>
               <div className="do-what-title-content">
-                <p className="do-what-title">Mise en avant</p>  
+                <p className="do-what-title">Publicités</p>  
               </div>
               <div className="do-what-exemples">
                 <span>Stratégie</span>
-                <span>Identité</span>
-                <span>Rebrand</span>  
-              </div>
-            </div><div className="do-what">
-              <h3 className="do-what-num">04</h3>
-              <div className="do-what-title-content">
-                <p className="do-what-title">Social Média</p>  
-              </div>
-              <div className="do-what-exemples">
-                <span>Stratégie</span>
-                <span>Ciblage</span>
-                <span>Réalisation</span>  
+                <span>Vente</span>
+                <span>Leads</span>  
               </div>
             </div>
           </div>
-
         </section>
-        <section className="page-precision">
+        <Informations />
+        {/* <section className="page-precision">
           <div className="precision-slogan">
             <div className="precision-slogan-content">
               <h2>Titre Slogan génial</h2>
@@ -141,7 +135,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="page-nous">
           <div className="page-text">
             <h2>Notre équipe pour vous accompagner</h2>

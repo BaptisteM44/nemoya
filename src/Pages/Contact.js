@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/pages/contact.scss'
-import Navbar from '../components/Header/Navbar'
 import Footer from '../components/Footer/footer'
+import Navbar from '../components/Header/Navbar';
 
 function Contact() {
   return (
-    <div>
+    <div className="page-contact">
       <Navbar />
       <Footer />
     </div>

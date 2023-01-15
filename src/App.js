@@ -10,7 +10,7 @@ function index() {
   return (
     <>
       <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/Home" exact element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
       </Routes>

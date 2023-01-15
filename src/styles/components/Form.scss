@@ -20,8 +20,8 @@
         background: transparent;
         color: $primary-color;
         transition: none !important;
-        font-weight: 500;
-        font-size: $sizeP2;
+        font-weight: 200;
+        font-size: $size7;
         border: none;
         border-bottom: 0.1vw solid rgba(0,0,0,0.16);
     }
@@ -29,6 +29,7 @@
         min-height: 13vw;
         resize: vertical;
         padding-top: 0.8858vw;
+
         overflow: auto;
     }
     .form-button{
@@ -47,7 +48,7 @@
         width: 60%;
         .contact-email,
         .contact-num{
-            font-size: $sizeTitle4;
+            font-size: $size7;
             margin: 0 auto;
             a{
               color: $primary-color;  
