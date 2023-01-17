@@ -51,6 +51,7 @@
   .navbar {
     width: 100vw;
     font-size: $size6;
+    justify-content: center;
     &.hidden {
         height: 0px;
         margin: -100px 0;

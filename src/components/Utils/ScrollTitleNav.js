@@ -26,6 +26,7 @@ const ScrollTitleNav = () => {
         end: "bottom",
         scrub: true,
         toggleActions: "play none none",
+        markers: true
       },
     });
   }, []);

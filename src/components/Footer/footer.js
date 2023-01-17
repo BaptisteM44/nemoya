@@ -24,7 +24,6 @@ function Footer() {
                                     <a href="https://www.instagram.com/nemoya.fr/">Instagram</a>
                                     <a href="https://www.instagram.com/nemoya.fr/">Tiktok</a>
                                     <a href="https://www.instagram.com/nemoya.fr/">Twitter</a>
-                                    {/* <a href="https://www.instagram.com/nemoya.fr/">Jsaispas</a> */}
                                 </div>
                             </div>
                         </div>

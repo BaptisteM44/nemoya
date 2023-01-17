@@ -395,7 +395,7 @@
     .do-title-content{
         height: 10vh;
         .do-title-row{
-            top: 0.8em;
+            top: 1.4em;
             .do-title{
                 font-size: $size8;
             }    
@@ -429,64 +429,36 @@
             align-items: center;
         }
     }
-
-
-
-    // .page-presentation{
-    // font-family: "GallientRegular";
-    // height: 100vh;
-    // background-color: $secondary-color;
-    // .page-presentation-left{
-    //     &::after{
-    //         content: '';
-    //         position: absolute;
-    //         border-right: 1px solid $primary-color;
-    //         height: 100%;
-    //         z-index: 100;
-    //         top: 0;
-    //         left: 39em;
-    //     }
-    // }
-    //     .presentation-footer{
-    //         display: flex;
-    //         justify-content: space-between;
-    //         position: absolute;
-    //         bottom: 0;
-    //         left: 0;
-    //         height: 12vh;
-    //         width: 100%;
-    //         border-top: 1px solid $primary-color;
-    //         .footer-scroll{
-    //             padding-left: 1.2em;
-    //             display: flex;
-    //             align-items: center;
-    //             font-size: $size8;
-    //             font-weight: $font1;
-    //         }
-    //         .footer-names{
-    //             position: absolute;
-    //             right: 4em;
-    //             bottom: 0.8em;
-    //             font-size: $size8;
-    //             font-weight: $font1;
-    //         }
-    //         .arrow-circle1{
-    //             position: absolute;
-    //             bottom: 0.3em;
-    //             left: 30em;
-    //             height: 100px;
-    //             width: 100px;
-    //             border-radius: 50%;
-    //             border: 1px solid $primary-color;
-    //             float: right;
-    //         }
-    //         .arrow1{
-    //             position: absolute;
-    //             font-size: 3em;
-    //             top: 17%;
-    //             left: 33%;
-    //             transform: rotate(90deg);  
-    //         }
-    //     }
-    // }
+    .page-presentation{
+    .page-presentation-left{
+        display: none;
+    }
+        .presentation-footer{
+            .footer-scroll{
+                display: none;
+            }
+            .footer-names{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                right: 0em;
+                bottom: 0em;
+                font-size: $size5;
+            }
+            .arrow-circle1{
+                left: 21em;
+                bottom: 1.4em;
+                height: 60px;
+                width: 60px;
+            }
+            .arrow1{
+                font-size: 1.7em;
+                top: 17%;
+                left: 33%;
+                transform: rotate(90deg);  
+            }
+        }
+    }
 }
