@@ -16,7 +16,7 @@ export const Form = () => {
   };
 
   return (
-    <div className="contact-form-content">
+    
         <form className="contact-form" ref={form} onSubmit={sendEmail}>
             <div className="form-name">
                 <label htmlFor="Nom">Name</label>
@@ -37,17 +37,7 @@ export const Form = () => {
             <div className="form-button">
                 <input className="form-button-send" type="submit" value="Envoyer" />    
             </div>
-            
         </form>
-        <div className="contact-info">
-            <div className="contact-num">
-                <a href="tel:+33102030405">0624234233</a> 
-            </div>
-            <div className="contact-email">
-                <a href="mailto:xxxx@xx.xx"> email@email.com</a> 
-            </div>
-        </div>
-    </div>
   );
 };
 export default Form;

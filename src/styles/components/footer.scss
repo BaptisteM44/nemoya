@@ -1,54 +1,124 @@
 @import '../settings';
 
 .page-contact{
-    min-height: 100vh;
+    height: 100vh;
+    padding-top: 6em;
     background-color: $third-color;
 }
 .contact-title-content{
     width: 50vw;
     .contact-title{
-        padding: 2em 0;
-        font-size: $size7;
+        font-size: $size10;
     }    
 }
 
 .footer{
-    padding-top: 4em;
     display: flex;
     justify-content: space-between;
 }
 .footer-credits{
     width: 40vw;
-    height: 20vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
-    padding-top: 4em;
+    padding-top: 5em;
     .footer-credits-content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         .credits-title{
-            font-size: 12px;
+            font-size: $size3;
         }
         .credits-entreprise{
-            font-size: 10px;
+            font-size: $size2;
         }
     }
-    .footer-link-content,
     .footer-slogan-content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         .slogan-title{
-            font-size: 12px;
+            font-size: $size3;
         }
         .slogan2023{
-            font-size: 10px;
+            font-size: $size2;
         }
     }
 }
-.footer-link-content{
-    a{
-        color: $primary-color;
+.contact-info{
+    padding-left: 10em;
+    width: 60%;
+    .contact-email,
+    .contact-num{
+        font-size: $size10;
+        margin: 0 auto;
+        a{
+          color: $primary-color;  
+        }
+    }
+    .contact-credits{
+        padding-top: 13vh;
+        .contact-credits-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            a{  
+                font-size: $size7;
+                color: $primary-color;
+                }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-phone) {
+    .page-contact{
+        height: auto;
+        padding-top: 1em;
+    }
+  .contact-title-content{
+      width: 100%;
+      padding-top: 5em ;
+      .contact-title{
+        font-size: $size7;
+    } 
+  }
+  .contact-info{
+    padding: 1em 0;
+    width: 100%;
+        .contact-email,
+        .contact-num{
+            font-size: $size6;
+        }
+        .contact-credits{
+            padding-top: 2vh;
+            .contact-credits-content{
+                a{  
+                    font-size: $size4;
+                    color: $primary-color;
+                    }
+            }
+        }
+    }
+    .footer-credits{
+        width: 100%;
+        height: auto;
+        padding: 2em 0;
+        text-align: left;
+        .footer-credits-content{
+            .credits-title{
+                font-size: $size2;
+            }
+            .credits-entreprise{
+                font-size: $size1;
+            }
+        }
+        .footer-slogan-content{
+            .slogan-title{
+                font-size: $size2;
+            }
+            .slogan2023{
+                font-size: $size1;
+            }
+        }
     }
 }

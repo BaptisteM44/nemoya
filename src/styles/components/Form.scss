@@ -7,16 +7,15 @@
     height: auto;
     .contact-form{
         height: 100%;
-        width: 40%;
+        width: 42vw;
     }
     label{
-        
         display: none;
     }
     textarea,
     input{
         width: 100%;
-        height: 3.8vw;
+        height: 3vw;
         background: transparent;
         color: $primary-color;
         transition: none !important;
@@ -43,18 +42,28 @@
             transition: 1s;
         }
     }
-    .contact-info{
-        padding-left: 10em;
-        width: 60%;
-        .contact-email,
-        .contact-num{
-            font-size: $size7;
-            margin: 0 auto;
-            a{
-              color: $primary-color;  
-            }
-            
-        }
-    }
+    
 
+}
+
+@media (max-width: $breakpoint-phone) {
+    .contact{
+        padding-top: 1em;
+        .contact-form-content{
+            flex-direction: column;
+            .contact-form{
+                padding: 2em 0em;
+                width: 100%;
+            }
+            textarea,
+            input{
+                height: 13vw;
+                font-size: $size5;
+            }
+            textarea{
+                min-height: 33vw;
+            }
+        }    
+    }
+    
 }

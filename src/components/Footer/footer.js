@@ -10,7 +10,25 @@ function Footer() {
             </div>
             <footer>
                 <div className="contact">
-                    <Form />
+                    <div className="contact-form-content">
+                        <Form />
+                        <div className="contact-info">
+                            <div className="contact-num">
+                                <a href="tel:+33102030405">0624234233</a> 
+                            </div>
+                            <div className="contact-email">
+                                <a href="mailto:xxxx@xx.xx"> nemoya@email.com</a> 
+                            </div>
+                            <div className="contact-credits">
+                                <div className="contact-credits-content">
+                                    <a href="https://www.instagram.com/nemoya.fr/">Instagram</a>
+                                    <a href="https://www.instagram.com/nemoya.fr/">Tiktok</a>
+                                    <a href="https://www.instagram.com/nemoya.fr/">Twitter</a>
+                                    {/* <a href="https://www.instagram.com/nemoya.fr/">Jsaispas</a> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="footer">
                         <div className="footer-credits">
                             <div className="footer-credits-content">
@@ -30,15 +48,6 @@ function Footer() {
                                 </div>
 
                             </div>
-                        </div>
-                        <div className="footer-link footer-credits">
-                            <div className="footer-link-content">
-                                <a href="https://www.instagram.com/nemoya.fr/">Instagram</a>
-                                <a href="https://www.instagram.com/nemoya.fr/">Tiktok</a>
-                                <a href="https://www.instagram.com/nemoya.fr/">Twitter</a>
-                                <a href="https://www.instagram.com/nemoya.fr/">Jsaispas</a>
-                            </div>
-
                         </div>
                     </div>
                 </div>
