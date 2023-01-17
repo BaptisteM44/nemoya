@@ -26,11 +26,11 @@ const ScrollTitleNav = () => {
         end: "bottom",
         scrub: true,
         toggleActions: "play none none",
-        markers: true
+        markers: false
       },
     });
   }, []);
-  if (location.pathname === '/Home') {
+  if (location.pathname === '/') {
     return (
       <h1 ref={titleRef} className="logo">
         Némoya

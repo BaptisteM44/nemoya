@@ -31,7 +31,7 @@ const Navbar = () => {
           <div id="nav" className={`navbar ${isVisible ? "" : "hidden"}`}>
             <ScrollTitleNav />
             <div className="menu">
-              <Link to="/Home">Accueil</Link>
+              <Link to="/">Accueil</Link>
               <Link to="/About">Services</Link>
               <Link to="/Contact">Contact</Link>   
             </div>
