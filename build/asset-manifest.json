@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nemoya/Home/static/css/main.588861ef.css",
+    "main.js": "/nemoya/Home/static/js/main.1113a549.js",
+    "static/media/Julien.jpg": "/nemoya/Home/static/media/Julien.7d1f1d7cf70fa01cd268.jpg",
+    "static/media/iphone.png": "/nemoya/Home/static/media/iphone.ef167939cbfa8a284e95.png",
+    "static/media/GallientRegular.ttf": "/nemoya/Home/static/media/GallientRegular.419a762c1efbc6a5bd7c.ttf",
+    "index.html": "/nemoya/Home/index.html",
+    "static/media/instagram.svg": "/nemoya/Home/static/media/instagram.02f16fe83165c5dd2279dafee5b73abb.svg",
+    "static/media/google.svg": "/nemoya/Home/static/media/google.9f5eb82d22e2841795f6915761702968.svg",
+    "static/media/tiktok.svg": "/nemoya/Home/static/media/tiktok.df595fecc6a7f4025a96c9098039377a.svg",
+    "static/media/facebook-squared.svg": "/nemoya/Home/static/media/facebook-squared.180ee80e703d17c606aa629436d0778d.svg",
+    "main.588861ef.css.map": "/nemoya/Home/static/css/main.588861ef.css.map",
+    "main.1113a549.js.map": "/nemoya/Home/static/js/main.1113a549.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.588861ef.css",
+    "static/js/main.1113a549.js"
+  ]
+}
