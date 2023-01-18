@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/index.scss'
 
+import Favicon from '../styles/assets/img/favicon.png'
 import Julien from '../styles/assets/img/Julien.jpg'
 import Footer from '../components/Footer/footer'
 import Navbar from '../components/Header/Navbar';
@@ -13,11 +14,12 @@ function Home() {
         
         <Navbar />
         <section className="page-presentation">
+          <img className="favicon" src={Favicon} alt="" />
           <div className="page-presentation-content">
             <div className="presentation-title">
               <h1 className="presentation-title1">Agence de</h1>
               <h2 className="presentation-title2">Marketing Digital</h2>
-              <p className="presentation-slogan">Votre succès, notre intérêt</p>
+              <p className="presentation-slogan">Votre succès, notre intérêt<span className="point">.</span></p>
             </div>
             
           </div>

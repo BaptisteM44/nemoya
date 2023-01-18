@@ -16,7 +16,7 @@ const ScrollTitleNav = () => {
   useEffect(() => {
     let title = titleRef.current;
 
-    gsap.fromTo(title, {y:380, x:800, fontSize:"4em"}, {
+    gsap.fromTo(title, {y:580, x:1050, fontSize:"4em"}, {
       y: 0,
       x: 0,
       fontSize: "2.441rem",
@@ -24,7 +24,7 @@ const ScrollTitleNav = () => {
       color: "#b75d32",
       scrollTrigger: {
         trigger: ".page-presentation",
-        start: "top ",
+        start: "top",
         end: "bottom",
         scrub: true,
         toggleActions: "play none none",
@@ -35,13 +35,13 @@ const ScrollTitleNav = () => {
   if (location.pathname === '/') {
     return (
       <h1 ref={titleRef} className="logo">
-        Némoya
+        nemoya.
       </h1>
     );
   } else {
     return (
       <h1 className="logo1">
-        Némoya
+        nemoya.
       </h1>
     );
   }

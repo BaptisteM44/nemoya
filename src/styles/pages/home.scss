@@ -5,24 +5,32 @@
     background: url(../assets/img/background.jpg) no-repeat center center fixed;
     background-size: cover;
     background-color: $secondary-color;
+    .favicon{
+        position: absolute;
+        top: 0.4rem;
+        left: 2rem;
+        height: 100px;
+        z-index: 1000;
+    }
     .page-presentation-content{
         display: flex;
         height: 100%;
         align-items: center;
         .presentation-title{
             width: 35em;
-            text-transform: uppercase;
             .presentation-title1{
                 font-size: $size12;
                 font-weight: $font5;
                 font-family: 'Futura PT Light';
+                text-transform: uppercase;
             }
             .presentation-title2{
                 font-size: $size12;
                 font-weight: $font5;
-
+                text-transform: uppercase;
             }
             .presentation-slogan{
+                font-family: 'Futura PT Heavy';
                 font-size: $size7;
                 font-weight: $font2;
             }
@@ -177,6 +185,7 @@
     }
 }
 .point{
+    font-family: 'Futura PT Heavy';
     color: $fifth-color;
 }
 .page-nous{
