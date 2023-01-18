@@ -4,17 +4,72 @@
     font-weight: normal;
     font-style: normal;
   }
+@font-face {
+    font-family: 'Futura PT Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Book'), url('./fonts/futura-pt/FuturaCyrillicBook.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Light'), url('./fonts/futura-pt/FuturaCyrillicLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura PT Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Medium'), url('./fonts/futura-pt/FuturaCyrillicMedium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura PT Demi';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Demi'), url('./fonts/futura-pt/FuturaCyrillicDemi.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura PT Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Heavy'), url('./fonts/futura-pt/FuturaCyrillicHeavy.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura PT Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Bold'), url('./fonts/futura-pt/FuturaCyrillicBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Futura PT Extra Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Extra Bold'), url('./fonts/futura-pt/FuturaCyrillicExtraBold.woff') format('woff');
+    }
 
 $primary-color:#343434;
 $secondary-color:#FFF;
 $third-color:#efcda3;
-$fourth-color: #9e9e9e;
+$fourth-color: #f2f2f2;
 $fifth-color: #b75d32;
 
 $font1: 100;
 $font2: 200;
 $font3: 300;
 $font4: 400;
+$font5: 600;
 
 $size1:0.512rem;
 $size2:0.64rem;
@@ -44,17 +99,26 @@ $breakpoint-computer: 1px;
     border: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Futura PT Light';
     box-sizing: border-box;
     -webkit-font-smoothing: subpixel-antialiased;
 }
-.navbar,
+#nav,
 section{
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 p, h1, h2, h3, span{
     color: $primary-color;
+}
+p, span{
+    font-family: 'Futura PT Light';
+}
+h1{
+    font-family: 'Futura PT Heavy';
+}
+h2,h3{
+    font-family: 'Futura PT Medium';
 }
 @media (max-width: $breakpoint-phone) {
     .navbar,

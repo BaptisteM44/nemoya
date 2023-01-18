@@ -1,18 +1,31 @@
 @import '../settings';
-
 .page-presentation{
     font-family: "GallientRegular";
     height: 100vh;
+    background: url(../assets/img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
     background-color: $secondary-color;
-    .page-presentation-left{
-        &::after{
-            content: '';
-            position: absolute;
-            border-right: 1px solid $primary-color;
-            height: 100%;
-            z-index: 100;
-            top: 0;
-            left: 39em;
+    .page-presentation-content{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        .presentation-title{
+            width: 35em;
+            text-transform: uppercase;
+            .presentation-title1{
+                font-size: $size12;
+                font-weight: $font5;
+                font-family: 'Futura PT Light';
+            }
+            .presentation-title2{
+                font-size: $size12;
+                font-weight: $font5;
+
+            }
+            .presentation-slogan{
+                font-size: $size7;
+                font-weight: $font2;
+            }
         }
     }
     .presentation-footer{
@@ -30,30 +43,6 @@
             align-items: center;
             font-size: $size8;
             font-weight: $font1;
-        }
-        .footer-names{
-            position: absolute;
-            right: 4em;
-            bottom: 0.8em;
-            font-size: $size8;
-            font-weight: $font1;
-        }
-        .arrow-circle1{
-            position: absolute;
-            bottom: 0.3em;
-            left: 30em;
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
-            border: 1px solid $primary-color;
-            float: right;
-        }
-        .arrow1{
-            position: absolute;
-            font-size: 3em;
-            top: 17%;
-            left: 33%;
-            transform: rotate(90deg);  
         }
     }
 }
@@ -79,15 +68,10 @@
     }
 
 }
-
-.page-do{
-    height: 80vh;
-    background-color: $fourth-color;
-}
 .do-title-content{
-    background-color: $fourth-color;
-    position: relative;
-    height: 20vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     white-space: nowrap;
     overflow: hidden;
     .do-title-row{
@@ -96,18 +80,27 @@
         justify-content: flex-start;
         align-items: flex-start;
         left: 0;
-        top: 0;
-        opacity: 0.8;
+        top: 3rem;
         position: absolute;
-        animation: do-title 20s infinite linear;
+        animation: do-title 35s infinite linear;
     .do-title{
-        font-size: 10em;
+        color: $fifth-color;
+        font-size: $size7;
+        font-weight: $font5;
         line-height: 100%;
         letter-spacing: -0.033em;
         margin-right: 3.8vw;
         position: relative;
         white-space: nowrap;
-        font-weight: $font2;
+        text-transform: uppercase;
+    }
+    .do-title1{
+        font-weight: $font1;
+        font-family: 'Futura PT Light';
+    }
+    .do-title2{
+        font-family: 'Futura PT Heavy';
+        font-weight: $font4;
     }
     .inner{
         height: 100%;
@@ -121,181 +114,70 @@
     }
     
 }
-
 @keyframes do-title {
 
     100% {
 		transform: translate3d(-50%, 0, 0);
 	}
 }
-.do-what-content{
-    height: 100%;
-    max-width: 80vw;
-    .do-what{
-        padding-left: 3em;
-        height: 33%;
+.page-do{
+    height: 100vh;
+    background-color: $secondary-color;
+    font-family: 'fut';
+    .do-what-explain{
+        padding-top: 4em;
+        width: 40%;
         display: flex;
-        justify-content: start;
-        color: $primary-color;
-    }
-    .do-what-num{
-        font-size: $size5;
-        padding: 3em;
-    }
-    .do-what-title-content{
-        padding: 0 10em;
-        min-width: 4em;
-        align-self: center;
-    .do-what-title{
-        display: flex;
-        justify-content: left;
-        height: 100%;
-        min-width: 7em;
-        font-size: $size11;
-        align-self: center;
-    }    
-    }
-    
-    .do-what-exemples{
-        font-size: $size5;
-        display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex-direction: column;
-    }
-}
-.page-precision{
-    height: auto;
-    background-color: $fourth-color;
-}
-.precision-slogan{
-    .precision-slogan-content{
-        padding: 2em;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
         h2{
-            font-size: $size11;
+            font-size: $size10;
+            padding-bottom: 0.8em;
         }
         p{
-            font-size: $size5;
-            width: 50%;
-            margin: 0 auto;
+            font-size: $size7;
+        } 
+        
+    }
+    .do-what-content{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 8em;
+        .do-what{
+            height: 100%;
+            width: 400px;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            justify-content: center;
+            color: $primary-color;
+        }
+        .do-what-title-content{
+            display: flex;
+            width: 100%;
+            .do-what-title{
+                display: flex;
+                justify-content: left;
+                height: 100%;
+                font-size: $size10;
+            }
+        }
+        .do-what-exemples{
+            font-size: $size7;
+            font-weight: $font1;
+            padding: 1em 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            span{
+                padding: 5px 0;
+            }
         }
     }
-    .parent {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(11, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        // height: 100vh;
-        padding-bottom: 20px;
-        .grid-commun{
-            border-radius: 20px;
-            background-color: $secondary-color;
-        }
-        .div1 {
-            grid-area: 1 / 1 / 5 / 3;
-            width: auto;
-            height: auto;
-            background-color: $secondary-color;
-            .grid2-content{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 1em;
-                text-align: center;
-                h2{
-                    font-size: $size7;    
-                }
-                p{
-                    padding:2em;
-                    font-size: $size5;
-                }
-            }
-         }
-        .div2 { 
-            grid-area: 5 / 1 / 7 / 3;
-            .grid2-img-content{
-                display: flex;
-                justify-content: center;
-                width: auto;
-                margin-top: 20px;
-                img{
-                    margin: 30px;
-                    width: -webkit-fill-available;
-                }
-            }
-         }
-        .div3 { 
-            grid-area: 1 / 3 / 7 / 5;
-            .grid3-img-content{
-                height: 100%;
-                text-align: center;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                    border-radius: 25px;
-                }
-            }
-         }
-        .div4 { 
-            grid-area: 7 / 3 / 11 / 5;
-            background-color: $secondary-color;
-         }
-        .div5 { 
-            grid-area: 7 / 1 / 12 / 2;
-            background-color: $secondary-color;
-         }
-         .gridtext-content{
-            margin: 20px;
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-            h2{
-                font-size: $size7;
-                font-weight: $font4;
-                margin: 10px auto;
-            }
-            p{
-                font-size: $size5;
-            }
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-         }
-        .div6{
-            grid-area: 7 / 2 / 12 / 3;
-            background-color: $secondary-color;
-        }
-        .div7 {
-            grid-area: 11 / 3 / 12 / 5;
-            background-color: $secondary-color;
-            .grid-number{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                height: 100%;
-                padding: 20px;
-                .grid-number-content{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
-                    h2{
-                        font-size: $size9;
-                    }
-                    p{
-                        font-size: $size5;
-                    }
-                }
-            }
-         }
-        }
-        
+}
+.point{
+    color: $fifth-color;
 }
 .page-nous{
     height: auto;
@@ -412,10 +294,6 @@
             padding-left: 0em;
             flex-wrap: wrap;
         }
-        .do-what-num{
-            font-size: $size3;
-            padding: 0em;
-        }
         .do-what-title-content{
             padding: 0em;
             min-width: 0em;
@@ -427,38 +305,6 @@
             font-size: $size4;
             width: 100%;
             align-items: center;
-        }
-    }
-    .page-presentation{
-    .page-presentation-left{
-        display: none;
-    }
-        .presentation-footer{
-            .footer-scroll{
-                display: none;
-            }
-            .footer-names{
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                right: 0em;
-                bottom: 0em;
-                font-size: $size5;
-            }
-            .arrow-circle1{
-                left: 21em;
-                bottom: 1.4em;
-                height: 60px;
-                width: 60px;
-            }
-            .arrow1{
-                font-size: 1.7em;
-                top: 17%;
-                left: 33%;
-                transform: rotate(90deg);  
-            }
         }
     }
 }

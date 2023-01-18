@@ -2,22 +2,33 @@
 
 .page-informations{
     min-height: 150vh;
-    background-color: $third-color;
+    background-color: $fourth-color;
+    .information-title{
+        position: relative;
+        font-size: $size8;
+        width: 60%;
+        padding: 3rem;
+    }
     .info2{
+        background-color: $secondary-color !important;
         display: flex;
         flex-direction: row-reverse;
     }
     .informations-content{
-        padding: 2em 0;
+        padding: 4em 0;
         height: auto;
+        min-height: 50vh;
         display: flex;
         justify-content: center;
         position: relative;
-        border-bottom: 1px solid $primary-color;
+        background-color: $fourth-color;
         .informations-content-bloc{
             width: 50%;
             display: flex;
             justify-content: center;
+            .content-bloc-img{
+                width: 40em;
+            }
             .content-bloc{
                 width: 440px;
                 display: flex;
@@ -78,12 +89,13 @@
 .arrow-circle {
             position: absolute;
             bottom: 2em;
-            right: 0px;
+            right: 3em;
             height: 100px;
             width: 100px;
             border-radius: 50%;
             border: 1px solid $primary-color;
             float: right;
+            color: $primary-color;
           }
           .arrow {
             position: absolute;

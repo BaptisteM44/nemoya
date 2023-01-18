@@ -20,15 +20,15 @@
         margin: -100px 0;
       }
     .menu {
+      width: 15em;
       font-size: $size8;
       font-weight: $font1;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding-right: 4em;
       a {
         color: $primary-color;
         text-decoration: none;
-        margin: 0 1rem;
         &:hover {
           color: lighten($primary-color, 20%);
         }
@@ -36,13 +36,16 @@
     }
   }
   .logo {
+      color: $primary-color;
       position: absolute;
-      font-size: $size7;
-      top: 30px;
+      font-size: $size10;
+      top: 24px;
       left: 0px;
       padding-left: 3rem;
       font-weight: bold;
       font-family: 'GallientRegular', sans-serif;
+      opacity: 0.1;
+      
     }
 
 

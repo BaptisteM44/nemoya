@@ -32,7 +32,7 @@ function Footer() {
                         <div className="footer-credits">
                             <div className="footer-credits-content">
                                 <div className="credits-title">
-                                    <h2>Entreprise Marketing Digital</h2>    
+                                    <h2>Agence de Marketing Digital</h2>    
                                 </div>
                                 <div className="credits-entreprise">
                                     <p>NOMEYA</p>

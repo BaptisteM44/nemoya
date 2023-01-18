@@ -16,10 +16,12 @@ const ScrollTitleNav = () => {
   useEffect(() => {
     let title = titleRef.current;
 
-    gsap.fromTo(title, {y:380, x:0, fontSize:"4em"}, {
+    gsap.fromTo(title, {y:380, x:800, fontSize:"4em"}, {
       y: 0,
       x: 0,
       fontSize: "2.441rem",
+      opacity:1,
+      color: "#b75d32",
       scrollTrigger: {
         trigger: ".page-presentation",
         start: "top ",

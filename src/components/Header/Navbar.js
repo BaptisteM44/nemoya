@@ -27,16 +27,14 @@ const Navbar = () => {
   }, []);
   
     return (
-        <header>
-          <div id="nav" className={`navbar ${isVisible ? "" : "hidden"}`}>
+          <header id="nav" className={`navbar ${isVisible ? "" : "hidden"}`}>
             <ScrollTitleNav />
             <div className="menu">
               <Link to="/">Accueil</Link>
               <Link to="/About">Services</Link>
               <Link to="/Contact">Contact</Link>   
             </div>
-          </div>
-        </header>
+          </header>
     );
   }
   

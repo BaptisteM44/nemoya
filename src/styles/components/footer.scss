@@ -2,13 +2,13 @@
 
 .page-contact{
     height: 100vh;
-    padding-top: 6em;
-    background-color: $third-color;
+    background-color: $fourth-color;
 }
 .contact-title-content{
     width: 50vw;
+    padding-top: 10em;
     .contact-title{
-        font-size: $size10;
+        font-size: $size8;
     }    
 }
 
@@ -18,10 +18,8 @@
 }
 .footer-credits{
     width: 40vw;
-    height: 10vh;
     display: flex;
     justify-content: space-between;
-    padding-top: 5em;
     .footer-credits-content{
         display: flex;
         flex-direction: column;
@@ -57,7 +55,7 @@
         }
     }
     .contact-credits{
-        padding-top: 13vh;
+        padding-top: 16vh;
         .contact-credits-content{
             display: flex;
             flex-direction: column;
@@ -72,7 +70,6 @@
 
 @media (max-width: $breakpoint-phone) {
     .page-contact{
-        height: auto;
         padding-top: 1em;
     }
   .contact-title-content{
