@@ -4,10 +4,6 @@ import Form from '../Formulaire/Form';
 
 function Footer() {
     return (
-        <section className="page-contact">
-            <div className="contact-title-content">
-                <h2 className="contact-title">Vous démarrez un nouveau projet ou souhaitez collaborer avec nous ?</h2>
-            </div>
             <footer>
                 <div className="contact">
                     <div className="contact-form-content">
@@ -51,7 +47,6 @@ function Footer() {
                     </div>
                 </div>
             </footer>
-        </section>
 )
     }
 

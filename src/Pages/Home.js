@@ -45,7 +45,10 @@ function Home() {
         <section className="page-do">
           <div className="do-what-explain">
               <h2>Ce que nous faisons<span className="point">.</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum debitis, vel ex necessitatibus possimus obcaecati voluptatem consectetur dolore voluptates, provident facilis quos at? Doloremque sunt eaque fugit iste odio aliquam.</p>
+            <p>
+              Nemoya est une agence qui vous accompagne dans la digitalisation de votre entreprise. Notre moteur : c’est votre développement, votre réussite et votre succès à travers internet.
+              Nous réalisons votre site web, nous le référençons, nous créons vos visuels… Vous allez devenir une autorité sur votre marché.
+            </p>
           </div>
           <div className="do-what-content">
             <div className="do-what">
@@ -118,7 +121,13 @@ function Home() {
           </div>
           
         </section>
-        <Footer />
+        <section className="page-contact">
+          <div className="contact-title-content">
+            <h2 className="contact-title">Nous contacter<span className="point">.</span></h2>
+          </div>
+          <Footer />
+        </section>
+        
       </div>
       
     );
