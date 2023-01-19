@@ -16,17 +16,16 @@
         display: flex;
         height: 100%;
         align-items: center;
-        // padding-left: 6em;
         .presentation-title{
             width: 30em;
             .presentation-title1{
-                font-size: $size10;
+                font-size: $size11;
                 font-weight: $font5;
                 font-family: 'Futura PT Light';
                 text-transform: uppercase;
             }
             .presentation-title2{
-                font-size: $size10;
+                font-size: $size11;
                 font-weight: $font5;
                 text-transform: uppercase;
             }
@@ -130,7 +129,7 @@
 	}
 }
 .page-do{
-    height: 100vh;
+    height: auto;
     background-color: $secondary-color;
     .do-what-explain{
         padding-top: 8em;
@@ -139,11 +138,11 @@
         flex-direction: column;
         justify-content: center;
         h2{
-            font-size: $size9;
+            font-size: $size8;
             padding-bottom: 0.8em;
         }
         p{
-            font-size: $size6;
+            font-size: $size5;
         } 
         
     }
@@ -151,7 +150,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding-top: 6em;
+        padding: 6em 0em;
         .do-what{
             height: 100%;
             width: 400px;
@@ -168,11 +167,11 @@
                 display: flex;
                 justify-content: left;
                 height: 100%;
-                font-size: $size9;
+                font-size: $size8;
             }
         }
         .do-what-exemples{
-            font-size: $size6;
+            font-size: $size5;
             font-weight: $font1;
             padding: 1em 0;
             display: flex;
@@ -196,10 +195,10 @@
     height: auto;
     margin: 3em 0;
     h2{
-        font-size: $size9;
+        font-size: $size8;
     }
     p{
-        font-size: $size7;
+        font-size: $size6;
         width: 50%;
     }
 }

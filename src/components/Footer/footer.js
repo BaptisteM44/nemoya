@@ -13,7 +13,7 @@ function Footer() {
                                 <a href="tel:+33102030405">0624234233</a> 
                             </div>
                             <div className="contact-email">
-                                <a href="mailto:xxxx@xx.xx"> nemoya@email.com</a> 
+                                <a href="mailto:xxxx@xx.xx">contact@nemoya.fr</a> 
                             </div>
                             <div className="contact-credits">
                                 <div className="contact-credits-content">

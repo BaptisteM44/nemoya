@@ -5,6 +5,55 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Futura PT Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Book"), url("./fonts/futura-pt/FuturaCyrillicBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Light"), url("./fonts/futura-pt/FuturaCyrillicLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Medium"), url("./fonts/futura-pt/FuturaCyrillicMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Demi';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Demi"), url("./fonts/futura-pt/FuturaCyrillicDemi.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Heavy"), url("./fonts/futura-pt/FuturaCyrillicHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Bold"), url("./fonts/futura-pt/FuturaCyrillicBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Extra Bold"), url("./fonts/futura-pt/FuturaCyrillicExtraBold.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,21 +64,140 @@
   border: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Futura PT Light';
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.navbar,
+#nav,
 section {
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+
+p, h1, h2, h3, span {
+  color: #343434;
+}
+
+p, span {
+  font-family: 'Futura PT Light';
+}
+
+h1 {
+  font-family: 'Futura PT Heavy';
+}
+
+h2, h3 {
+  font-family: 'Futura PT Medium';
+}
+
+.firstHover:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.firstHover::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #b75d32;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+@media (max-width: 600px) {
+  .navbar,
+  section {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 .page-presentation {
   font-family: "GallientRegular";
   height: 100vh;
-  background-color: #d1c5b6;
+  background: url(../assets/img/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-color: #FFF;
+}
+
+.page-presentation .favicon {
+  position: absolute;
+  top: 0.4rem;
+  left: 2rem;
+  height: 100px;
+  z-index: 1000;
+}
+
+.page-presentation .page-presentation-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-presentation .page-presentation-content .presentation-title {
+  width: 30em;
+}
+
+.page-presentation .page-presentation-content .presentation-title .presentation-title1 {
+  font-size: 4.768rem;
+  font-weight: 600;
+  font-family: 'Futura PT Light';
+  text-transform: uppercase;
+}
+
+.page-presentation .page-presentation-content .presentation-title .presentation-title2 {
+  font-size: 4.768rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.page-presentation .page-presentation-content .presentation-title .presentation-slogan {
+  font-family: 'Futura PT Heavy';
+  font-size: 1.563rem;
+  font-weight: 200;
+}
+
+.page-presentation .presentation-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 12vh;
+  width: 100%;
+  border-top: 1px solid #343434;
+}
+
+.page-presentation .presentation-footer .footer-scroll {
+  padding-left: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.441rem;
+  font-weight: 100;
 }
 
 .presentation-content {
@@ -47,7 +215,9 @@ section {
 }
 
 .presentation-content .presentation-title {
-  font-size: 2em;
+  font-family: "GallientRegular";
+  font-size: 0.8rem;
+  font-weight: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,15 +241,10 @@ section {
   margin: 0 auto;
 }
 
-.page-do {
-  height: 80vh;
-  background-color: #FFF;
-}
-
 .do-title-content {
-  background-color: #FFF;
-  position: relative;
-  height: 20vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -99,70 +264,132 @@ section {
       -ms-flex-align: start;
           align-items: flex-start;
   left: 0;
-  top: 0;
-  opacity: 0.3;
+  top: 3rem;
   position: absolute;
-  -webkit-animation: do-title 25s infinite linear;
-          animation: do-title 25s infinite linear;
+  -webkit-animation: do-title 35s infinite linear;
+          animation: do-title 35s infinite linear;
 }
 
 .do-title-content .do-title-row .do-title {
-  font-size: 10em;
+  color: #b75d32;
+  font-size: 1.563rem;
+  font-weight: 600;
   line-height: 100%;
   letter-spacing: -0.033em;
   margin-right: 3.8vw;
   position: relative;
   white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.do-title-content .do-title-row .do-title1 {
+  font-weight: 100;
+  font-family: 'Futura PT Light';
+}
+
+.do-title-content .do-title-row .do-title2 {
+  font-family: 'Futura PT book';
+  font-weight: 400;
+}
+
+.do-title-content .do-title-row .inner {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-animation: marquee 15s linear infinite;
+          animation: marquee 15s linear infinite;
+  will-change: transform;
 }
 
 @-webkit-keyframes do-title {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
   100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
   }
 }
 
 @keyframes do-title {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
   100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
   }
 }
 
-.do-what-content {
-  height: 100%;
-  max-width: 80vw;
+.page-do {
+  height: auto;
+  background-color: #FFF;
 }
 
-.do-what-content .do-what {
-  height: 25%;
+.page-do .do-what-explain {
+  padding-top: 8em;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-do .do-what-explain h2 {
+  font-size: 2.441rem;
+  padding-bottom: 0.8em;
+}
+
+.page-do .do-what-explain p {
+  font-size: 1.25rem;
+}
+
+.page-do .do-what-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6em 0em;
+}
+
+.page-do .do-what-content .do-what {
+  height: 100%;
+  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  color: #000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #343434;
 }
 
-.do-what-content .do-what-num {
-  font-size: 1.2em;
-  padding: 3em;
+.page-do .do-what-content .do-what-title-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
-.do-what-content .do-what-title-content {
-  margin: 0 5em;
-}
-
-.do-what-content .do-what-title-content .do-what-title {
+.page-do .do-what-content .do-what-title-content .do-what-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,14 +397,13 @@ section {
       -ms-flex-pack: left;
           justify-content: left;
   height: 100%;
-  width: 30vw;
-  font-size: 4.5em;
-  -ms-flex-item-align: center;
-      align-self: center;
+  font-size: 2.441rem;
 }
 
-.do-what-content .do-what-exemples {
-  font-size: 1.2em;
+.page-do .do-what-content .do-what-exemples {
+  font-size: 1.25rem;
+  font-weight: 100;
+  padding: 1em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,235 +416,17 @@ section {
           flex-direction: column;
 }
 
-.page-precision {
-  height: auto;
-  background-color: #eae9e4;
+.page-do .do-what-content .do-what-exemples span {
+  padding: 5px 0;
 }
 
-.precision-slogan .precision-slogan-content {
-  padding: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.precision-slogan .precision-slogan-content h2 {
-  font-size: 5em;
-}
-
-.precision-slogan .precision-slogan-content p {
-  font-size: 1.2em;
-  width: 50%;
-  margin: 0 auto;
-}
-
-.precision-slogan .parent {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[11];
-      grid-template-rows: repeat(11, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  padding-bottom: 20px;
-}
-
-.precision-slogan .parent .grid-commun {
-  border-radius: 20px;
-  background-color: #FFF;
-}
-
-.precision-slogan .parent .div1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 1 / 1 / 5 / 3;
-  width: auto;
-  height: auto;
-  background-color: #FFF;
-}
-
-.precision-slogan .parent .div1 .grid2-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1em;
-  text-align: center;
-}
-
-.precision-slogan .parent .div1 .grid2-content h2 {
-  font-size: 2em;
-}
-
-.precision-slogan .parent .div1 .grid2-content p {
-  padding: 2em;
-  font-size: 1.2em;
-}
-
-.precision-slogan .parent .div2 {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 5 / 1 / 7 / 3;
-}
-
-.precision-slogan .parent .div2 .grid2-img-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: auto;
-  margin-top: 20px;
-}
-
-.precision-slogan .parent .div2 .grid2-img-content img {
-  margin: 30px;
-  width: -webkit-fill-available;
-}
-
-.precision-slogan .parent .div3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 6;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: 1 / 3 / 7 / 5;
-}
-
-.precision-slogan .parent .div3 .grid3-img-content {
-  height: 100%;
-  text-align: center;
-}
-
-.precision-slogan .parent .div3 .grid3-img-content img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 25px;
-}
-
-.precision-slogan .parent .div4 {
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 4;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: 7 / 3 / 11 / 5;
-  background-color: #FFF;
-}
-
-.precision-slogan .parent .div5 {
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 7 / 1 / 12 / 2;
-  background-color: #FFF;
-}
-
-.precision-slogan .parent .gridtext-content {
-  margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.precision-slogan .parent .gridtext-content h2 {
-  font-size: 2em;
-  font-weight: 400;
-  margin: 10px auto;
-}
-
-.precision-slogan .parent .gridtext-content p {
-  font-size: 1.2em;
-}
-
-.precision-slogan .parent .gridtext-content img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.precision-slogan .parent .div6 {
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 5;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 7 / 2 / 12 / 3;
-  background-color: #FFF;
-}
-
-.precision-slogan .parent .div7 {
-  -ms-grid-row: 11;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: 11 / 3 / 12 / 5;
-  background-color: #FFF;
-}
-
-.precision-slogan .parent .div7 .grid-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 100%;
-  padding: 20px;
-}
-
-.precision-slogan .parent .div7 .grid-number .grid-number-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.precision-slogan .parent .div7 .grid-number .grid-number-content h2 {
-  font-size: 3em;
-}
-
-.precision-slogan .parent .div7 .grid-number .grid-number-content p {
-  font-size: 1.2em;
+.point {
+  font-family: 'Futura PT Heavy';
+  color: #b75d32;
 }
 
 .page-nous {
-  height: auto;
+  height: 100vh;
   background-color: #FFF;
 }
 
@@ -428,26 +436,26 @@ section {
 }
 
 .page-text h2 {
-  font-size: 4em;
+  font-size: 2.441rem;
 }
 
 .page-text p {
-  font-size: 2em;
+  font-size: 1.563rem;
   width: 50%;
 }
 
 .page-parent {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: (1fr)[12];
-      grid-template-rows: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin: 0 auto;
   width: 70vw;
-  height: 150vh;
+  height: 80vh;
 }
 
 .page-parent .page-grid-content img {
@@ -469,38 +477,120 @@ section {
 }
 
 .page-parent .page-grid-content .page-who h3 {
-  font-size: 3em;
+  font-size: 2.441rem;
 }
 
 .page-parent .page-grid-content .page-who p {
-  font-size: 1.2em;
+  font-size: 1rem;
   font-weight: 100;
 }
 
 .page-parent .page-grid1 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 5;
-  -ms-grid-column: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 2;
-  grid-area: 1 / 1 / 6 / 3;
+  grid-area: 1 / 2 / 3 / 4;
   height: auto;
 }
 
 .page-parent .page-grid2 {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 5;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
-  grid-area: 4 / 5 / 9 / 7;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: -2;
+  grid-area: 2 / 9 / 3 / 7;
   height: auto;
 }
 
 .page-parent .page-grid3 {
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 5;
-  -ms-grid-column: 2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: -1;
+  -ms-grid-column: 4;
   -ms-grid-column-span: 2;
-  grid-area: 7 / 2 / 12 / 4;
+  grid-area: 4 / 4 / 3 / 6;
   height: auto;
+}
+
+@media (max-width: 600px) {
+  .page-text h2 {
+    font-size: 1.953rem;
+  }
+  .page-text p {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .page-parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 80%;
+  }
+  .page-parent .page-grid-content {
+    padding: 2em 0em;
+  }
+  .page-parent .page-grid-content img {
+    height: 70%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .page-parent .page-grid-content .page-who {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px;
+  }
+  .page-parent .page-grid-content .page-who h3 {
+    font-size: 3.052rem;
+  }
+  .page-parent .page-grid-content .page-who p {
+    font-size: 1.25rem;
+    font-weight: 100;
+  }
+  .do-title-content {
+    height: 10vh;
+  }
+  .do-title-content .do-title-row {
+    top: 1.4em;
+  }
+  .do-title-content .do-title-row .do-title {
+    font-size: 2.441rem;
+  }
+  .page-do {
+    height: 90vh;
+  }
+  .do-what-content {
+    max-width: 100vw;
+  }
+  .do-what-content .do-what {
+    padding: 2em 0em 2em;
+    padding-left: 0em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .do-what-content .do-what-title-content {
+    padding: 0em;
+    min-width: 0em;
+  }
+  .do-what-content .do-what-title-content .do-what-title {
+    font-size: 3.052rem;
+  }
+  .do-what-content .do-what-exemples {
+    font-size: 1rem;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=home.css.map */

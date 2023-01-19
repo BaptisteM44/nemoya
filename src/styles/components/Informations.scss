@@ -5,9 +5,9 @@
     background-color: $fourth-color;
     .information-title{
         position: relative;
-        font-size: $size7;
+        font-size: $size6;
         width: 60%;
-        padding: 3rem 7em;
+        padding: 3rem 0em 3em 16rem;
     }
     .info2{
         background-color: $secondary-color !important;
@@ -75,14 +75,14 @@
             h1{
                 margin: 0 auto;
                 width: 65%;
-                font-size: $size8;
+                font-size: $size7;
                 color: $primary-color;
             }
             p{
                 padding-top: 1em;
                 margin: 0 auto;
                 width: 65%;
-                font-size: $size7;
+                font-size: $size6;
                 color: $primary-color;
                 font-weight: $font1;
             }

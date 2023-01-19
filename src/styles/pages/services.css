@@ -124,14 +124,9 @@ h2, h3 {
   }
 }
 
-.logo1 {
-  color: #b75d32;
-  position: absolute;
-  font-size: 3.052rem;
-  top: 30px;
-  left: 0px;
-  padding-left: 3rem;
-  font-weight: bold;
-  font-family: 'GallientRegular', sans-serif;
+.about {
+  height: 100vh;
+  padding-top: 10vh;
+  background-color: #FFF;
 }
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=services.css.map */

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/pages/about.scss'
+import '../styles/pages/services.scss'
 import Navbar from '../components/Header/Navbar'
 
 

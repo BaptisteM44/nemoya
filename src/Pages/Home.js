@@ -14,7 +14,7 @@ function Home() {
         
         <Navbar />
         <section className="page-presentation">
-          <img className="favicon" src={Favicon} alt="" />
+          <img className="favicon" src={Favicon} alt="logo nemoya" />
           <div className="page-presentation-content">
             <div className="presentation-title">
               <h1 className="presentation-title1">Agence de</h1>

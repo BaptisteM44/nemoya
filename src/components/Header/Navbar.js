@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom';
 import '../../styles/components/Navbar.scss'
 import React, { useEffect, useState } from "react";
 import ScrollTitleNav from '../Utils/ScrollTitleNav';
-
+import NavbarMenu from './NavbarMenu'
 const Navbar = () => {
+  
 
   const [isVisible, setIsVisible] = useState(true);
   let previousScrollPosition = 0;
@@ -31,11 +32,11 @@ const Navbar = () => {
             <ScrollTitleNav />
             <div className="menu">
               <Link className="firstHover" to="/">Accueil</Link>
-              <Link className="firstHover" to="/About">Services</Link>
+              <NavbarMenu />
               <Link className="firstHover" to="/Contact">Contact</Link>   
             </div>
           </header>
     );
-  }
+}
   
   export default Navbar;

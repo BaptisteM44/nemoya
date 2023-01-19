@@ -5,6 +5,55 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Futura PT Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Book"), url("./fonts/futura-pt/FuturaCyrillicBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Light"), url("./fonts/futura-pt/FuturaCyrillicLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Medium"), url("./fonts/futura-pt/FuturaCyrillicMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Demi';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Demi"), url("./fonts/futura-pt/FuturaCyrillicDemi.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Heavy"), url("./fonts/futura-pt/FuturaCyrillicHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Bold"), url("./fonts/futura-pt/FuturaCyrillicBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Extra Bold"), url("./fonts/futura-pt/FuturaCyrillicExtraBold.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,18 +64,68 @@
   border: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Futura PT Light';
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.navbar,
+#nav,
 section {
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+
+p, h1, h2, h3, span {
+  color: #343434;
+}
+
+p, span {
+  font-family: 'Futura PT Light';
+}
+
+h1 {
+  font-family: 'Futura PT Heavy';
+}
+
+h2, h3 {
+  font-family: 'Futura PT Medium';
+}
+
+.firstHover:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.firstHover::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #b75d32;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+@media (max-width: 600px) {
+  .navbar,
+  section {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 .contact-form-content {
+  padding: 4em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +135,7 @@ section {
 
 .contact-form-content .contact-form {
   height: 100%;
-  width: 40%;
+  width: 42vw;
 }
 
 .contact-form-content label {
@@ -46,13 +145,13 @@ section {
 .contact-form-content textarea,
 .contact-form-content input {
   width: 100%;
-  height: 3.8vw;
+  height: 3vw;
   background: transparent;
-  color: #000;
+  color: #343434;
   -webkit-transition: none !important;
   transition: none !important;
-  font-weight: 500;
-  font-size: 2em;
+  font-weight: 200;
+  font-size: 1.953rem;
   border: none;
   border-bottom: 0.1vw solid rgba(0, 0, 0, 0.16);
 }
@@ -65,34 +164,42 @@ section {
 }
 
 .contact-form-content .form-button {
-  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.contact-form-content .form-button value {
-  -webkit-transform: 0.5s;
-          transform: 0.5s;
+.contact-form-content .form-button .form-button-send {
+  cursor: pointer;
 }
 
 .contact-form-content .form-button:hover {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
-  -webkit-transition: 1.4s;
-  transition: 1.4s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.contact-form-content .contact-info {
-  padding-left: 10em;
-  width: 60%;
-}
-
-.contact-form-content .contact-info .contact-email,
-.contact-form-content .contact-info .contact-num {
-  font-size: 2em;
-  margin: 0 auto;
-}
-
-.contact-form-content .contact-info .contact-email a,
-.contact-form-content .contact-info .contact-num a {
-  color: #000;
+@media (max-width: 600px) {
+  .contact {
+    padding-top: 1em;
+  }
+  .contact .contact-form-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contact-form-content .contact-form {
+    padding: 2em 0em;
+    width: 100%;
+  }
+  .contact .contact-form-content textarea,
+  .contact .contact-form-content input {
+    height: 13vw;
+    font-size: 1.25rem;
+  }
+  .contact .contact-form-content textarea {
+    min-height: 33vw;
+  }
 }
 /*# sourceMappingURL=Form.css.map */

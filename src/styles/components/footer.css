@@ -5,6 +5,55 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Futura PT Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Book"), url("./fonts/futura-pt/FuturaCyrillicBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Light"), url("./fonts/futura-pt/FuturaCyrillicLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Medium"), url("./fonts/futura-pt/FuturaCyrillicMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Demi';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Demi"), url("./fonts/futura-pt/FuturaCyrillicDemi.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Heavy"), url("./fonts/futura-pt/FuturaCyrillicHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Bold"), url("./fonts/futura-pt/FuturaCyrillicBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Extra Bold"), url("./fonts/futura-pt/FuturaCyrillicExtraBold.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,29 +64,82 @@
   border: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Futura PT Light';
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.navbar,
+#nav,
 section {
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+
+p, h1, h2, h3, span {
+  color: #343434;
+}
+
+p, span {
+  font-family: 'Futura PT Light';
+}
+
+h1 {
+  font-family: 'Futura PT Heavy';
+}
+
+h2, h3 {
+  font-family: 'Futura PT Medium';
+}
+
+.firstHover:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.firstHover::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #b75d32;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+@media (max-width: 600px) {
+  .navbar,
+  section {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 .page-contact {
-  min-height: 100vh;
-  background-color: #eae9e4;
+  height: 100vh;
+  background-color: #f2f2f2;
 }
 
-.contact-title {
-  padding: 2em 0;
-  font-size: 2em;
+.contact-title-content {
+  width: 50vw;
+  padding-top: 10em;
+}
+
+.contact-title-content .contact-title {
+  text-transform: uppercase;
+  font-size: 1.953rem;
 }
 
 .footer {
-  padding-top: 9em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,15 +149,13 @@ section {
 }
 
 .footer-credits {
-  width: 40vw;
-  height: 20vh;
+  width: 35vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 4em;
 }
 
 .footer-credits .footer-credits-content {
@@ -72,14 +172,13 @@ section {
 }
 
 .footer-credits .footer-credits-content .credits-title {
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 
 .footer-credits .footer-credits-content .credits-entreprise {
-  font-size: 10px;
+  font-size: 0.64rem;
 }
 
-.footer-credits .footer-link-content,
 .footer-credits .footer-slogan-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,17 +192,95 @@ section {
           justify-content: center;
 }
 
-.footer-credits .footer-link-content .slogan-title,
 .footer-credits .footer-slogan-content .slogan-title {
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 
-.footer-credits .footer-link-content .slogan2023,
 .footer-credits .footer-slogan-content .slogan2023 {
-  font-size: 10px;
+  font-size: 0.64rem;
 }
 
-.footer-link-content a {
-  color: #000;
+.contact-info {
+  padding-left: 10em;
+  width: 60%;
+}
+
+.contact-info .contact-email,
+.contact-info .contact-num {
+  font-size: 2.441rem;
+  margin: 0 auto;
+}
+
+.contact-info .contact-email a,
+.contact-info .contact-num a {
+  color: #343434;
+}
+
+.contact-info .contact-credits {
+  padding-top: 16vh;
+}
+
+.contact-info .contact-credits .contact-credits-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-info .contact-credits .contact-credits-content a {
+  font-size: 1.953rem;
+  color: #343434;
+}
+
+@media (max-width: 600px) {
+  .page-contact {
+    padding-top: 1em;
+  }
+  .contact-title-content {
+    width: 100%;
+    padding-top: 5em;
+  }
+  .contact-title-content .contact-title {
+    font-size: 1.953rem;
+  }
+  .contact-info {
+    padding: 1em 0;
+    width: 100%;
+  }
+  .contact-info .contact-email,
+  .contact-info .contact-num {
+    font-size: 1.563rem;
+  }
+  .contact-info .contact-credits {
+    padding-top: 2vh;
+  }
+  .contact-info .contact-credits .contact-credits-content a {
+    font-size: 1rem;
+    color: #343434;
+  }
+  .footer-credits {
+    width: 100%;
+    height: auto;
+    padding: 2em 0;
+    text-align: left;
+  }
+  .footer-credits .footer-credits-content .credits-title {
+    font-size: 0.64rem;
+  }
+  .footer-credits .footer-credits-content .credits-entreprise {
+    font-size: 0.512rem;
+  }
+  .footer-credits .footer-slogan-content .slogan-title {
+    font-size: 0.64rem;
+  }
+  .footer-credits .footer-slogan-content .slogan2023 {
+    font-size: 0.512rem;
+  }
 }
 /*# sourceMappingURL=footer.css.map */
