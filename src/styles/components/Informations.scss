@@ -7,7 +7,7 @@
         position: relative;
         font-size: $size7;
         width: 60%;
-        padding: 3rem;
+        padding: 3rem 7em;
     }
     .info2{
         background-color: $secondary-color !important;
@@ -15,7 +15,7 @@
         flex-direction: row-reverse;
     }
     .informations-content{
-        padding: 4em 0;
+        padding: 4em 7em;
         height: auto;
         min-height: 50vh;
         display: flex;

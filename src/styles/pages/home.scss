@@ -16,7 +16,7 @@
         display: flex;
         height: 100%;
         align-items: center;
-        padding-left: 6em;
+        // padding-left: 6em;
         .presentation-title{
             width: 30em;
             .presentation-title1{
@@ -189,7 +189,7 @@
     color: $fifth-color;
 }
 .page-nous{
-    height: auto;
+    height: 100vh;
     background-color: $secondary-color;
 }
 .page-text{
@@ -205,13 +205,13 @@
 }
 .page-parent {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin: 0 auto;
     width: 70vw;
-    height: 150vh;
+    height: 80vh;
     .page-grid-content{
         img{
             height: 70%;
@@ -223,26 +223,26 @@
             flex-direction: column;
             padding: 15px;
             h3{
-                font-size: $size9;
+                font-size: $size8;
             }
             p{
-                font-size: $size5;
+                font-size: $size4;
                 font-weight: $font1;
             }
         }
         
     }
     .page-grid1 { 
-        grid-area: 1 / 1 / 6 / 3;
+        grid-area: 1 / 2 / 3 / 4;
         height: auto;
         
     }
     .page-grid2 { 
-        grid-area: 3 / 6 / 8 / 8;
+        grid-area: 2 / 9 / 3 / 7;
         height: auto;
      }
     .page-grid3 { 
-        grid-area: 6 / 3 / 11 / 5;
+        grid-area: 4 / 4 / 3 / 6;
         height: auto;
      }
 }
