@@ -24,7 +24,7 @@ const NavbarMenu = () => {
             useEffect(() => {
             setShowSlideBar(false);
             }, [location.pathname]);
-            
+
             useEffect(() => {
                 const handleScroll = e => {
                   if (showSlideBar) {
@@ -49,6 +49,9 @@ const NavbarMenu = () => {
                     </div>
                     <p className="slide-button" onClick={() => setShowSlideBar(false)}>Fermer</p>
                     <img src={Favicon} alt="logo nemoya" />
+                    <div className="slide-slogan">
+                        <p>Votre succès notre intérêt </p>
+                    </div>
                 </div>
             )}
         </>

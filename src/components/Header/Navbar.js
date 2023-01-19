@@ -13,7 +13,7 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollPosition = window.pageYOffset;
       
-      if (currentScrollPosition > 750) {
+      if (currentScrollPosition > 850) {
         if (previousScrollPosition > currentScrollPosition) {
           setIsVisible(true);
         } else {

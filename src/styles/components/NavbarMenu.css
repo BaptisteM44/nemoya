@@ -139,7 +139,7 @@ h2, h3 {
 .slide-bar img {
   position: absolute;
   height: 120px;
-  top: 550px;
+  top: 800px;
   right: 250px;
 }
 
@@ -179,5 +179,15 @@ h2, h3 {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.slide-slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 12em;
 }
 /*# sourceMappingURL=NavbarMenu.css.map */
