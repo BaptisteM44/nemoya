@@ -13,7 +13,7 @@
     font-size: $size8;
     transition: .7s;
     z-index: 10;
-    border-bottom: 1px solid $primary-color;
+    // border-bottom: 1px solid $primary-color;
     backdrop-filter: blur(4px);
     &.hidden {
         height: 0px;
@@ -21,13 +21,14 @@
       }
     .menu {
       width: 15em;
-      font-size: $size8;
+      font-size: $size6;
       font-weight: $font1;
       display: flex;
       justify-content: space-between;
       align-items: center;
       text-transform: uppercase;
       a {
+        position: relative;
         color: $primary-color;
         text-decoration: none;
         &:hover {

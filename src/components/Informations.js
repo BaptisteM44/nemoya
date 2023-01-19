@@ -25,12 +25,16 @@ const Informations = () => {
             </div>
             <div className="informations-content">
                 <div className="informations-content-bloc">
-                    <img className="content-bloc-img" src={Mac} alt="image ordinateur" />
+                    <div className="content-bloc-img">
+                        <img className="bloc-img" src={Mac} alt="image ordinateur" />    
+                    </div>
+                    
                 </div>
                 <article className="informations-content-article">
                     <h1>Branding</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque rem, sed reiciendis nesciunt itaque nisi delectus temporibus placeat officiis ducimus odio velit molestias, ex aliquid nostrum voluptatum asperiores est quis!</p>
                     <Link className="arrow-circle" to="/About">
+                        <div className="text-arrow">Branding</div>
                         <div className="arrow">⟶</div>    
                     </Link>
                 </article>
@@ -66,18 +70,22 @@ const Informations = () => {
                     <h1>Conceptions et développement web</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati dolor ea quidem quaerat aut officiis impedit labore modi minima non facere mollitia eum vel aperiam commodi, sint sit libero!</p>
                     <Link className="arrow-circle" to="/About">
+                        <div className="text-arrow1">Web</div>
                         <div className="arrow">⟶</div>    
                     </Link>
                 </article>
             </div>
             <div className="informations-content">
             <div className="informations-content-bloc">
-                    <img className="content-bloc-img" src={Mediasociaux} alt="image ordinateur" />
+                <div className="content-bloc-img">
+                    <img className="bloc-img" src={Mediasociaux} alt="image ordinateur" />
+                </div> 
                 </div>
                 <article className="informations-content-article">
                     <h1>Médias sociaux</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, repudiandae deleniti officiis molestiae enim numquam sint ducimus, nam a voluptate soluta nostrum dignissimos nisi facilis sapiente magnam quisquam voluptas maiores.</p>
                     <Link className="arrow-circle" to="/About">
+                        <div className="text-arrow2">Médias</div>
                         <div className="arrow">⟶</div>
                     </Link>
                 </article>

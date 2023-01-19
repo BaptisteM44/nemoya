@@ -5,7 +5,7 @@
     background-color: $fourth-color;
     .information-title{
         position: relative;
-        font-size: $size8;
+        font-size: $size7;
         width: 60%;
         padding: 3rem;
     }
@@ -27,7 +27,12 @@
             display: flex;
             justify-content: center;
             .content-bloc-img{
-                width: 40em;
+                align-self: center;
+                display: flex;
+                justify-content: center;
+                .bloc-img{
+                    width: 70%;
+                }
             }
             .content-bloc{
                 width: 440px;
@@ -70,9 +75,8 @@
             h1{
                 margin: 0 auto;
                 width: 55%;
-                font-size: $size9;
+                font-size: $size8;
                 color: $primary-color;
-                font-family: "GallientRegular";
             }
             p{
                 padding-top: 1em;
@@ -96,13 +100,47 @@
             border: 1px solid $primary-color;
             float: right;
             color: $primary-color;
-          }
-          .arrow {
+            transition: transform 0.5s;
+            display: inline;
+            overflow: hidden;
+            &:hover{
+                .text-arrow1,
+                .text-arrow2,
+                .arrow,
+                .text-arrow{
+                    transform: translateX(3.7em);
+                }
+            }
+            .text-arrow{
+                position: absolute;
+                font-size: 1.5em;
+                top: 32%;
+                right: 4em;
+                transition: transform 0.5s;
+            }
+            .text-arrow1{
+                position: absolute;
+                font-size: 1.5em;
+                top: 32%;
+                right: 4.7em;
+                transition: transform 0.5s;
+            }
+            .text-arrow2{
+                position: absolute;
+                font-size: 1.5em;
+                top: 32%;
+                right: 4.2em;
+                transition: transform 0.5s;
+            }
+            .arrow {
             position: absolute;
             font-size: 3em;
-            top: 8%;
+            top: 10%;
             left: 25%;
+            transition: transform 0.5s;
           }
+        }
+          
 
 @media (max-width: $breakpoint-phone) {
 .page-informations{

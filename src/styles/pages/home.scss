@@ -16,22 +16,23 @@
         display: flex;
         height: 100%;
         align-items: center;
+        padding-left: 6em;
         .presentation-title{
-            width: 35em;
+            width: 30em;
             .presentation-title1{
-                font-size: $size12;
+                font-size: $size10;
                 font-weight: $font5;
                 font-family: 'Futura PT Light';
                 text-transform: uppercase;
             }
             .presentation-title2{
-                font-size: $size12;
+                font-size: $size10;
                 font-weight: $font5;
                 text-transform: uppercase;
             }
             .presentation-slogan{
                 font-family: 'Futura PT Heavy';
-                font-size: $size7;
+                font-size: $size6;
                 font-weight: $font2;
             }
         }
@@ -93,7 +94,7 @@
         animation: do-title 35s infinite linear;
     .do-title{
         color: $fifth-color;
-        font-size: $size7;
+        font-size: $size6;
         font-weight: $font5;
         line-height: 100%;
         letter-spacing: -0.033em;
@@ -107,7 +108,7 @@
         font-family: 'Futura PT Light';
     }
     .do-title2{
-        font-family: 'Futura PT Heavy';
+        font-family: 'Futura PT book';
         font-weight: $font4;
     }
     .inner{
@@ -131,19 +132,18 @@
 .page-do{
     height: 100vh;
     background-color: $secondary-color;
-    font-family: 'fut';
     .do-what-explain{
-        padding-top: 4em;
+        padding-top: 8em;
         width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         h2{
-            font-size: $size10;
+            font-size: $size9;
             padding-bottom: 0.8em;
         }
         p{
-            font-size: $size7;
+            font-size: $size6;
         } 
         
     }
@@ -168,11 +168,11 @@
                 display: flex;
                 justify-content: left;
                 height: 100%;
-                font-size: $size10;
+                font-size: $size9;
             }
         }
         .do-what-exemples{
-            font-size: $size7;
+            font-size: $size6;
             font-weight: $font1;
             padding: 1em 0;
             display: flex;
@@ -196,7 +196,7 @@
     height: auto;
     margin: 3em 0;
     h2{
-        font-size: $size10;
+        font-size: $size9;
     }
     p{
         font-size: $size7;
@@ -206,7 +206,7 @@
 .page-parent {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin: 0 auto;
@@ -238,11 +238,11 @@
         
     }
     .page-grid2 { 
-        grid-area: 4 / 5 / 9 / 7;
+        grid-area: 3 / 6 / 8 / 8;
         height: auto;
      }
     .page-grid3 { 
-        grid-area: 7 / 2 / 12 / 4;
+        grid-area: 6 / 3 / 11 / 5;
         height: auto;
      }
 }

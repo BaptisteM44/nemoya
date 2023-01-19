@@ -120,6 +120,24 @@ h1{
 h2,h3{
     font-family: 'Futura PT Medium';
 }
+
+.firstHover:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.firstHover::after{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $fifth-color;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s; 
+}
+
 @media (max-width: $breakpoint-phone) {
     .navbar,
     section{

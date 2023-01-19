@@ -30,9 +30,9 @@ const Navbar = () => {
           <header id="nav" className={`navbar ${isVisible ? "" : "hidden"}`}>
             <ScrollTitleNav />
             <div className="menu">
-              <Link to="/">Accueil</Link>
-              <Link to="/About">Services</Link>
-              <Link to="/Contact">Contact</Link>   
+              <Link className="firstHover" to="/">Accueil</Link>
+              <Link className="firstHover" to="/About">Services</Link>
+              <Link className="firstHover" to="/Contact">Contact</Link>   
             </div>
           </header>
     );
