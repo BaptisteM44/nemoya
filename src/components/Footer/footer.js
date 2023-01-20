@@ -10,7 +10,7 @@ function Footer() {
                         <Form />
                         <div className="contact-info">
                             <div className="contact-num">
-                                <a href="tel:+33102030405">0624234233</a> 
+                                <a href="tel:+33102030405">06 24 23 42 33</a> 
                             </div>
                             <div className="contact-email">
                                 <a href="mailto:xxxx@xx.xx">contact@nemoya.fr</a> 

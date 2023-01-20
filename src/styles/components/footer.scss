@@ -71,11 +71,12 @@
 
 @media (max-width: $breakpoint-phone) {
     .page-contact{
+        height: auto;
         padding-top: 1em;
     }
   .contact-title-content{
       width: 100%;
-      padding-top: 5em ;
+      padding-top: 3em ;
       .contact-title{
         font-size: $size7;
     } 

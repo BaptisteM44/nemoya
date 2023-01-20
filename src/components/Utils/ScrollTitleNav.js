@@ -16,6 +16,8 @@ const ScrollTitleNav = () => {
   useEffect(() => {
     let title = titleRef.current;
 
+    const mq = window.matchMedia("(min-width: 600px)");
+    if (mq.matches) {
     gsap.fromTo(title, {y:580, x:1050, fontSize:"4em"}, {
       y: 0,
       x: 0,
@@ -31,7 +33,8 @@ const ScrollTitleNav = () => {
         markers: false
       },
     });
-  }, []);
+  }}, []);
+  
   if (location.pathname === '/') {
     return (
       <h1 ref={titleRef} className="logo">

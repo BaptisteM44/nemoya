@@ -15,9 +15,9 @@ const NavbarMenu = () => {
 
       useEffect(() => {
         if (showSlideBar) {
-          gsap.to('.slide-bar', {duration: 0.5, x: 0, vars: {overflow: 'hidden'}});
+          gsap.to('.slide-bar', {duration: 0.3, x: 0});
         } else {
-          gsap.to('.slide-bar', {duration: 0.5, x: '100%', vars: {overflow: 'auto'}});
+          gsap.to('.slide-bar', {duration: 0.3, x: 2000});
         }
       }, [showSlideBar]);
         const location = useLocation();
@@ -44,7 +44,7 @@ const NavbarMenu = () => {
                 <div className={`slide-bar ${showSlideBar ? "show" : ""}`}>
                     <div className="slide-bar-content">
                         <Link className="slide-link firstHover" to="/Services/SiteInternet">Site Internet</Link>
-                        <Link className="slide-link firstHover" to="/Services/Réseauxsociaux">Réseaux Sociaux</Link>
+                        <Link className="slide-link firstHover" to="/Services/Reseauxsociaux">Réseaux Sociaux</Link>
                         <Link className="slide-link firstHover" to="/Services/Branding">Branding</Link>    
                     </div>
                     <p className="slide-button" onClick={() => setShowSlideBar(false)}>Fermer</p>

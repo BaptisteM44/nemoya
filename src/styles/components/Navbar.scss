@@ -51,8 +51,7 @@
 @media (max-width: $breakpoint-phone) {
 
   .navbar {
-    width: 100vw;
-    font-size: $size6;
+    font-size: $size5;
     justify-content: center;
     &.hidden {
         height: 0px;
@@ -73,9 +72,11 @@
     }
   }
   .logo {
-      font-size: $size3;
-      padding-left: 1rem;
-    }
-
-
+    font-size: $size8;
+    top: 8px;
+    left: 0px;
+    padding-left: 2rem;
+    opacity: 1;
+    color: $fifth-color;
+  }
 }

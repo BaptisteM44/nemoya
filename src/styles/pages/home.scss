@@ -16,8 +16,6 @@
         display: flex;
         height: 100%;
         align-items: center;
-        .presentation-title{
-            width: 30em;
             .presentation-title1{
                 font-size: $size11;
                 font-weight: $font5;
@@ -34,7 +32,6 @@
                 font-size: $size6;
                 font-weight: $font2;
             }
-        }
     }
     .presentation-footer{
         display: flex;
@@ -45,13 +42,6 @@
         height: 12vh;
         width: 100%;
         border-top: 1px solid $primary-color;
-        .footer-scroll{
-            padding-left: 1.2em;
-            display: flex;
-            align-items: center;
-            font-size: $size8;
-            font-weight: $font1;
-        }
     }
 }
 .presentation-content{
@@ -60,6 +50,7 @@
     flex-direction: column;
     justify-content: center;
     .presentation-title{
+        width: 30em;
         font-family: "GallientRegular";
         font-size: $size3;
         font-weight: $font1;
@@ -143,8 +134,7 @@
         }
         p{
             font-size: $size5;
-        } 
-        
+        }
     }
     .do-what-content{
         width: 100%;
@@ -256,13 +246,39 @@
             width: 80%;
         }
     }
+    .page-presentation{
+        .favicon{
+            display: none;
+        }
+        .page-presentation-content{
+                .presentation-title1{
+                    font-size: $size9;
+                }
+                .presentation-title2{
+                    font-size: $size9;
+                }
+                .presentation-slogan{
+                    font-size: $size5;
+                }
+        }    
+    }
+    
+    .presentation-footer{
+        .footer-scroll{
+            padding-left: 1.2em;
+            display: flex;
+            align-items: center;
+            font-size: $size8;
+            font-weight: $font1;
+        }
+    }
     .page-parent {
         display: flex;
         flex-direction: column;
         height: auto;
         width: 80%;
         .page-grid-content{
-            padding: 2em 0em;
+            padding: 1.5em 0em;
             img{
                 height: 70%;
                 width: 100%;
@@ -285,15 +301,51 @@
     .do-title-content{
         height: 10vh;
         .do-title-row{
-            top: 1.4em;
+            top: 2.2em;
             .do-title{
-                font-size: $size8;
+                font-size: $size4;
             }    
         }
         
     }
     .page-do{
-        height: 90vh;
+        height: auto;
+        .do-what-explain{
+            padding-top: 2em;
+            width: 100%;
+            h2{
+                font-size: $size6;
+            }
+            p{
+                font-size: $size4;
+            }
+        }
+        .do-what-content{
+            flex-direction: column;
+            padding: 0em;
+            .do-what{
+                width: auto;
+            }
+            .do-what-title-content{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                .do-what-title{
+                    display: flex;
+                    justify-content: left;
+                    height: 100%;
+                    font-size: $size6;
+                }
+            }
+            .do-what-exemples{
+                span{
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+    .page-nous{
+        height: auto;
     }
     .do-what-content{
         max-width: 100vw;

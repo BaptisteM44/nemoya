@@ -1,6 +1,9 @@
 @import '../settings';
 
-
+.slide-bar-content{
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
 .slide-bar {
   z-index: 10000;
   position: fixed;
@@ -10,6 +13,7 @@
   height: 1200px;
   background-color: $fourth-color;
   transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
   img{
     position: absolute;
     height: 120px;
@@ -19,7 +23,7 @@
 }
 .slide-bar,
 .show{
-  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
   overflow: hidden;
   position: fixed;
 }
@@ -31,7 +35,7 @@
     width: 80%;
     .slide-link{
       padding-top: 1em;
-      font-size: $size9;
+      font-size: $size7;
     }
   }
   .slide-button {
@@ -43,7 +47,25 @@
     cursor: pointer;
   }
   .slide-slogan{
-    display: flex;
-    justify-content: center;
-    padding-top: 12em;
+    position: absolute;
+    height: 120px;
+    top: 760px;
+    right: 150px;
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    .slide-bar{
+      width: 100%;
+      img{
+        height: 120px;
+        top: 536px;
+        right: 126px;
+      }
+    }
+    .slide-slogan{
+      position: absolute;
+      height: 120px;
+      top: 500px;
+      right: 55px;
+    }
   }

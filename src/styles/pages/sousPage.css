@@ -1581,4 +1581,14 @@ h2, h3 {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/*# sourceMappingURL=index.css.map */
+
+.page.hidden {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.page-sousPage {
+  height: 100vh;
+  color: #f2f2f2;
+}
+/*# sourceMappingURL=sousPage.css.map */

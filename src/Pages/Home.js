@@ -125,7 +125,7 @@ function Home() {
         </section>
         <section className="page-contact">
           <div className="contact-title-content">
-            <h2 className="contact-title">Nous contacter<span className="point">.</span></h2>
+            <h2 className="contact-title">Parlez-nous de votre projet !<span className="point">.</span></h2>
           </div>
           <Footer />
         </section>
