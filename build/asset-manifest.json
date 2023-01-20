@@ -1,20 +1,28 @@
 {
   "files": {
-    "main.css": "./static/css/main.39573277.css",
-    "main.js": "./static/js/main.dc2db5c4.js",
+    "main.css": "./static/css/main.be8c28e8.css",
+    "main.js": "./static/js/main.ce38e0da.js",
     "static/media/Julien.jpg": "./static/media/Julien.7d1f1d7cf70fa01cd268.jpg",
+    "static/media/siteweb.png": "./static/media/siteweb.cbba8979d01e53d8dd91.png",
+    "static/media/Macimg.png": "./static/media/Macimg.406fd9c3b481c60e88de.png",
     "static/media/iphone.png": "./static/media/iphone.ef167939cbfa8a284e95.png",
+    "static/media/background.jpg": "./static/media/background.ffbc0ab9e49c095fc3bc.jpg",
+    "static/media/branding.png": "./static/media/branding.4fee19e9b8440f4938fd.png",
+    "static/media/mediassociaux.png": "./static/media/mediassociaux.b042070953843b23bdc3.png",
     "static/media/GallientRegular.ttf": "./static/media/GallientRegular.419a762c1efbc6a5bd7c.ttf",
+    "static/media/FuturaCyrillicExtraBold.woff": "./static/media/FuturaCyrillicExtraBold.d5327f27b104cd252527.woff",
+    "static/media/FuturaCyrillicDemi.woff": "./static/media/FuturaCyrillicDemi.1fa09eb5be28d5aded5a.woff",
+    "static/media/FuturaCyrillicBold.woff": "./static/media/FuturaCyrillicBold.5f706378d8f9a8c7b274.woff",
+    "static/media/FuturaCyrillicLight.woff": "./static/media/FuturaCyrillicLight.771add7f65bc0d53ca8b.woff",
+    "static/media/FuturaCyrillicMedium.woff": "./static/media/FuturaCyrillicMedium.48dfecb562dfd789a300.woff",
+    "static/media/FuturaCyrillicHeavy.woff": "./static/media/FuturaCyrillicHeavy.c44d5abde1e36c6628eb.woff",
+    "static/media/FuturaCyrillicBook.woff": "./static/media/FuturaCyrillicBook.376720780ed67df2bcc7.woff",
     "index.html": "./index.html",
-    "static/media/instagram.svg": "./static/media/instagram.02f16fe83165c5dd2279dafee5b73abb.svg",
-    "static/media/google.svg": "./static/media/google.9f5eb82d22e2841795f6915761702968.svg",
-    "static/media/tiktok.svg": "./static/media/tiktok.df595fecc6a7f4025a96c9098039377a.svg",
-    "static/media/facebook-squared.svg": "./static/media/facebook-squared.180ee80e703d17c606aa629436d0778d.svg",
-    "main.39573277.css.map": "./static/css/main.39573277.css.map",
-    "main.dc2db5c4.js.map": "./static/js/main.dc2db5c4.js.map"
+    "main.be8c28e8.css.map": "./static/css/main.be8c28e8.css.map",
+    "main.ce38e0da.js.map": "./static/js/main.ce38e0da.js.map"
   },
   "entrypoints": [
-    "static/css/main.39573277.css",
-    "static/js/main.dc2db5c4.js"
+    "static/css/main.be8c28e8.css",
+    "static/js/main.ce38e0da.js"
   ]
 }
