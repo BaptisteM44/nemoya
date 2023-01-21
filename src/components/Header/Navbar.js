@@ -4,6 +4,18 @@ import React, { useEffect, useState } from "react";
 import ScrollTitleNav from '../Utils/ScrollTitleNav';
 import NavbarMenu from './NavbarMenu'
 const Navbar = () => {
+
+//   const [isMobile, setIsMobile] = useState(false);
+//   const handleResize = () => {
+//     if (window.innerWidth < 600) {
+//       setIsMobile(true);
+//     } else {
+//       setIsMobile(false);
+//     }
+//   };
+//   window.addEventListener("resize", handleResize);
+//   return () => window.removeEventListener("resize", handleResize);
+// }, []);
   
 
   const [isVisible, setIsVisible] = useState(true);

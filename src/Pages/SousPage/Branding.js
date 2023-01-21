@@ -6,6 +6,9 @@ import Navbar from '../../components/Header/Navbar';
 function Branding() {
   return (
     <section className="page-sousPage">
+      <div className="sousPage-content">
+        
+      </div>
       <Navbar />
       <div className="contact-title-content">
         <h2 className="contact-title">Vous démarrez un nouveau projet ou souhaitez collaborer avec nous ?</h2>

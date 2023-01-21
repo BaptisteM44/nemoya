@@ -1,6 +1,20 @@
 @import '../index.scss';
 
 .page-sousPage{
-    height: 100vh;
+    padding-top: 10em;
+    min-height: 100vh;
     color: $fourth-color;
+    .sousPage-content{
+        width: 60%;
+        h2{
+            font-size: $size10;
+            padding: 1em 0em;
+        }
+        h3{
+            font-size: $size7;
+        }
+        p{
+            font-size: $size6;
+        }
+    }
 }
