@@ -5,18 +5,12 @@ import ScrollTitleNav from '../Utils/ScrollTitleNav';
 import NavbarMenu from './NavbarMenu'
 const Navbar = () => {
 
-//   const [isMobile, setIsMobile] = useState(false);
-//   const handleResize = () => {
-//     if (window.innerWidth < 600) {
-//       setIsMobile(true);
-//     } else {
-//       setIsMobile(false);
-//     }
-//   };
-//   window.addEventListener("resize", handleResize);
-//   return () => window.removeEventListener("resize", handleResize);
-// }, []);
-  
+  const [showLinks, setShowLinks] = useState(false)
+
+  const handleShowLinks = () => {
+    setShowLinks(!showLinks)
+  }
+
 
   const [isVisible, setIsVisible] = useState(true);
   let previousScrollPosition = 0;
@@ -40,13 +34,16 @@ const Navbar = () => {
   }, []);
   
     return (
-          <header id="nav" className={`navbar ${isVisible ? "" : "hidden"}`}>
+          <header id="nav" className={`navbar ${isVisible ? "" : "hidden"} ${showLinks ? "show-nav" : "hide-nav"}`}>
             <ScrollTitleNav />
             <div className="menu">
               <Link className="firstHover" to="/">Accueil</Link>
               <NavbarMenu />
               <Link className="firstHover" to="/Contact">Contact</Link>   
             </div>
+            <button className="navbar_burger" onClick={handleShowLinks}>
+              <span className="burger-bar"></span>
+            </button>
           </header>
     );
 }

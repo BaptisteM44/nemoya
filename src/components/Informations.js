@@ -2,9 +2,9 @@ import '../styles/components/Informations.scss'
 import React from "react";
 import { Link } from 'react-router-dom';
 
-import Siteweb from '../styles/assets/img/siteweb.png'
-import Branding from '../styles/assets/img/branding.png'
-import Mediasociaux from '../styles/assets/img/mediassociaux.png'
+// import Siteweb from '../styles/assets/img/Mac.png'
+// import Branding from '../styles/assets/img/branding.png'
+import Mediasociaux from '../styles/assets/img/Macimg.png'
 import Mac from '../styles/assets/img/Macimg.png'
 import Iphone from '../styles/assets/img/iphone.png'
 // import Google from '../styles/assets/img/google.svg'
@@ -33,7 +33,7 @@ const Informations = () => {
                 <article className="informations-content-article">
                     <h1>Branding</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque rem, sed reiciendis nesciunt itaque nisi delectus temporibus placeat officiis ducimus odio velit molestias, ex aliquid nostrum voluptatum asperiores est quis!</p>
-                    <Link className="arrow-circle" to="/About">
+                    <Link className="arrow-circle" to="/Services/Branding">
                         <div className="text-arrow">Branding</div>
                         <div className="arrow">⟶</div>    
                     </Link>
@@ -69,7 +69,7 @@ const Informations = () => {
                 <article className="informations-content-article">
                     <h1>Conceptions et développement web</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati dolor ea quidem quaerat aut officiis impedit labore modi minima non facere mollitia eum vel aperiam commodi, sint sit libero!</p>
-                    <Link className="arrow-circle" to="/About">
+                    <Link className="arrow-circle" to="/Services/SiteInternet">
                         <div className="text-arrow1">Web</div>
                         <div className="arrow">⟶</div>    
                     </Link>
@@ -84,7 +84,7 @@ const Informations = () => {
                 <article className="informations-content-article">
                     <h1>Médias sociaux</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, repudiandae deleniti officiis molestiae enim numquam sint ducimus, nam a voluptate soluta nostrum dignissimos nisi facilis sapiente magnam quisquam voluptas maiores.</p>
-                    <Link className="arrow-circle" to="/About">
+                    <Link className="arrow-circle" to="/Services/ReseauxSociaux">
                         <div className="text-arrow2">Médias</div>
                         <div className="arrow">⟶</div>
                     </Link>

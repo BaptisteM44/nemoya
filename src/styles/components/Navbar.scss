@@ -46,30 +46,50 @@
       opacity: 0.1;
       
     }
-
+.navbar_burger{
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  color: inherit;
+  display: none;
+}
 
 @media (max-width: $breakpoint-phone) {
 
   .navbar {
-    font-size: $size5;
+    font-size: $size7;
+    // height: 100vh;
     justify-content: center;
+    
     &.hidden {
         height: 0px;
         margin: -100px 0;
       }
     .menu {
-      font-size: $size5;
+      font-size: $size7;
       font-weight: $font1;
       padding-right: 0em;
+      flex-direction: column;
+      height: -100vw;
+      position: fixed;
+      bottom: 11em;
+      right: 1.5em;
       a {
         color: $primary-color;
         text-decoration: none;
         margin: 0 1rem;
+        padding: 1em 0em;
         &:hover {
           color: lighten($primary-color, 20%);
         }
       }
     }
+  }
+  .show-nav{
+    background-color: $fourth-color;
+    height: 100vh;
+    left: 0;
+    width: 100vw;
   }
   .logo {
     font-size: $size8;
@@ -78,5 +98,46 @@
     padding-left: 2rem;
     opacity: 1;
     color: $fifth-color;
+  }
+  .navbar_burger{
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+  .navbar_burger:hover{
+    cursor: pointer;
+  }
+  .burger-bar,
+  .burger-bar::before,
+  .burger-bar::after{
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: $primary-color;
+    transition: all .5s ease-in-out;
+  }
+  .burger-bar::before,
+  .burger-bar::after{
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .burger-bar::before{
+    transform: translateY(-12px);
+  }
+  .burger-bar::after{
+    transform: translateY(12px);
+  }
+  .show-nav .burger-bar{
+    background: transparent;
+  }
+  .show-nav .burger-bar::before{
+    transform: rotate(45deg);
+  }
+  .show-nav .burger-bar::after{
+    transform: rotate(-45deg);
   }
 }
