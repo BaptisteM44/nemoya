@@ -45,13 +45,15 @@ const NavbarMenu = () => {
                     <div className="slide-bar-content">
                         <Link className="slide-link firstHover" to="/Services/SiteInternet">Site Internet</Link>
                         <Link className="slide-link firstHover" to="/Services/Reseauxsociaux">Réseaux Sociaux</Link>
-                        <Link className="slide-link firstHover" to="/Services/Branding">Branding</Link>    
+                        <Link className="slide-link firstHover" to="/Services/Branding">Branding</Link>
+                        <div className="slide-slogan">
+                          <p>Votre succès notre intérêt </p>
+                          <img src={Favicon} alt="logo nemoya" />
+                        </div>
                     </div>
                     <p className="slide-button" onClick={() => setShowSlideBar(false)}>Fermer</p>
-                    <img src={Favicon} alt="logo nemoya" />
-                    <div className="slide-slogan">
-                        <p>Votre succès notre intérêt </p>
-                    </div>
+                    
+                    
                 </div>
             )}
         </>

@@ -1,6 +1,7 @@
 import { gsap, ScrollTrigger } from "gsap/all";
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import '../../styles/index.scss'
 
@@ -34,18 +35,14 @@ const ScrollTitleNav = () => {
       },
     });
   }}, []);
-  
+
   if (location.pathname === '/') {
     return (
-      <h1 ref={titleRef} className="logo">
-        nemoya.
-      </h1>
+      <Link ref={titleRef} className="logo"to="/">nemoya.</Link>
     );
   } else {
     return (
-      <h1 className="logo1">
-        nemoya.
-      </h1>
+      <Link className="logo1"to="/">nemoya.</Link>
     );
   }
 };

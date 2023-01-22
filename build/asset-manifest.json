@@ -1,14 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.345bb41d.css",
-    "main.js": "./static/js/main.35f52822.js",
+    "main.css": "./static/css/main.abf90816.css",
+    "main.js": "./static/js/main.83e83b6b.js",
     "static/media/Julien.jpg": "./static/media/Julien.7d1f1d7cf70fa01cd268.jpg",
-    "static/media/siteweb.png": "./static/media/siteweb.cbba8979d01e53d8dd91.png",
     "static/media/Macimg.png": "./static/media/Macimg.406fd9c3b481c60e88de.png",
     "static/media/iphone.png": "./static/media/iphone.ef167939cbfa8a284e95.png",
     "static/media/background.jpg": "./static/media/background.ffbc0ab9e49c095fc3bc.jpg",
-    "static/media/branding.png": "./static/media/branding.4fee19e9b8440f4938fd.png",
-    "static/media/mediassociaux.png": "./static/media/mediassociaux.b042070953843b23bdc3.png",
     "static/media/GallientRegular.ttf": "./static/media/GallientRegular.419a762c1efbc6a5bd7c.ttf",
     "static/media/FuturaCyrillicExtraBold.woff": "./static/media/FuturaCyrillicExtraBold.d5327f27b104cd252527.woff",
     "static/media/FuturaCyrillicDemi.woff": "./static/media/FuturaCyrillicDemi.1fa09eb5be28d5aded5a.woff",
@@ -17,12 +14,13 @@
     "static/media/FuturaCyrillicMedium.woff": "./static/media/FuturaCyrillicMedium.48dfecb562dfd789a300.woff",
     "static/media/FuturaCyrillicHeavy.woff": "./static/media/FuturaCyrillicHeavy.c44d5abde1e36c6628eb.woff",
     "static/media/FuturaCyrillicBook.woff": "./static/media/FuturaCyrillicBook.376720780ed67df2bcc7.woff",
+    "static/media/computer.svg": "./static/media/computer.5a1c118b9869164b39ca4e6444031b37.svg",
     "index.html": "./index.html",
-    "main.345bb41d.css.map": "./static/css/main.345bb41d.css.map",
-    "main.35f52822.js.map": "./static/js/main.35f52822.js.map"
+    "main.abf90816.css.map": "./static/css/main.abf90816.css.map",
+    "main.83e83b6b.js.map": "./static/js/main.83e83b6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.345bb41d.css",
-    "static/js/main.35f52822.js"
+    "static/css/main.abf90816.css",
+    "static/js/main.83e83b6b.js"
   ]
 }

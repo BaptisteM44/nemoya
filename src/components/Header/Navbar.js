@@ -3,6 +3,9 @@ import '../../styles/components/Navbar.scss'
 import React, { useEffect, useState } from "react";
 import ScrollTitleNav from '../Utils/ScrollTitleNav';
 import NavbarMenu from './NavbarMenu'
+import Instagram from '../../styles/assets/img/instagram.svg'
+import Linkedin from '../../styles/assets/img/linkedin.svg'
+
 const Navbar = () => {
 
   const [showLinks, setShowLinks] = useState(false)
@@ -21,7 +24,7 @@ const Navbar = () => {
       
       if (currentScrollPosition > 850) {
         if (previousScrollPosition > currentScrollPosition) {
-          setIsVisible(true);
+          setIsVisible(true) && handleShowLinks(false);
         } else {
           setIsVisible(false);
         }
@@ -39,7 +42,11 @@ const Navbar = () => {
             <div className="menu">
               <Link className="firstHover" to="/">Accueil</Link>
               <NavbarMenu />
-              <Link className="firstHover" to="/Contact">Contact</Link>   
+              <Link className="firstHover" to="/Contact">Contact</Link>
+              <div className="credits">
+                <a href="https://www.instagram.com/nemoya.studio/"><img src={Instagram} alt="logo instagram" /></a>
+                <a href="https://www.linkedin.com/feed/"><img src={Linkedin} alt="logo instagram" /></a>
+              </div>
             </div>
             <button className="navbar_burger" onClick={handleShowLinks}>
               <span className="burger-bar"></span>
