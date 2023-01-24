@@ -7,7 +7,7 @@ function Contact() {
   return (
     <section className="page-contact">
       <Navbar />
-      <div className="contact-title-content">
+      <div className="contact-title-content contact-padding">
         <h2 className="contact-title">Vous démarrez un nouveau projet ou souhaitez collaborer avec nous ?</h2>
       </div>
       <Footer />

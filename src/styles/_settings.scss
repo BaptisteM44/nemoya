@@ -88,7 +88,7 @@ $breakpoint-phone: 600px;
 $breakpoint-tablet: 768px;
 $breakpoint-computer: 1024px;
 $breakpoint-large-computer: 1200px;
-
+$breakpoint-big: 1600px;
 
 
 * {
@@ -104,10 +104,13 @@ $breakpoint-large-computer: 1200px;
     box-sizing: border-box;
     -webkit-font-smoothing: subpixel-antialiased;
 }
-#nav,
 section{
     padding-left: 16rem;
     padding-right: 16rem;
+}
+#nav{
+    padding-left: 2em;
+    padding-right: 2em;
 }
 p, h1, h2, h3, span{
     color: $primary-color;
@@ -146,7 +149,6 @@ h2,h3{
     transform-origin: center;
   }
 @media (max-width: $breakpoint-computer) {
-    #nav,
     section{
         padding-left: 2em;
         padding-right: 2em;
@@ -154,7 +156,6 @@ h2,h3{
 }
 
 @media (min-width: $breakpoint-computer) and (max-width: 1600px)  {
-    #nav,
     section{
         padding-left: 6em;
         padding-right: 6em;
