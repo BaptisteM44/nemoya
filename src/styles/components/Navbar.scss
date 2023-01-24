@@ -57,7 +57,7 @@
   display: none;
 }
 
-@media (max-width: $breakpoint-phone) {
+@media (max-width: $breakpoint-computer){
 
   .navbar {
     font-size: $size7;
@@ -152,5 +152,15 @@
   }
   .show-nav .burger-bar::after{
     transform: rotate(-45deg);
+  }
+}
+@media (min-width: $breakpoint-computer) and (max-width: 1600px) {
+  .logo {
+    font-size: $size8;
+    top: 35px;
+    left: 0px;
+    padding-left: 2rem;
+    opacity: 1;
+    color: $fifth-color;
   }
 }

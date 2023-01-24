@@ -17,7 +17,7 @@ const ScrollTitleNav = () => {
   useEffect(() => {
     let title = titleRef.current;
 
-    const mq = window.matchMedia("(min-width: 600px)");
+    const mq = window.matchMedia("(min-width: 1600px)");
     if (mq.matches) {
     gsap.fromTo(title, {y:580, x:1050, fontSize:"4em"}, {
       y: 0,

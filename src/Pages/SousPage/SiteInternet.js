@@ -1,10 +1,33 @@
-import React from 'react';
+// import React from 'react';
 import '../../styles/pages/sousPage.scss'
 import Footer from '../../components/Footer/footer'
 import Navbar from '../../components/Header/Navbar';
 import Computer from '../../styles/assets/img/computer.svg'
 
-function Branding() {
+import React from 'react';
+
+
+
+function SiteInternet() {
+
+  const title = document.querySelector('h4');
+
+  const txt = [
+  "Je suis une phrase animée"
+  // "Je suis une autre phrase animée",
+  // "Et encore une autre phrase animée"
+];
+  function TypeWriter(word, index){
+    if(index < word.length) {
+      setTimeout(() => {
+        title.innerHTML += `<span>${word[index]}</span>`
+        TypeWriter(txt, index +1)
+      }, 300);
+    }
+  }
+  setTimeout(() => {
+    TypeWriter(txt, 0)
+  }, 500);
   return (
     <section className="page-sousPage">
       <div className="sousPage-content">
@@ -12,16 +35,18 @@ function Branding() {
           <h2>Site web<span className="point">.</span></h2>
             <h3>Un site web doit être représentatif de votre histoire.</h3>  
         </div>
+        
       </div>
       <div className="sousPage-cards">
         <div className="sousPage-cards-content">
           <div className="cards-svg">
             <img src={Computer} alt="Ordinateur" />
+            <h4 className="typeWhrite" aria-label="PARIS"></h4>  
           </div>
-          <div className="cards-text">
-            <p>Chez Nemoya, nous créons votre site web en respectant votre image de marque, en implémentant vos valeurs à votre site. C’est un projet que nous menons à bien, ensemble.</p>
-            <p>Nous saurons vous conseiller sur ce qui est en tendance pour 2023 mais nous saurons surtout vous écouter.</p>
-          </div>
+        <div className="cards-text">
+          <p>Chez Nemoya, nous créons votre site web en respectant votre image de marque, en implémentant vos valeurs à votre site. C’est un projet que nous menons à bien, ensemble.</p>
+          <p>Nous saurons vous conseiller sur ce qui est en tendance pour 2023 mais nous saurons surtout vous écouter.</p>
+        </div>
         </div>
         <div className="sousPage-cards-content cards-content2">
           <div className="cards-svg">
@@ -51,4 +76,4 @@ function Branding() {
   );
 }
 
-export default Branding;
+export default SiteInternet;

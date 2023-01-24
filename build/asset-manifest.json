@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.abf90816.css",
-    "main.js": "./static/js/main.83e83b6b.js",
+    "main.css": "./static/css/main.18a20c2b.css",
+    "main.js": "./static/js/main.b7ef2113.js",
     "static/media/Julien.jpg": "./static/media/Julien.7d1f1d7cf70fa01cd268.jpg",
     "static/media/Macimg.png": "./static/media/Macimg.406fd9c3b481c60e88de.png",
     "static/media/iphone.png": "./static/media/iphone.ef167939cbfa8a284e95.png",
@@ -16,11 +16,13 @@
     "static/media/FuturaCyrillicBook.woff": "./static/media/FuturaCyrillicBook.376720780ed67df2bcc7.woff",
     "static/media/computer.svg": "./static/media/computer.5a1c118b9869164b39ca4e6444031b37.svg",
     "index.html": "./index.html",
-    "main.abf90816.css.map": "./static/css/main.abf90816.css.map",
-    "main.83e83b6b.js.map": "./static/js/main.83e83b6b.js.map"
+    "static/media/instagram.svg": "./static/media/instagram.02f16fe83165c5dd2279dafee5b73abb.svg",
+    "static/media/linkedin.svg": "./static/media/linkedin.5d200b6280812baec06fdc81ca62b5b7.svg",
+    "main.18a20c2b.css.map": "./static/css/main.18a20c2b.css.map",
+    "main.b7ef2113.js.map": "./static/js/main.b7ef2113.js.map"
   },
   "entrypoints": [
-    "static/css/main.abf90816.css",
-    "static/js/main.83e83b6b.js"
+    "static/css/main.18a20c2b.css",
+    "static/js/main.b7ef2113.js"
   ]
 }

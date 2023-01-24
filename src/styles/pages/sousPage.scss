@@ -19,6 +19,35 @@
         }
     }
 }
+.typeWhrite{
+    font-size: $size7;
+    display: inline-block;
+    margin-top: 100px;
+    position: relative;
+    color: black; 
+}
+.typeWhrite::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 3px;
+    background: wheat;
+    right: -15px;
+    top: 0;
+    animation: cursor 1s infinite;
+    }
+  @keyframes cursor{
+      0% {
+          opacity: 1;
+      }
+      50%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
 .sousPage-cards{
     width: 100%;
     display: flex;

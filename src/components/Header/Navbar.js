@@ -24,9 +24,11 @@ const Navbar = () => {
       
       if (currentScrollPosition > 850) {
         if (previousScrollPosition > currentScrollPosition) {
-          setIsVisible(true) && handleShowLinks(false);
+          setIsVisible(true);
+          
         } else {
           setIsVisible(false);
+          // handleShowLinks(true)
         }
       }
       previousScrollPosition = currentScrollPosition;

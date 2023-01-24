@@ -142,7 +142,7 @@
         }
           
 
-@media (max-width: $breakpoint-phone) {
+@media (max-width: $breakpoint-computer){
 .page-informations{
     .information-title{
         position: relative;
@@ -206,3 +206,15 @@
   }
   
 }
+
+// @media (max-width: $breakpoint-tablet) {
+//     .page-informations{
+//         .information-title{
+//             position: relative;
+//             font-size: $size6;
+//             width: 100%;
+//             padding: 3rem 2rem;
+//         }
+//     }
+
+// }

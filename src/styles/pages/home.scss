@@ -236,7 +236,7 @@
      }
 }
 
-@media (max-width: $breakpoint-phone) {
+@media (max-width: $breakpoint-tablet) {
     .page-text{
         h2{
             font-size: $size7;
@@ -340,6 +340,7 @@
             .do-what-exemples{
                 span{
                     padding: 5px 0;
+                    margin-right: auto;
                 }
             }
         }
@@ -368,3 +369,45 @@
         }
     }
 }
+
+@media (max-width: 1600px) {
+    .page-presentation{
+        .favicon{
+            display: none;
+        }
+    }
+
+
+}
+
+// @media (max-width: $breakpoint-tablet) {
+
+// .page-do{
+//     height: auto;
+//     background-color: $secondary-color;
+//     .do-what-explain{
+//         padding-top: 6em;
+//         width: 80%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         h2{
+//             font-size: $size7;
+//             padding-bottom: 0.8em;
+//         }
+//         p{
+//             font-size: $size4;
+//         }
+//     }
+//     .do-what-content{
+//         .do-what-title-content{
+//             .do-what-title{
+//                 font-size: $size7;
+//             }
+//         }
+//         .do-what-exemples{
+//             font-size: $size4;
+//         }
+//     }
+// }
+// }

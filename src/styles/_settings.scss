@@ -86,8 +86,9 @@ $size12:5.96rem;
 
 $breakpoint-phone: 600px;
 $breakpoint-tablet: 768px;
-$breakpoint-tablet-paysage: 992px;
-$breakpoint-computer: 1px;
+$breakpoint-computer: 1024px;
+$breakpoint-large-computer: 1200px;
+
 
 
 * {
@@ -144,10 +145,18 @@ h2,h3{
     transition: all 1s ease-in-out;
     transform-origin: center;
   }
-@media (max-width: $breakpoint-phone) {
+@media (max-width: $breakpoint-computer) {
     #nav,
     section{
         padding-left: 2em;
         padding-right: 2em;
+}
+}
+
+@media (min-width: $breakpoint-computer) and (max-width: 1600px)  {
+    #nav,
+    section{
+        padding-left: 6em;
+        padding-right: 6em;
 }
 }
