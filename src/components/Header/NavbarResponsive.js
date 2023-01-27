@@ -20,7 +20,7 @@ return (
             <Link className="firstHover" to="/Contact">Contact</Link>    
         </div>
         
-        <button className="navbar_burger" onClick={handleShowLinks}>
+        <button className="navbar_burger" aria-label="Naviguation" onClick={handleShowLinks}>
             <span className="burger-bar"></span>
         </button>
     </div>

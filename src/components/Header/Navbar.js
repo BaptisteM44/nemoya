@@ -51,8 +51,8 @@ const Navbar = () => {
                 <Link className="firstHover" to="/Equipe">Équipe</Link>
                 <Link className="firstHover link-contact" to="/Contact">Contact</Link>
                 <div className="credits">
-                  <a href="https://www.instagram.com/nemoya.studio/"><Instagram /></a>
-                  <a href="https://www.linkedin.com/feed/"><Linkedin /></a>
+                  <a href="https://www.instagram.com/nemoya.studio/" aria-label="Notre compte Instagram"><Instagram /></a>
+                  <a href="https://www.linkedin.com/feed/" aria-label="Notre compte Linkedin"><Linkedin /></a>
                 </div>
               </div>  
             </Fade>

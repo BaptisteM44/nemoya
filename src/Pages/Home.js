@@ -17,7 +17,7 @@ function Home() {
       <div className="body">
           <Navbar />
         <section className="page-presentation">
-          <img className="favicon" src={Favicon} alt="logo nemoya" />
+          <img className="favicon" src={Favicon} alt="logo nemoya" height="80px" width="80px" />
           <div className="page-presentation-content">
             <Fade delay={700} bottom cascade>
               <div className="presentation-title">

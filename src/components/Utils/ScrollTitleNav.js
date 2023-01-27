@@ -34,7 +34,7 @@ const ScrollTitleNav = () => {
         markers: false
       },
     });
-  }}, []);
+  }}, [titleRef]);
 
   if (location.pathname === '/') {
     return (
