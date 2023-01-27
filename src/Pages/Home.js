@@ -6,6 +6,7 @@ import Julien from '../styles/assets/img/Julien.jpg'
 import Footer from '../components/Footer/footer'
 import Navbar from '../components/Header/Navbar';
 import Informations from '../components/Informations';
+import Chiffres from '../components/Chiffres';
 
 function Home() {
     return (
@@ -100,21 +101,21 @@ function Home() {
           </div>
           <div className="page-parent">
             <div className="page-grid1 page-grid-content">
-              <img src={Julien} alt="Photo Julien" />
+              <img src={Julien} alt="Julien" />
               <div className="page-who">
                 <h3>Julien</h3>
                 <p>Fondateur et gestion des Branding</p>
               </div>
             </div>
             <div className="page-grid2 page-grid-content">
-              <img src="https://media.istockphoto.com/id/1369508766/fr/photo/belle-femme-latine-%C3%A0-succ%C3%A8s-souriante.jpg?s=612x612&w=0&k=20&c=pYpyqpy7vQP529g3Pxtn-VaZo3skT7RmSLb8ReHMIDs=" alt="Photo Elisa" />
+              <img src="https://media.istockphoto.com/id/1369508766/fr/photo/belle-femme-latine-%C3%A0-succ%C3%A8s-souriante.jpg?s=612x612&w=0&k=20&c=pYpyqpy7vQP529g3Pxtn-VaZo3skT7RmSLb8ReHMIDs=" alt="Elisa" />
               <div className="page-who">
                 <h3>Elisa</h3>
                 <p>Gestion des réseaux et création de contenus</p>
               </div>
             </div>
             <div className="page-grid3 page-grid-content">
-              <img src="https://media.istockphoto.com/id/1319763895/fr/photo/homme-m%C3%BBr-m%C3%A9lang%C3%A9-de-course-de-sourire-sur-le-fond-gris.jpg?s=612x612&w=0&k=20&c=A0t2vzsA3771bizeoxt2a3OLdgBbm5_wZn1rk3MxHsk=" alt="Photo Baptiste" />
+              <img src="https://media.istockphoto.com/id/1319763895/fr/photo/homme-m%C3%BBr-m%C3%A9lang%C3%A9-de-course-de-sourire-sur-le-fond-gris.jpg?s=612x612&w=0&k=20&c=A0t2vzsA3771bizeoxt2a3OLdgBbm5_wZn1rk3MxHsk=" alt="Baptiste" />
               <div className="page-who">
                 <h3>Baptiste</h3>
                 <p>Développeur Web</p>
@@ -123,6 +124,7 @@ function Home() {
           </div>
           
         </section>
+        <Chiffres />
         <section className="page-contact">
           <div className="contact-title-content">
             <h2 className="contact-title">Parlez-nous de votre projet<span className="point">.</span></h2>

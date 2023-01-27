@@ -2,9 +2,11 @@ import React from 'react';
 import '../../styles/pages/sousPage.scss'
 import Footer from '../../components/Footer/footer'
 import Navbar from '../../components/Header/Navbar';
-import Computer from '../../styles/assets/img/computer.svg'
-import Confiance from '../../styles/assets/img/confiance.svg'
-import Typewriter from "typewriter-effect";
+import {ReactComponent as Social} from '../../styles/assets/img/social.svg'
+import {ReactComponent as Science} from '../../styles/assets/img/science.svg'
+import {ReactComponent as Picture} from '../../styles/assets/img/picture.svg'
+
+// import Typewriter from "typewriter-effect";
 
 function ReseauxSociaux() {
 
@@ -13,53 +15,37 @@ function ReseauxSociaux() {
     <section className="page-sousPage">
       <div className="sousPage-content">
         <div className="sousPage-title">
-          <h2>Site web<span className="point">.</span></h2>
+          <h2>Publicité<br/>Webmarketing<span className="point">.</span></h2>
             <h3>Un site web doit être représentatif de votre histoire.</h3>  
         </div>
         
       </div>
       <div className="sousPage-cards">
-        <div className="sousPage-cards-content">
+        <div className="sousPage-cards-content cards">
           <div className="cards-svg">
-            <img src={Computer} alt="Ordinateur" />
+            <Social />
           </div>
         <div className="cards-text">
-          <p>Chez Nemoya, nous créons votre site web en respectant votre image de marque, en implémentant vos valeurs à votre site. C’est un projet que nous menons à bien, ensemble.</p>
-          <p>Nous saurons vous conseiller sur ce qui est en tendance pour 2023 mais nous saurons surtout vous écouter.</p>
+          <p>La publicité sur les réseaux sociaux et le référencement sont des stratégies incontournables pour la croissance de votre entreprise.</p>
+          <p>La publicité sur les réseaux sociaux, quézaco ?</p>
         </div>
         </div>
-        <div className="sousPage-cards-content cards-content2">
+        <div className="sousPage-cards-content cards cards-content2">
           <div className="cards-svg">
-          <Typewriter
-              options={{
-                autoStart: true,
-                loop: true,
-              }}
-              onInit={(typewriter)=> {
-          
-              typewriter
-              
-              .typeString("GeeksForGeeks")
-              .pauseFor(1000)
-              .deleteAll()
-              .typeString("Welcomes You")
-              .start();
-              
-              
-              }}
-              /> 
+            <Science />
           </div>
           <div className="cards-text">
-            <p>Que vous nous sollicitez pour un site vitrine ou un site e-commerce, votre site sera codé par notre développeur. Trop d’agences vous proposent des sites déjà pré-réalisés sur lesquels vous ne pouvez pas tout choisir. Chez Nemoya, vous aurez la main sur l'entièreté de votre site.</p>
-            <p>Nous optimisons 100% des sites que nous créons en incluant un référencement naturel ce qui vous positionne naturellement dans les premières places lors d’une recherche Google (SEO).</p>
+            <p>Aujourd’hui plus qu’hier et bien moins que demain, les réseaux sociaux sont connus de tous et utilisés par la majorité des individus.</p>
+            <p>C’est donc un excellent moyen, si ce n’est le meilleur, de pouvoir promouvoir votre produit ou votre service. Nous mettons en place des stratégies marketing afin de réaliser les meilleures publicités qu’il soient.</p>
           </div>
         </div>
         <div className="sousPage-cards-content">
           <div className="cards-svg">
-          <img src={Confiance} alt="Ordinateur" />
+            <Picture />
           </div>
           <div className="cards-text">
-            <p>En nous faisant confiance, vous établissez un réel partenariat. Vous aurez ainsi un accès à un chat collaboratif sur lequel nous pourrons échanger. Pas de système de ticket.</p>
+            <p>Nous venons à votre rencontre afin de nous imprégner de vos valeurs, ensuite nous réalisons le contenu (photos, vidéos…) puis nous rédigeons le texte publicitaire.</p>
+            <p>Vous serez surpris, étonnés, choqués des résultats. Un reporting hebdomadaire vous est transmis afin de pouvoir suivre les résultats.</p>
           </div>
         </div>  
       </div>

@@ -13,20 +13,25 @@
     font-size: $size8;
     transition: .7s;
     z-index: 10;
-    // border-bottom: 1px solid $primary-color;
     backdrop-filter: blur(4px);
     &.hidden {
         height: 0px;
         margin: -100px 0;
       }
     .menu {
-      width: 15em;
+      position: relative;
+      width: 20em;
       font-size: $size6;
       font-weight: $font1;
       display: flex;
       justify-content: space-between;
       align-items: center;
       text-transform: uppercase;
+      .link-contact{
+        font-weight: 100;
+        color: $fifth-color;
+        font-family: 'Futura PT Demi';
+      }
       a {
         position: relative;
         color: $primary-color;
@@ -52,6 +57,11 @@
   background: transparent;
   color: inherit;
   display: none;
+  transition: .7s;
+  &.hidden {
+    height: 0px;
+    margin: -100px 0;
+  }
 }
 .credits{
   display: none;
@@ -69,20 +79,17 @@
         margin: -100px 0;
       }
     .menu {
-      font-size: $size7;
+      font-size: $size5;
       font-weight: $font1;
       padding-right: 0em;
       flex-direction: column;
-      height: -100vw;
-      position: fixed;
-      bottom: 4em;
+      position: absolute;
+      bottom: 10em;
       width: 6em;
-      margin: 0 auto;
       a {
         color: $primary-color;
         text-decoration: none;
-        margin: 0 1rem;
-        padding: 1em 0em;
+        margin: 1em 0;
         &:hover {
           color: lighten($primary-color, 20%);
         }
@@ -92,7 +99,7 @@
   .credits{
     display: flex;
     a{
-      img{
+      svg{
         height: 40px;
       }
     }
@@ -114,7 +121,7 @@
   }
   .navbar_burger{
     display: block;
-    position: fixed;
+    position: absolute;
     top: 1rem;
     right: 1rem;
     z-index: -10;

@@ -1,0 +1,99 @@
+@import '../settings';
+
+.page-chiffres{
+    background-color: $primary-color;
+    height: auto;
+}
+.chiffres{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .chiffres-content{
+        position: relative;
+        width: 210px;
+        .pourcentage{
+            color: $fifth-color;
+            font-size: $size7;
+        }
+        h2{
+            color: $fourth-color;
+            font-size: $size11;
+        }
+        h3{
+            color: $fourth-color;
+            font-size: $size7;
+        }
+        p,
+        span{
+            font-size: $size5;
+            color: $secondary-color;    
+        }
+        
+    }
+}
+.bar::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -8em;
+    width: 100%;
+    height: 1px;
+    transform: rotate(90deg);
+    background: #ffffff;
+
+}
+
+@media (max-width: $breakpoint-computer) {
+    .chiffres{
+        .chiffres-content{
+            text-align: center;
+            width: 210px;
+            padding: 2em;
+            
+        }
+    }
+    
+
+}
+
+@media (max-width: $breakpoint-phone) {
+    .page-chiffres{
+        height: 100vh;
+    }
+    
+    .chiffres{
+        padding: 0em;
+        .chiffres-content{
+            padding: 1.2em;
+            .pourcentage{
+                font-size: $size6;
+            }
+            h2{
+                font-size: $size10;
+            }
+            h3{
+                font-size: $size6;
+            }
+            p,
+            span{
+                font-size: $size4;  
+            }
+            
+        }
+    }
+    .bar::after{
+        position: absolute;
+        content: "";
+        top: 100%;
+        right: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background: #ffffff;
+        transform: rotate(0deg);
+    }
+
+}

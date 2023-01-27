@@ -6,6 +6,7 @@ import './styles/_settings.scss'
 import Home from './Pages/Home';
 import Services from './Pages/Services';
 import Contact from './Pages/Contact';
+import Equipe from './Pages/Equipe';
 import Branding from './Pages/SousPage/Branding';
 import ReseauxSociaux from './Pages/SousPage/ReseauxSociaux';
 import SiteInternet from './Pages/SousPage/SiteInternet';
@@ -37,6 +38,7 @@ function Index() {
           <Route path="/Services/SiteInternet" element={<SiteInternet className="page" />} />
           <Route path="/Services/Reseauxsociaux" element={<ReseauxSociaux className="page" />} />
           <Route path="/Services/Branding" element={<Branding className="page" />} />
+          <Route path="/Equipe" element={<Equipe className="page" />} />
           <Route path="/Contact" element={<Contact className="page" />} />
       </Routes>
     </>

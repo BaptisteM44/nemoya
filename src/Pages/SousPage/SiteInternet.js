@@ -2,8 +2,8 @@ import React from 'react';
 import '../../styles/pages/sousPage.scss'
 import Footer from '../../components/Footer/footer'
 import Navbar from '../../components/Header/Navbar';
-import Computer from '../../styles/assets/img/computer.svg'
-import Confiance from '../../styles/assets/img/confiance.svg'
+import {ReactComponent as Computer} from '../../styles/assets/img/computer.svg'
+import {ReactComponent as Confiance} from '../../styles/assets/img/confiance.svg'
 import Typewriter from "typewriter-effect";
 
 
@@ -21,16 +21,16 @@ function SiteInternet() {
         
       </div>
       <div className="sousPage-cards">
-        <div className="sousPage-cards-content">
+        <div className="sousPage-cards-content cards">
           <div className="cards-svg">
-            <img src={Computer} alt="Ordinateur" />
+            <Computer />
           </div>
         <div className="cards-text">
           <p>Chez Nemoya, nous créons votre site web en respectant votre image de marque, en implémentant vos valeurs à votre site. C’est un projet que nous menons à bien, ensemble.</p>
           <p>Nous saurons vous conseiller sur ce qui est en tendance pour 2023 mais nous saurons surtout vous écouter.</p>
         </div>
         </div>
-        <div className="sousPage-cards-content cards-content2">
+        <div className="sousPage-cards-content cards cards-content2">
           <div className="cards-svg">
           <Typewriter
               options={{
@@ -41,10 +41,13 @@ function SiteInternet() {
           
               typewriter
               
-              .typeString("GeeksForGeeks")
+              .typeString("Développement")
               .pauseFor(1000)
               .deleteAll()
-              .typeString("Welcomes You")
+              .typeString("script(function(){ SEO/GOOGLE/JS})(); script")
+              .pauseFor(500)
+              .deleteAll()
+              .typeString("Architecture")
               .start();
               
               
@@ -58,7 +61,7 @@ function SiteInternet() {
         </div>
         <div className="sousPage-cards-content">
           <div className="cards-svg">
-          <img src={Confiance} alt="Ordinateur" />
+            <Confiance />
           </div>
           <div className="cards-text">
             <p>En nous faisant confiance, vous établissez un réel partenariat. Vous aurez ainsi un accès à un chat collaboratif sur lequel nous pourrons échanger. Pas de système de ticket.</p>

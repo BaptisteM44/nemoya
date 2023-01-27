@@ -3,8 +3,11 @@ import '../../styles/components/Navbar.scss'
 import React, { useEffect, useState } from "react";
 import ScrollTitleNav from '../Utils/ScrollTitleNav';
 import NavbarMenu from './NavbarMenu'
-import Instagram from '../../styles/assets/img/instagram.svg'
-import Linkedin from '../../styles/assets/img/linkedin.svg'
+import {ReactComponent as Instagram} from '../../styles/assets/img/instagram.svg'
+import {ReactComponent as Linkedin} from '../../styles/assets/img/linkedin.svg'
+
+// import Instagram from '../../styles/assets/img/instagram.svg'
+// import Linkedin from '../../styles/assets/img/linkedin.svg'
 
 const Navbar = () => {
 
@@ -44,13 +47,14 @@ const Navbar = () => {
             <div className="menu">
               <Link className="firstHover" to="/">Accueil</Link>
               <NavbarMenu />
-              <Link className="firstHover" to="/Contact">Contact</Link>
+              <Link className="firstHover" to="/Equipe">Équipe</Link>
+              <Link className="firstHover link-contact" to="/Contact">Contact</Link>
               <div className="credits">
-                <a href="https://www.instagram.com/nemoya.studio/"><img src={Instagram} alt="logo instagram" /></a>
-                <a href="https://www.linkedin.com/feed/"><img src={Linkedin} alt="logo instagram" /></a>
+                <a href="https://www.instagram.com/nemoya.studio/"><Instagram /></a>
+                <a href="https://www.linkedin.com/feed/"><Linkedin /></a>
               </div>
             </div>
-            <button className="navbar_burger" onClick={handleShowLinks}>
+            <button className={`navbar_burger ${isVisible ? "" : "hidden"}  `}onClick={handleShowLinks}>
               <span className="burger-bar"></span>
             </button>
           </header>

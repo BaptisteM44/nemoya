@@ -4,7 +4,7 @@
     height: 100vh;
     background: url(../assets/img/background.jpg) no-repeat center center fixed;
     background-size: cover;
-    background-color: $secondary-color;
+    background-position: bottom;
     .favicon{
         position: absolute;
         top: 0.4rem;
@@ -83,7 +83,7 @@
         position: absolute;
         animation: do-title 35s infinite linear;
     .do-title{
-        color: $fifth-color;
+        color: $primary-color;
         font-size: $size6;
         font-weight: $font5;
         line-height: 100%;
@@ -178,11 +178,11 @@
     color: $fifth-color;
 }
 .page-nous{
-    height: 100vh;
+    height: auto;
     background-color: $secondary-color;
 }
 .page-text{
-    height: 20vh;
+    height: auto;
     padding: 3em 0;
     h2{
         font-size: $size8;
@@ -198,9 +198,9 @@
     grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin: 0 auto;
     width: auto;
     height: 80vh;
+    margin: 2em auto;
     .page-grid-content{
         padding: 0 1em;
         img{
@@ -248,6 +248,7 @@
         }
     }
     .page-presentation{
+        background-size: 140vh;
         .favicon{
             display: none;
         }
@@ -275,25 +276,32 @@
     }
     .page-parent {
         display: flex;
-        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: space-around;
         height: auto;
-        width: 80%;
+        width: 100%;
+        text-align: center;
         .page-grid-content{
             padding: 1.5em 0em;
+            width: 50%;
             img{
-                height: 20em;
-                width: 100%;
-                object-fit: cover;    
+                height: 10em;
+                width: 9em;
+                object-fit: cover;
+                border-radius: 10px;
             }
             .page-who{
                 display: flex;
                 flex-direction: column;
-                padding: 15px;
+                padding: 0px;
+                text-align: left;
+                padding-left: 7px;
                 h3{
-                    font-size: $size9;
+                    font-size: $size4;
                 }
                 p{
-                    font-size: $size5;
+                    width: 90%;
+                    font-size: $size3;
                     font-weight: $font1;
                 }
             }

@@ -47,7 +47,8 @@
                     flex-direction: column;
                     text-align: center;
                     justify-content: center;
-                    img{
+                    img,
+                    svg{
                         height: 40%;
                         align-self: center;
                     }
@@ -159,17 +160,17 @@
             padding-top: 2em;
             .content-bloc{
                 width: auto;
-                .bloc{
-                    height: 300px;
-                    width: 150px;
-                    h2{
-                        font-size: $size4;
-                    }
-                    p{
-                        font-weight: $font1;
-                        font-size: $size2;
-                    }
-                }
+                // .bloc{
+                //     height: 300px;
+                //     width: 150px;
+                //     h2{
+                //         font-size: $size4;
+                //     }
+                //     p{
+                //         font-weight: $font1;
+                //         font-size: $size2;
+                //     }
+                // }
                 .bloc1{
                     height: 100px;
                     width: 50%;
@@ -198,6 +199,11 @@
     right: 1em;
     height: 60px;
     width: 60px;
+    .text-arrow2,
+    .text-arrow1,
+    .text-arrow{
+        font-size: 0.9em;
+    }
     .arrow {
         font-size: 1.8em;
         top: 10%;
@@ -207,14 +213,24 @@
   
 }
 
-// @media (max-width: $breakpoint-tablet) {
-//     .page-informations{
-//         .information-title{
-//             position: relative;
-//             font-size: $size6;
-//             width: 100%;
-//             padding: 3rem 2rem;
-//         }
-//     }
-
-// }
+@media (max-width: $breakpoint-phone){
+.page-informations{
+    .informations-content{
+        .informations-content-bloc{
+            .content-bloc{
+                .bloc{
+                    height: 200px;
+                    width: 150px;
+                    h2{
+                        font-size: $size4;
+                    }
+                    p{
+                        font-weight: $font1;
+                        font-size: $size2;
+                    }
+                }
+        }
+    }
+}
+} 
+}

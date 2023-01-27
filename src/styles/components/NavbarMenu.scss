@@ -1,9 +1,5 @@
 @import '../settings';
 
-.slide-bar-content{
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-}
 .slide-bar {
   z-index: 10000;
   position: fixed;
@@ -22,12 +18,15 @@
   position: fixed;
 }
   .slide-bar-content{
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
     padding-top: 5em;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 80%;
     .slide-link{
+      width: 10em;
       padding-top: 1em;
       font-size: $size7;
     }
@@ -55,12 +54,22 @@
   }
 
   @media (max-width: $breakpoint-phone) {
+    .slide-bar-content{
+      padding-top: 3em;
+      .slide-link{
+        font-size: $size5;
+        padding-top: 0em;
+      }
+    }
     .slide-bar{
       width: 100%;
     }
     .slide-slogan{
       padding-top: 5em;
-      font-size: $size4;
+      font-size: $size3;
+      p{
+        font-size: $size4;
+      }
       img{
         margin-top: 1em;
         height: 60px;

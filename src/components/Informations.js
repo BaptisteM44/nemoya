@@ -2,15 +2,13 @@ import '../styles/components/Informations.scss'
 import React from "react";
 import { Link } from 'react-router-dom';
 
-// import Siteweb from '../styles/assets/img/Mac.png'
-// import Branding from '../styles/assets/img/branding.png'
 import Mediasociaux from '../styles/assets/img/Macimg.png'
 import Mac from '../styles/assets/img/Macimg.png'
 import Iphone from '../styles/assets/img/iphone.png'
-// import Google from '../styles/assets/img/google.svg'
-// import Facebook from "../styles/assets/img/facebook-squared.svg"
-// import Instagram from '../styles/assets/img/instagram.svg'
-// import Tiktok from '../styles/assets/img/tiktok.svg'
+import {ReactComponent as SEO} from '../styles/assets/img/seo.svg'
+import {ReactComponent as Conception} from '../styles/assets/img/conception.svg'
+import {ReactComponent as Responsive} from '../styles/assets/img/responsive.svg'
+
 
 const Informations = () => {
 
@@ -32,7 +30,7 @@ const Informations = () => {
                 </div>
                 <article className="informations-content-article">
                     <h1>Branding</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque rem, sed reiciendis nesciunt itaque nisi delectus temporibus placeat officiis ducimus odio velit molestias, ex aliquid nostrum voluptatum asperiores est quis!</p>
+                    <p>Faites-vous remarquer en prenant soin de votre image, quel que soit votre domaine d'activité. Un logo impactant, une charte graphique cohérente, une typographie attrayante et des couleurs percutantes sont des éléments clés pour vous démarquer.</p>
                     <Link className="arrow-circle" to="/Services/Branding">
                         <div className="text-arrow">Branding</div>
                         <div className="arrow">⟶</div>    
@@ -44,31 +42,31 @@ const Informations = () => {
                 <div className="informations-content-bloc">
                     <div className="content-bloc">
                         <div className="bloc">
-                            <img src={Iphone} alt="" />
-                            <h2>Stratégie produit</h2>
-                            <p>Une recherche approfondie et une stratégie optimisée sont les fondements du meilleur développement de produit. </p>
+                            <Conception />
+                            <h2>Conception</h2>
+                            <p>Planification et design pour une expérience utilisateur optimale</p>
                         </div>
                         <div className="bloc">
-                            <img src={Iphone} alt="" />
-                            <h2>Stratégie produit</h2>
-                            <p>Une recherche approfondie et une stratégie optimisée sont les fondements du meilleur développement de produit. </p>
+                            <img src={Iphone} alt="Iphone" />
+                            <h2>UI/UX</h2>
+                            <p>Créer une expérience utilisateur intuitive et agréable</p>
                         </div>
                         <div className="bloc">
-                            <img src={Iphone} alt="" />
-                            <h2>Stratégie produit</h2>
-                            <p>Une recherche approfondie et une stratégie optimisée sont les fondements du meilleur développement de produit. </p>
+                            <Responsive />
+                            <h2>Responsive</h2>
+                            <p>Concevoir un site qui s'adapte</p>
                         </div>
                         <div className="bloc">
-                            <img src={Iphone} alt="" />
-                            <h2>Stratégie produit</h2>
-                            <p>Une recherche approfondie et une stratégie optimisée sont les fondements du meilleur développement de produit. </p>
+                            <SEO />
+                            <h2>Optimisation</h2>
+                            <p>Assurer la performance et la sécurité du site web à long terme</p>
                         </div> 
                     </div>
                     
                 </div>
                 <article className="informations-content-article">
                     <h1>Conceptions et développement web</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati dolor ea quidem quaerat aut officiis impedit labore modi minima non facere mollitia eum vel aperiam commodi, sint sit libero!</p>
+                    <p>Notre équipe peut vous assister pour concevoir ou rafraîchir votre présence en ligne, qu'il s'agisse d'un site web, d'un site e-commerce ou d'une application, en tenant compte de vos souhaits et exigences pour vous offrir une vitrine en ligne qui vous correspond.</p>
                     <Link className="arrow-circle" to="/Services/SiteInternet">
                         <div className="text-arrow1">Web</div>
                         <div className="arrow">⟶</div>    
@@ -83,7 +81,7 @@ const Informations = () => {
                 </div>
                 <article className="informations-content-article">
                     <h1>Médias sociaux</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, repudiandae deleniti officiis molestiae enim numquam sint ducimus, nam a voluptate soluta nostrum dignissimos nisi facilis sapiente magnam quisquam voluptas maiores.</p>
+                    <p>Notre équipe établit votre stratégie créative digitale. Nous adaptons votre communication actuelle par la création de publications et/ou snack content sur tous vos réseaux. </p>
                     <Link className="arrow-circle" to="/Services/ReseauxSociaux">
                         <div className="text-arrow2">Médias</div>
                         <div className="arrow">⟶</div>
