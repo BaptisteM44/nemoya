@@ -27,7 +27,7 @@ const Informations = () => {
                 <div className="informations-content">
                     <div className="informations-content-bloc">
                         <div className="content-bloc-img">
-                            <img className="bloc-img" src={Mac} alt="ordinateur" height="500px" width="800px" />    
+                            <img className="bloc-img" src={Mac} alt="ordinateur" loading="lazy" height="500px" width="800px" />    
                         </div>
                         
                     </div>
@@ -52,7 +52,7 @@ const Informations = () => {
                                 <p>Planification et design pour une expérience utilisateur optimale</p>
                             </div>
                             <div className="bloc">
-                                <img src={Iphone} alt="Iphone" width="50px" height="90px" />
+                                <img src={Iphone} alt="Iphone" loading="lazy" width="50px" height="90px" />
                                 <h2>UI/UX</h2>
                                 <p>Créer une expérience utilisateur intuitive et agréable</p>
                             </div>
@@ -84,7 +84,7 @@ const Informations = () => {
                 <div className="informations-content">
                     <div className="informations-content-bloc">
                         <div className="content-bloc-img">
-                            <img className="bloc-img" src={Mediasociaux} alt="ordinateur" height="500px" width="800px" />
+                            <img className="bloc-img" src={Mediasociaux} alt="ordinateur" loading="lazy" height="500px" width="800px" />
                         </div> 
                     </div>
                     <article className="informations-content-article">

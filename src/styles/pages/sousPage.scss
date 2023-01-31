@@ -5,92 +5,22 @@
     min-height: 100vh;
     color: $fourth-color;
     .sousPage-content{
-        width: 60%;
+        width: 100%;
+        height: 40vh;
         display: flex;
         flex-direction: column;
+        background: url(../assets/img/backgroundservice.png) no-repeat center center fixed;
+        background-size: contain;
         .sousPage-title{
-            h2{
-                font-size: $size8;
-                padding: 1em 0em;
-            }
-            h3{
-                font-size: $size7;
-            }   
-        }
-    }
-}
-.svg{
-    height: 120px;
-}
-.Typewriter{
-    font-size: $size9;
-    display: inline-block;
-    color: $secondary-color; 
-}
-.sousPage-cards{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 4em;
-    .cards-content2{
-        flex-direction: row-reverse;
-    }
-    .sousPage-cards-content{
-        height: 33%;
-        display: flex;
-        padding: 6em 0em;
-        .cards-svg{
-            width: 50%;
+            font-size: $size8;
+            padding: 1em 0em;
+            text-transform: uppercase;
             text-align: center;
             margin: auto 0;
-            img{
-                width: 200px;
-            }
-        }
-        .cards-text{
-            width: 50%;
-            font-size: $size6;
-            display: flex;
-            flex-direction: column;
-            align-self: center;
         }
     }
 }
+
 @media (max-width: $breakpoint-tablet) {
-    .page-sousPage{
-        .sousPage-content{
-            width: 80%;
-        }
-    }
-    .sousPage-cards{
-        .cards-content2{
-            flex-direction: row;
-        }
-        .cards{
-            border-bottom: 1px solid $fifth-color;
-        }
-        .sousPage-cards-content{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            .cards-svg{
-                width: 90%;
-                text-align: center;
-                padding-bottom: 2em;
-                img{
-                    width: 120px;
-                }
-            }
-            .cards-text{
-                font-size: $size5;
-                width: 90%;
-            }
-        }
-    }
-    .Typewriter{
-        font-size: $size7;
-    }
-
-
+    
 }

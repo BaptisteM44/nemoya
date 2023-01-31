@@ -2,10 +2,13 @@
 
 .page-chiffres{
     background-color: $primary-color;
-    height: auto;
+    height: 50vh;
+    position: relative;
+    z-index: 10000;
+    margin-bottom: -15em;
 }
 .chiffres{
-    width: 80%;
+    width: 800px;
     margin: 0 auto;
     padding: 2em 0;
     display: flex;
@@ -38,16 +41,18 @@
     position: absolute;
     content: "";
     top: 50%;
-    right: -8em;
+    right: -6em;
     width: 100%;
     height: 1px;
     transform: rotate(90deg);
     background: #ffffff;
-
 }
-
 @media (max-width: $breakpoint-computer) {
+    .page-chiffres{
+        margin-bottom: 0em;
+    }
     .chiffres{
+        width: 100%;
         .chiffres-content{
             text-align: center;
             width: 210px;

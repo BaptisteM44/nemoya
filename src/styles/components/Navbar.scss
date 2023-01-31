@@ -31,6 +31,15 @@
         font-weight: 100;
         color: $fifth-color;
         font-family: 'Futura PT Demi';
+        border: 1px solid $fifth-color;
+        border-radius: 25px;
+        padding: 8px;
+        transition: .4s;
+        &:hover{
+          transition: .4s;
+          border-color: $fourth-color;
+          opacity: 0.8;
+        }
       }
       a {
         position: relative;

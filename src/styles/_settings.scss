@@ -103,6 +103,9 @@ $breakpoint-big: 1600px;
     font-family: 'Futura PT Light';
     box-sizing: border-box;
     -webkit-font-smoothing: subpixel-antialiased;
+}::selection{
+    background-color: $fifth-color;
+    color: $fourth-color;
 }
 section{
     padding-left: 16rem;
