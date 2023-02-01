@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.6dd8cf74.css",
-    "main.js": "./static/js/main.c589e42f.js",
+    "main.css": "./static/css/main.2fa86918.css",
+    "main.js": "./static/js/main.0ee7e6a5.js",
     "static/media/Julien.jpg": "./static/media/Julien.7d1f1d7cf70fa01cd268.jpg",
     "static/media/Macimg.png": "./static/media/Macimg.406fd9c3b481c60e88de.png",
     "static/media/iphone.png": "./static/media/iphone.ef167939cbfa8a284e95.png",
+    "static/media/backgroundservice.png": "./static/media/backgroundservice.3e58cee3a6319e1add39.png",
     "static/media/GallientRegular.ttf": "./static/media/GallientRegular.419a762c1efbc6a5bd7c.ttf",
     "static/media/FuturaCyrillicExtraBold.woff": "./static/media/FuturaCyrillicExtraBold.d5327f27b104cd252527.woff",
     "static/media/FuturaCyrillicDemi.woff": "./static/media/FuturaCyrillicDemi.1fa09eb5be28d5aded5a.woff",
@@ -14,25 +15,17 @@
     "static/media/FuturaCyrillicHeavy.woff": "./static/media/FuturaCyrillicHeavy.c44d5abde1e36c6628eb.woff",
     "static/media/FuturaCyrillicBook.woff": "./static/media/FuturaCyrillicBook.376720780ed67df2bcc7.woff",
     "static/media/background2.svg": "./static/media/background2.6ee1c6740b3722d0590d.svg",
-    "static/media/branding1.svg": "./static/media/branding1.cde5a514f962fc1ded7c0dfc0071da10.svg",
-    "static/media/social.svg": "./static/media/social.e45960d740c83eb1eb8cc27432f02b31.svg",
     "static/media/conception.svg": "./static/media/conception.51f03215ee4baf7185dd88f8c088b677.svg",
-    "static/media/branding3.svg": "./static/media/branding3.9522ba204628b63fe85008daa39560bb.svg",
-    "static/media/branding2.svg": "./static/media/branding2.a2174f85255dbd826e737280e80ee4ff.svg",
-    "static/media/computer.svg": "./static/media/computer.f8071e60fa7c4f98c6f31fd5763109c9.svg",
-    "static/media/confiance.svg": "./static/media/confiance.0290223df80d30d48a293f282e4c3a73.svg",
     "static/media/seo.svg": "./static/media/seo.ec409ccedf58147e36596bb3202ace75.svg",
-    "static/media/picture.svg": "./static/media/picture.efbb32f8e7bb024e1d365f5d6516dd5c.svg",
     "static/media/responsive.svg": "./static/media/responsive.0a5e8db0072e59bafdebebf43e9d155f.svg",
-    "static/media/science.svg": "./static/media/science.76420da2655679bb9b293d65dd554242.svg",
     "index.html": "./index.html",
     "static/media/instagram.svg": "./static/media/instagram.02f16fe83165c5dd2279dafee5b73abb.svg",
     "static/media/linkedin.svg": "./static/media/linkedin.5d200b6280812baec06fdc81ca62b5b7.svg",
-    "main.6dd8cf74.css.map": "./static/css/main.6dd8cf74.css.map",
-    "main.c589e42f.js.map": "./static/js/main.c589e42f.js.map"
+    "main.2fa86918.css.map": "./static/css/main.2fa86918.css.map",
+    "main.0ee7e6a5.js.map": "./static/js/main.0ee7e6a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.6dd8cf74.css",
-    "static/js/main.c589e42f.js"
+    "static/css/main.2fa86918.css",
+    "static/js/main.0ee7e6a5.js"
   ]
 }
