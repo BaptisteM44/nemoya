@@ -1,24 +1,24 @@
-import imgBranding from '../assets/img/imgSousPages/imgBranding.png'
+import imgBranding from '../assets/img/imgSousPages/imgBranding.webp'
 import imgBranding1 from '../assets/img/imgSousPages/imgBranding1.svg'
 import imgBranding2 from '../assets/img/imgSousPages/imgBranding2.svg'
 import imgBranding3 from '../assets/img/imgSousPages/imgBranding3.svg'
 import imgBranding4 from '../assets/img/imgSousPages/imgBranding4.svg'
-import imgDroiteBranding from '../assets/img/imgSousPages/imgDroiteBranding.png'
+import imgDroiteBranding from '../assets/img/imgSousPages/imgDroiteBranding.webp'
 
-import imgWeb from '../assets/img/imgSousPages/imgWeb.png'
+import imgWeb from '../assets/img/imgSousPages/imgWeb.webp'
 import imgWeb1 from '../assets/img/imgSousPages/imgWeb1.svg'
 import imgWeb2 from '../assets/img/imgSousPages/imgWeb2.svg'
 import imgWeb3 from '../assets/img/imgSousPages/imgWeb3.svg'
 import imgWeb4 from '../assets/img/imgSousPages/imgWeb4.svg'
-import imgDroiteWeb from '../assets/img/imgSousPages/imgDroiteWeb.png'
+import imgDroiteWeb from '../assets/img/imgSousPages/imgDroiteWeb.webp'
 
 
-import imgMedia from '../assets/img/imgSousPages/imgMedia.png'
+import imgMedia from '../assets/img/imgSousPages/imgMedia.webp'
 import imgMedia1 from '../assets/img/imgSousPages/imgMedia1.svg'
 import imgMedia2 from '../assets/img/imgSousPages/imgMedia2.svg'
 import imgMedia3 from '../assets/img/imgSousPages/imgMedia3.svg'
 import imgMedia4 from '../assets/img/imgSousPages/imgMedia4.svg'
-import imgDroiteMedia from '../assets/img/imgSousPages/imgDroiteMedia.png'
+import imgDroiteMedia from '../assets/img/imgSousPages/imgDroiteMedia.webp'
 
 
 export const data = [

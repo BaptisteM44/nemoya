@@ -29,7 +29,7 @@ function SousPage() {
           <h2 className="sousPage-title" >{item.title}</h2>
         </div>
         <div className="sousPage-titleImg-content">
-          <img className="titleImg-content" src={item.imgTitle} alt="computer" />
+          <img loading="lazy" className="titleImg-content" src={item.imgTitle} alt="computer" />
         </div>
         <div className="sousPage-title2-content">
           <h3 className="title2-content">nos services</h3>
@@ -39,7 +39,7 @@ function SousPage() {
             <div className="sousPage-article-left">
               <div className="sousPage-info-content">
                 <div className="info-content-img">
-                  <img src={item.imgTitle1} alt="img1" />
+                  <img loading="lazy" src={item.imgTitle1} alt="img1" />
                 </div>
                 <div className="info-content-title">
                   <h3>{item.title1}</h3>
@@ -48,7 +48,7 @@ function SousPage() {
               </div>
               <div className="sousPage-info-content">
                 <div className="info-content-img">
-                  <img src={item.imgTitle2} alt="img1" />
+                  <img loading="lazy" src={item.imgTitle2} alt="img1" />
                 </div>
                 <div className="info-content-title">
                   <h3>{item.title2}</h3>
@@ -57,7 +57,7 @@ function SousPage() {
               </div>
               <div className="sousPage-info-content">
                 <div className="info-content-img">
-                  <img src={item.imgTitle3} alt="img1" />
+                  <img loading="lazy" src={item.imgTitle3} alt="img1" />
                 </div>
                 <div className="info-content-title">
                   <h3>{item.title3}</h3>
@@ -66,7 +66,7 @@ function SousPage() {
               </div>
               <div className="sousPage-info-content">
                 <div className="info-content-img">
-                  <img src={item.imgTitle4} alt="img1" />
+                  <img loading="lazy" src={item.imgTitle4} alt="img1" />
                 </div>
                 <div className="info-content-title">
                   <h3>{item.title4}</h3>
@@ -76,7 +76,7 @@ function SousPage() {
             </div>
           </article>
           <div className="sousPage-right-img">
-            <img className="right-img" src={item.imgDroite} alt="" />
+            <img loading="lazy" className="right-img" src={item.imgDroite} alt="" />
           </div>
         </div>
         <div className="sousPage-title2-content">
@@ -84,16 +84,16 @@ function SousPage() {
         </div>
       <div class="sousPage-grid-parent">
         <div class="sousPage-grid grid1">
-          <img src={grid1} alt="img1" />
+          <img loading="lazy" src={grid1} alt="img1" />
         </div>
         <div class="sousPage-grid grid2">
-          <img src={grid2} alt="img1" />
+          <img loading="lazy" src={grid2} alt="img1" />
         </div>
         <div class="sousPage-grid grid3">
-          <img src={grid3} alt="img1" />
+          <img loading="lazy" src={grid3} alt="img1" />
         </div>
         <div class="sousPage-grid grid4">
-          <img src={grid4} alt="img1" />
+          <img loading="lazy" src={grid4} alt="img1" />
         </div>
       </div>
       <div className="footer-padding">
