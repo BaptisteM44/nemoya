@@ -4,8 +4,12 @@ import { useParams } from 'react-router-dom';
 import '../../styles/pages/sousPage.scss'
 import Footer from '../../components/Footer/footer'
 import Navbar from '../../components/Header/Navbar';
-import data from '../../components/Data';
+import { data } from '../../components/Data';
 
+import grid1 from '../../assets/img/grid1.png'
+import grid2 from '../../assets/img/grid2.png'
+import grid3 from '../../assets/img/grid3.png'
+import grid4 from '../../assets/img/grid4.png'
 
 function SousPage() {
   const { id } = useParams();
@@ -78,10 +82,23 @@ function SousPage() {
         <div className="sousPage-title2-content">
           <h3 className="title2-content">nos réalisations</h3>
         </div>
+      <div class="sousPage-grid-parent">
+        <div class="sousPage-grid grid1">
+          <img src={grid1} alt="img1" />
+        </div>
+        <div class="sousPage-grid grid2">
+          <img src={grid2} alt="img1" />
+        </div>
+        <div class="sousPage-grid grid3">
+          <img src={grid3} alt="img1" />
+        </div>
+        <div class="sousPage-grid grid4">
+          <img src={grid4} alt="img1" />
+        </div>
+      </div>
       <div className="footer-padding">
         <Footer />  
       </div>
-      
     </div>
   );
 }
