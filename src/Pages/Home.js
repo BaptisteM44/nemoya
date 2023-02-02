@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/index.scss'
 
-import Favicon from '../styles/assets/img/favicon.png'
-import Julien from '../styles/assets/img/Julien.jpg'
+import Favicon from '../assets/img/favicon.png'
+import Julien from '../assets/img/Julien.jpg'
 
 import ScrollImg from '../components/Utils/ScrollImg'
 import Footer from '../components/Footer/footer'

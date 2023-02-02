@@ -1,27 +1,27 @@
-import imgBranding from '../styles/assets/img/imgSousPages/imgBranding.png'
-import imgBranding1 from '../styles/assets/img/imgSousPages/imgBranding1.svg'
-import imgBranding2 from '../styles/assets/img/imgSousPages/imgBranding2.svg'
-import imgBranding3 from '../styles/assets/img/imgSousPages/imgBranding3.svg'
-import imgBranding4 from '../styles/assets/img/imgSousPages/imgBranding4.svg'
-import imgDroiteBranding from '../styles/assets/img/imgSousPages/imgDroiteBranding.png'
+import imgBranding from '../assets/img/Mac.png'
+import imgBranding1 from '../assets/img/imgSousPages/imgBranding1.svg'
+import imgBranding2 from '../assets/img/imgSousPages/imgBranding2.svg'
+import imgBranding3 from '../assets/img/imgSousPages/imgBranding3.svg'
+import imgBranding4 from '../assets/img/imgSousPages/imgBranding4.svg'
+import imgDroiteBranding from '../assets/img/imgSousPages/imgDroiteBranding.png'
 
-import imgWeb from '../styles/assets/img/imgSousPages/imgWeb.png'
-import imgWeb1 from '../styles/assets/img/imgSousPages/imgWeb1.svg'
-import imgWeb2 from '../styles/assets/img/imgSousPages/imgWeb2.svg'
-import imgWeb3 from '../styles/assets/img/imgSousPages/imgWeb3.svg'
-import imgWeb4 from '../styles/assets/img/imgSousPages/imgWeb4.svg'
-import imgDroiteWeb from '../styles/assets/img/imgSousPages/imgDroiteWeb.png'
-
-
-import imgMedia from '../styles/assets/img/imgSousPages/imgMedia.png'
-import imgMedia1 from '../styles/assets/img/imgSousPages/imgMedia1.svg'
-import imgMedia2 from '../styles/assets/img/imgSousPages/imgMedia2.svg'
-import imgMedia3 from '../styles/assets/img/imgSousPages/imgMedia3.svg'
-import imgMedia4 from '../styles/assets/img/imgSousPages/imgMedia4.svg'
-import imgDroiteMedia from '../styles/assets/img/imgSousPages/imgDroiteMedia.png'
+import imgWeb from '../assets/img/imgSousPages/imgWeb.png'
+import imgWeb1 from '../assets/img/imgSousPages/imgWeb1.svg'
+import imgWeb2 from '../assets/img/imgSousPages/imgWeb2.svg'
+import imgWeb3 from '../assets/img/imgSousPages/imgWeb3.svg'
+import imgWeb4 from '../assets/img/imgSousPages/imgWeb4.svg'
+import imgDroiteWeb from '../assets/img/imgSousPages/imgDroiteWeb.png'
 
 
-const data = [
+import imgMedia from '../assets/img/imgSousPages/imgMedia.png'
+import imgMedia1 from '../assets/img/imgSousPages/imgMedia1.svg'
+import imgMedia2 from '../assets/img/imgSousPages/imgMedia2.svg'
+import imgMedia3 from '../assets/img/imgSousPages/imgMedia3.svg'
+import imgMedia4 from '../assets/img/imgSousPages/imgMedia4.svg'
+import imgDroiteMedia from '../assets/img/imgSousPages/imgDroiteMedia.png'
+
+
+export const data = [
       {
         id: "Branding",
         title: "identité visuelle",
@@ -77,4 +77,3 @@ const data = [
         imgDroite: imgDroiteMedia
       }
     ]
-    export default data;

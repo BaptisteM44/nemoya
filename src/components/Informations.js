@@ -3,12 +3,12 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
-import Mediasociaux from '../styles/assets/img/Macimg.png'
-import Mac from '../styles/assets/img/Macimg.png'
-import Iphone from '../styles/assets/img/iphone.png'
-import {ReactComponent as SEO} from '../styles/assets/img/seo.svg'
-import {ReactComponent as Conception} from '../styles/assets/img/conception.svg'
-import {ReactComponent as Responsive} from '../styles/assets/img/responsive.svg'
+import Mediasociaux from '../assets/img/Macimg.png'
+import Mac from '../assets/img/Macimg.png'
+import Iphone from '../assets/img/iphone.png'
+import {ReactComponent as SEO} from '../assets/img/seo.svg'
+import {ReactComponent as Conception} from '../assets/img/conception.svg'
+import {ReactComponent as Responsive} from '../assets/img/responsive.svg'
 
 
 const Informations = () => {

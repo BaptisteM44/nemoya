@@ -3,8 +3,8 @@ import '../../styles/components/Navbar.scss'
 import React, { useEffect, useState } from "react";
 import ScrollTitleNav from '../Utils/ScrollTitleNav';
 import NavbarMenu from './NavbarMenu'
-import {ReactComponent as Instagram} from '../../styles/assets/img/instagram.svg'
-import {ReactComponent as Linkedin} from '../../styles/assets/img/linkedin.svg'
+import {ReactComponent as Instagram} from '../../assets/img/instagram.svg'
+import {ReactComponent as Linkedin} from '../../assets/img/linkedin.svg'
 import Fade from 'react-reveal/Fade';
 
 const Navbar = () => {

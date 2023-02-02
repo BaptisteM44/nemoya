@@ -3,7 +3,7 @@ import '../../styles/components/NavbarMenu.scss'
 import React, { useState, useEffect } from "react";
 import { gsap } from 'gsap';
 import { useLocation } from 'react-router-dom';
-import Favicon from '../../styles/assets/img/favicon.png'
+import Favicon from '../../assets/img/favicon.png'
     
     
 const NavbarMenu = () => {
