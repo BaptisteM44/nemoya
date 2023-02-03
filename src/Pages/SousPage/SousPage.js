@@ -97,6 +97,9 @@ function SousPage() {
         </div>
       </div>
       <div className="footer-padding">
+        <div className="contact-title-content contact-padding">
+          <h2 className="contact-title">Vous démarrez un nouveau projet ou souhaitez collaborer avec nous ?</h2>
+        </div>
         <Footer />  
       </div>
     </div>

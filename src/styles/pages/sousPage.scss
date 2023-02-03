@@ -10,7 +10,7 @@
         background: url(../../assets/img/imgSousPages/backgroundservice.webp) no-repeat center center fixed;
         background-size: cover;
         .sousPage-title{
-            font-size: $size12;
+            font-size: $size11;
             font-family: 'GallientRegular';
             display: flex;
             justify-content: center;
@@ -32,19 +32,18 @@
         height: 10vh;
         background-color: $fourth-color;
         .title2-content{
-            font-size: $size8;
+            font-size: $size7;
             text-transform: uppercase;
             display: flex;
             justify-content: center;
             height: 100%;
-            /* margin: auto 0; */
             align-items: center;
         }
     }
 }
 .sousPage-section-service{
     width: 100vw;
-    min-height: 70vh;
+    min-height: 90vh;
     height: auto;
     background-color: $secondary-color;
     display: flex;
@@ -62,12 +61,12 @@
         .sousPage-info-content{
             width: 50%;
             display: flex;
-            padding: 4em 2em;
+            padding: 5em 2em;
             .info-content-img{
-                padding-right: 1em;
+                padding-right: 2em;
                 img{
-                    height: 100px;
-                    width: 100px;
+                    height: 90px;
+                    width: 90px;
                     color: $primary-color;
                 }
             }
@@ -75,13 +74,31 @@
                 display: flex;
                 flex-direction: column;
                 h3{
-                    padding-bottom: 1em;
+                    padding-bottom: 1.5em;
                     font-size: $size5;
                     text-transform: uppercase;
+                    position: relative;
+                    &::before{
+                        content:"";
+                        position: absolute;
+                        bottom: 20px;
+                        left: 0px;
+                        width: 50px;
+                        border: 0.5px solid $primary-color;
+                    }
                 }
                 p{
+                    position: relative;
                     font-size: $size3;
                     color: $primary-color;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: -15px;
+                        left: 0px;
+                        width: 20px;
+                        border: 0.5px solid $primary-color;
+                    }
                 }
             }
 

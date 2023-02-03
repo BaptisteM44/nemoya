@@ -29,10 +29,10 @@
       text-transform: uppercase;
       .link-contact{
         font-weight: 100;
-        color: $fifth-color;
+        color: $secondary-color;
         font-family: 'Futura PT Demi';
         border: 1px solid $fifth-color;
-        border-radius: 25px;
+        background-color: $fifth-color;
         padding: 8px;
         transition: .4s;
         &:hover{
