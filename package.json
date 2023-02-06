@@ -1,7 +1,7 @@
 {
   "name": "nemoya",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://BaptisteM44.github.io/nemoya",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -9,7 +9,6 @@
     "axios": "^1.2.2",
     "core-js-compat": "^3.4.7",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2",
     "gsap": "^3.11.4",
     "iconoir": "^5.5.2",
     "nodemailer": "^6.8.0",
@@ -47,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "file-loader": "^6.2.0"
+    "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0"
   }
 }
