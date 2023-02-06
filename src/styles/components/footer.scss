@@ -74,10 +74,11 @@
 @media (max-width: $breakpoint-computer) {
     .page-contact{
         height: auto;
-        padding-top: 1em;
+        padding-top: 4em;
     }
   .contact-title-content{
       width: 100%;
+      padding-top: 2em;
       .contact-title{
         font-size: $size6;
     } 

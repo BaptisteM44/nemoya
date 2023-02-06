@@ -17,7 +17,6 @@ function SousPage() {
   const [item, setItem] = useState({});
 
   useEffect(() => {
-
     const itemData = data.find(item => item.id === id);
     setItem(itemData);
   }, [id]);

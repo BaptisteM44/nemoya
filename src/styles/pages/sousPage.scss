@@ -1,7 +1,7 @@
 @import '../index.scss';
 
 .page-sousPage{
-    padding-top: 8em;
+    padding-top: 20vh;
     height: auto;
     color: $fourth-color;
     .sousPage-content{
@@ -158,15 +158,18 @@
 @media (max-width: $breakpoint-tablet) {
     .page-sousPage{
     .sousPage-content{
-        height: 40vh;
+        height: 32vh;
+        background: url(../../assets/img/imgSousPages/backgroundservice.webp) repeat center center fixed;
+        background-size: contain;
         .sousPage-title{
             font-size: $size7;
         }
     }
     .sousPage-titleImg-content{
-        height: 35vh;
+        height: 48vh;
         .titleImg-content{
-            height: 82%;
+            width: 300px;
+            height: auto;
         }
     }
     .sousPage-title2-content{

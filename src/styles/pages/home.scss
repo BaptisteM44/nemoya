@@ -184,7 +184,7 @@
 }
 .page-text{
     height: auto;
-    padding: 3em 0;
+    padding: 2em 0;
     h2{
         font-size: $size8;
     }
@@ -242,6 +242,7 @@
     .page-text{
         h2{
             font-size: $size7;
+            padding-bottom: 1em;
         }
         p{
             font-size: $size4;

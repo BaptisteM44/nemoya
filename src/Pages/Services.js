@@ -1,17 +1,17 @@
-import React from 'react';
-import '../styles/pages/services.scss'
-import Navbar from '../components/Header/Navbar'
+// import React from 'react';
+// import '../styles/pages/services.scss'
+// import Navbar from '../components/Header/Navbar'
 
 
-function About() {
-    return (
+// function About() {
+//     return (
       
-      <div className="about">
-        <Navbar />
+//       <div className="about">
+//         <Navbar />
 
         
-      </div>
-    );
-  }
+//       </div>
+//     );
+//   }
   
-  export default About;
+//   export default About;

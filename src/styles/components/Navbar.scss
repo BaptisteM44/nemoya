@@ -27,10 +27,10 @@
       justify-content: space-between;
       align-items: center;
       text-transform: uppercase;
+      cursor: pointer;
       .link-contact{
         font-weight: 100;
         color: $secondary-color;
-        font-family: 'Futura PT Demi';
         border: 1px solid $fifth-color;
         background-color: $fifth-color;
         padding: 8px;

@@ -32,7 +32,7 @@ const Informations = () => {
                         
                     </div>
                     <article className="informations-content-article">
-                        <h1>Branding</h1>
+                        <h2>Branding</h2>
                         <p>Faites-vous remarquer en prenant soin de votre image, quel que soit votre domaine d'activité. Un logo impactant, une charte graphique cohérente, une typographie attrayante et des couleurs percutantes sont des éléments clés pour vous démarquer.</p>
                         
                     </article>
@@ -70,7 +70,7 @@ const Informations = () => {
                         
                     </div>
                     <article className="informations-content-article">
-                        <h1>Conceptions et développement web</h1>
+                        <h2>Conceptions et développement web</h2>
                         <p>Notre équipe peut vous assister pour concevoir ou rafraîchir votre présence en ligne, qu'il s'agisse d'un site web, d'un site e-commerce ou d'une application, en tenant compte de vos souhaits et exigences pour vous offrir une vitrine en ligne qui vous correspond.</p>
                         
                     </article>
@@ -88,7 +88,7 @@ const Informations = () => {
                         </div> 
                     </div>
                     <article className="informations-content-article">
-                        <h1>Médias sociaux</h1>
+                        <h2>Médias sociaux</h2>
                         <p>Notre équipe établit votre stratégie créative digitale. Nous adaptons votre communication actuelle par la création de publications et/ou snack content sur tous vos réseaux. </p>
                     </article>
                     <Link className="arrow-circle" to="/Services/ReseauxSociaux">

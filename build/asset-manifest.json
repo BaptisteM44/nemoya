@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c8c6d23.css",
-    "main.js": "/static/js/main.1a1f879c.js",
+    "main.css": "/static/css/main.2d5818fc.css",
+    "main.js": "/static/js/main.1c2ecfa4.js",
     "static/media/Julien.jpg": "/static/media/Julien.7d1f1d7cf70fa01cd268.jpg",
     "static/media/Macimg.png": "/static/media/Macimg.406fd9c3b481c60e88de.png",
     "static/media/iphone.png": "/static/media/iphone.ef167939cbfa8a284e95.png",
@@ -26,28 +26,28 @@
     "static/media/backgroundservice.webp": "/static/media/backgroundservice.bfed17adab076df8126b.webp",
     "static/media/background2.svg": "/static/media/background2.6ee1c6740b3722d0590d.svg",
     "static/media/conception.svg": "/static/media/conception.51f03215ee4baf7185dd88f8c088b677.svg",
-    "static/media/imgMedia2.svg": "/static/media/imgMedia2.9f249b0ee3962e1659c0e7069e158c73.svg",
-    "static/media/imgMedia3.svg": "/static/media/imgMedia3.1157d8250eec560339d369eb882e6d50.svg",
-    "static/media/imgMedia4.svg": "/static/media/imgMedia4.f22b440ac483a6bab9f4e0de4bdf9261.svg",
-    "static/media/imgWeb2.svg": "/static/media/imgWeb2.abf921aac141c4f5b5262e401e71d2b2.svg",
-    "static/media/imgBranding1.svg": "/static/media/imgBranding1.4bd595e028678449f9e0d401557124fd.svg",
-    "static/media/imgBranding4.svg": "/static/media/imgBranding4.b69f2596f73357f04da2d4294b7a16d7.svg",
-    "static/media/imgWeb1.svg": "/static/media/imgWeb1.b974ff01f33520048e6e00a7495f64aa.svg",
+    "static/media/imgMedia2.svg": "/static/media/imgMedia2.431f9af8db6a7b057b211d660764b047.svg",
+    "static/media/imgMedia3.svg": "/static/media/imgMedia3.e5fb280f1f7480572b83e4505637a78e.svg",
+    "static/media/imgMedia4.svg": "/static/media/imgMedia4.843f8b03d1f56a45f60562883dae47ac.svg",
+    "static/media/imgWeb2.svg": "/static/media/imgWeb2.4a6f515b8885bc6dd4ce6c11a679c0f1.svg",
+    "static/media/imgBranding1.svg": "/static/media/imgBranding1.a13321b7db8cab76bc91c497c63cfba6.svg",
+    "static/media/imgBranding4.svg": "/static/media/imgBranding4.a3302b4a03be983a61e3c46b1a1deb50.svg",
+    "static/media/imgWeb1.svg": "/static/media/imgWeb1.61aca3886f1f5cdb6807d886b43ec1ca.svg",
     "static/media/imgWeb3.svg": "/static/media/imgWeb3.030b87356d2ea37ce3f2fd733388b835.svg",
-    "static/media/imgMedia1.svg": "/static/media/imgMedia1.7a859010f6bef34c940f8ce71b76be36.svg",
-    "static/media/imgBranding3.svg": "/static/media/imgBranding3.86c8276dbf4cd7fa006f6ab49eeb1b56.svg",
+    "static/media/imgMedia1.svg": "/static/media/imgMedia1.7a185dc43c77a7aff88a07502ca302ba.svg",
+    "static/media/imgBranding3.svg": "/static/media/imgBranding3.ebfc7e112450129d6e25a00150c84b26.svg",
     "static/media/seo.svg": "/static/media/seo.ec409ccedf58147e36596bb3202ace75.svg",
-    "static/media/imgBranding2.svg": "/static/media/imgBranding2.a035564ab827d16fa0ee27f282430057.svg",
+    "static/media/imgBranding2.svg": "/static/media/imgBranding2.4616707387a348cb03046acde56731f3.svg",
     "static/media/responsive.svg": "/static/media/responsive.0a5e8db0072e59bafdebebf43e9d155f.svg",
-    "static/media/imgWeb4.svg": "/static/media/imgWeb4.f51485ae0bf25348b19b770561db665b.svg",
+    "static/media/imgWeb4.svg": "/static/media/imgWeb4.f983e8644be5fe1a8a2ca37396673d4f.svg",
     "index.html": "/index.html",
     "static/media/instagram.svg": "/static/media/instagram.02f16fe83165c5dd2279dafee5b73abb.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.5d200b6280812baec06fdc81ca62b5b7.svg",
-    "main.1c8c6d23.css.map": "/static/css/main.1c8c6d23.css.map",
-    "main.1a1f879c.js.map": "/static/js/main.1a1f879c.js.map"
+    "main.2d5818fc.css.map": "/static/css/main.2d5818fc.css.map",
+    "main.1c2ecfa4.js.map": "/static/js/main.1c2ecfa4.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c8c6d23.css",
-    "static/js/main.1a1f879c.js"
+    "static/css/main.2d5818fc.css",
+    "static/js/main.1c2ecfa4.js"
   ]
 }

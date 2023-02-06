@@ -148,30 +148,19 @@
 .page-informations{
     .information-title{
         position: relative;
-        font-size: $size6;
+        font-size: $size5;
         width: 100%;
-        padding: 3rem 2rem;
+        padding: 2rem 2rem;
     }
     .informations-content{
     flex-direction: column-reverse;
-    padding: 1em 2em;
+    padding: 2em;
         .informations-content-bloc{
             width: 100%;
             padding-bottom: 5em;
             padding-top: 2em;
             .content-bloc{
                 width: auto;
-                // .bloc{
-                //     height: 300px;
-                //     width: 150px;
-                //     h2{
-                //         font-size: $size4;
-                //     }
-                //     p{
-                //         font-weight: $font1;
-                //         font-size: $size2;
-                //     }
-                // }
                 .bloc1{
                     height: 100px;
                     width: 50%;

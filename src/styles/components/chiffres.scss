@@ -66,11 +66,11 @@
 
 @media (max-width: $breakpoint-phone) {
     .page-chiffres{
-        height: 100vh;
+        height: auto;
     }
     
     .chiffres{
-        padding: 0em;
+        padding: 2em;
         .chiffres-content{
             padding: 1em;
             .pourcentage{
