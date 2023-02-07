@@ -224,3 +224,8 @@
 }
 } 
 }
+@media (max-width: $breakpoint-tablet){
+    .page-informations{
+        text-align: center;
+    }
+}

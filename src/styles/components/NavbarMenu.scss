@@ -55,7 +55,8 @@
 
   @media (max-width: $breakpoint-phone) {
     .slide-bar-content{
-      padding-top: 3em;
+      padding-top: 4em;
+      align-items: center;
       .slide-link{
         font-size: $size5;
         padding-top: 0em;

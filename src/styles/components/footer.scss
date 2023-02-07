@@ -70,7 +70,6 @@
         }
     }
 }
-
 @media (max-width: $breakpoint-computer) {
     .page-contact{
         height: auto;
@@ -121,5 +120,13 @@
                 font-size: $size1;
             }
         }
+    }
+}
+@media (max-width: $breakpoint-tablet) {
+    .page-contact{
+        text-align: center;
+    }
+    .footer-credits{
+        text-align: center;
     }
 }
