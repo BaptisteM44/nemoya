@@ -15,7 +15,7 @@
         flex-direction: row-reverse;
     }
     .informations-content{
-        padding: 4em 7em;
+        padding: 4em 8em;
         height: auto;
         min-height: 50vh;
         display: flex;
@@ -74,6 +74,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             h1{
                 margin: 0 auto;
                 width: 65%;
@@ -82,7 +83,6 @@
             }
             p{
                 padding-top: 1em;
-                margin: 0 auto;
                 width: 65%;
                 font-size: $size6;
                 color: $primary-color;
