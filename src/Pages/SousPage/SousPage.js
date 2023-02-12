@@ -27,6 +27,11 @@ function SousPage() {
         <div className="sousPage-content">
           <h2 className="sousPage-title" >{item.title}</h2>
         </div>
+        <div className="sousPage-parag">
+          <h2>{item.paragTitle}</h2>
+          <p>{item.parag}</p>
+          <p>{item.paragA}</p>
+        </div>
         <div className="sousPage-titleImg-content">
           <img loading="lazy" className="titleImg-content" src={item.imgTitle} alt="computer" />
         </div>

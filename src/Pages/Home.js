@@ -32,16 +32,16 @@ function Home() {
               <div className="do-title-row">
                 <div className="inner">
                   <h2 className="do-title">Site web</h2>
-                  <h2 className="do-title do-title1">Branding</h2>
+                  <h2 className="do-title do-title1">identité visuelle</h2>
                   <h2 className="do-title do-title2">Medias sociaux</h2>
                   <h2 className="do-title">Site web</h2>
-                  <h2 className="do-title do-title1">Branding</h2>
+                  <h2 className="do-title do-title1">identité visuelle</h2>
                   <h2 className="do-title do-title2">Medias sociaux</h2>
                   <h2 className="do-title">Site web</h2>
-                  <h2 className="do-title do-title1">Branding</h2>
+                  <h2 className="do-title do-title1">identité visuelle</h2>
                   <h2 className="do-title do-title2">Medias sociaux</h2>
                   <h2 className="do-title">Site web</h2>
-                  <h2 className="do-title do-title1">Branding</h2>
+                  <h2 className="do-title do-title1">identité visuelle</h2>
                   <h2 className="do-title do-title2">Medias sociaux</h2>   
                 </div>
               </div>
@@ -114,7 +114,7 @@ function Home() {
               <img  src={Julien}  alt="Julien" loading="lazy" width="300" height="200" />
               <div className="page-who">
                 <h3>Julien</h3>
-                <p>Fondateur et gestion des Branding</p>
+                <p>Fondateur et gestion de l'identité visuelle</p>
               </div>
             </div>
             <div className="page-grid2 page-grid-content">

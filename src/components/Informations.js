@@ -32,7 +32,7 @@ const Informations = () => {
                         
                     </div>
                     <article className="informations-content-article">
-                        <h2>Branding</h2>
+                        <h2>Identité visuelle</h2>
                         <p>Faites-vous remarquer en prenant soin de votre image, quel que soit votre domaine d'activité. Un logo impactant, une charte graphique cohérente, une typographie attrayante et des couleurs percutantes sont des éléments clés pour vous démarquer.</p>
                         
                     </article>

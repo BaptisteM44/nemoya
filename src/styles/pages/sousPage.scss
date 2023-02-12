@@ -21,6 +21,20 @@
             color: $secondary-color;
         }
     }
+    .sousPage-parag{
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        padding: 2em 0em;
+        h2{
+            font-size: $size7;
+            padding-bottom: 1em;
+        }
+        p{
+            padding: 0.5em 0em;
+            font-size: $size5;
+        }
+    }
     .sousPage-titleImg-content{
         height: 40vh;
         .titleImg-content{
@@ -163,7 +177,7 @@
         background: url(../../assets/img/imgSousPages/backgroundservice.webp) repeat center center fixed;
         background-size: contain;
         .sousPage-title{
-            font-size: $size7;
+            font-size: $size8;
         }
     }
     .sousPage-titleImg-content{
@@ -179,7 +193,24 @@
             font-size: $size6;
         }
     }
+    .sousPage-parag{
+        width: 85%;
+    }
 }
+.sousPage-parag{
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        padding: 2em 0em;
+        h2{
+            font-size: $size7;
+            padding-bottom: 1em;
+        }
+        p{
+            padding: 0.5em 0em;
+            font-size: $size5;
+        }
+    }
 .sousPage-section-service{
     .sousPage-article{
         .sousPage-article-left{
