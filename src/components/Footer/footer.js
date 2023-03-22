@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/components/footer.scss';
 import Form from '../Formulaire/Form';
 
@@ -18,33 +19,34 @@ function Footer() {
                             <div className="contact-credits">
                                 <div className="contact-credits-content">
                                     <a href="https://www.instagram.com/nemoya.fr/">Instagram</a>
-                                    <a href="https://www.instagram.com/nemoya.fr/">Tiktok</a>
-                                    <a href="https://www.instagram.com/nemoya.fr/">Twitter</a>
+                                    <a href="https://www.instagram.com/nemoya.fr/">Linkedin</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="footer">
-                        <div className="footer-credits">
-                            <div className="footer-credits-content">
-                                <div className="credits-title">
-                                    <h2>Agence de Marketing Digital</h2>    
-                                </div>
-                                <div className="credits-entreprise">
-                                    <p>NOMEYA</p>
+                            <div className="footer">
+                                <div className="footer-credits">
+                                    <div className="footer-credits-content">
+                                        <div className="credits-title">
+                                            <h2>Agence de Marketing Digital</h2>    
+                                        </div>
+                                        <div className="credits-entreprise">
+                                            <p>NOMEYA</p>
+                                        </div>
+                                    </div>
+                                    <div className="footer-slogan-content">
+                                        <div className="slogan-title">
+                                            <h2>Votre succès, notre intérêt</h2>
+                                        </div>
+                                        <div className="slogan2023">
+                                            <p>@2023</p>
+                                            <Link to="/Legal">Mention Légal</Link>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="footer-slogan-content">
-                                <div className="slogan-title">
-                                    <h2>Votre succès, notre intérêt</h2>
-                                </div>
-                                <div className="slogan2023">
-                                    <p>@2023</p>
-                                </div>
 
-                            </div>
                         </div>
                     </div>
+                    
                 </div>
             </footer>
 )

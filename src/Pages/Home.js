@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/index.scss'
 
 import Favicon from '../assets/img/favicon.png'
-import Julien from '../assets/img/Julien.jpg'
+import Julien from '../assets/img/ju.jpg'
 
 import ScrollImg from '../components/Utils/ScrollImg'
 import Footer from '../components/Footer/footer'

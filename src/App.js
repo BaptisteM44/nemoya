@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import Contact from './Pages/Contact';
 import Equipe from './Pages/Equipe';
 import SousPage from './Pages/SousPage/SousPage';
+import Legal from './Pages/Legal'
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -39,14 +40,10 @@ function Index() {
       <Wrapper>
         <Routes>
             <Route path="/" exact element={<Home className="page" />} />
-            {/* <Route path="/Services" element={<Services className="page" />} /> */}
             <Route path="/Services/:id" element={<SousPage className="page"/>} />
-
-            {/* <Route path="/Services/SiteInternet" DataSousPage={DataSousPage.Web} element={<SiteInternet  className="page" />} /> */}
-            {/* <Route path="/Services/Reseauxsociaux" DataSousPage={DataSousPage.Media} element={<ReseauxSociaux className="page" />} />
-            <Route path="/Services/Branding" DataSousPage={DataSousPage.Branding} element={<Branding className="page" />} /> */}
             <Route path="/Equipe" element={<Equipe className="page" />} />
             <Route path="/Contact" element={<Contact className="page" />} />
+            <Route path="/Legal" element={<Legal className="page" />} />
         </Routes>
       </Wrapper>
     </>

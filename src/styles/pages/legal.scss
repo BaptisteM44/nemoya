@@ -1,0 +1,15 @@
+@import '../index.scss';
+
+.page-legal{
+height: 100vh;
+    .legal-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .legale-content-parag{
+            padding: 15vh 0;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

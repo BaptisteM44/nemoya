@@ -102,7 +102,7 @@ $breakpoint-big: 1600px;
     scroll-behavior: smooth;
     font-family: 'Futura PT Light';
     box-sizing: border-box;
-    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: auto;
 }::selection{
     background-color: $fifth-color;
     color: $fourth-color;

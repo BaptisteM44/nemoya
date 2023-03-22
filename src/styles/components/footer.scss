@@ -15,9 +15,8 @@
 }
 
 .footer{
-    padding-bottom: 2em;
+    padding-top: 9em;
     display: flex;
-    justify-content: space-between;
 }
 .footer-credits{
     width: 35vw;
@@ -42,23 +41,31 @@
             font-size: $size3;
         }
         .slogan2023{
-            font-size: $size2;
+            font-size: $size3;
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            color: $fourth-color;
+            a{
+                color: $primary-color;
+            }
         }
     }
 }
 .contact-info{
     padding-left: 10em;
     width: 60%;
+    display: flex;
+    flex-direction: column;
     .contact-email,
     .contact-num{
         font-size: $size8;
-        margin: 0 auto;
         a{
           color: $primary-color;  
         }
     }
     .contact-credits{
-        padding-top: 16vh;
+        padding-top: 12vh;
         .contact-credits-content{
             display: flex;
             flex-direction: column;
@@ -118,6 +125,10 @@
             }
             .slogan2023{
                 font-size: $size1;
+                justify-content: center;
+                a{
+                    padding-left: 10px;
+                }
             }
         }
     }

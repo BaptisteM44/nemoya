@@ -22,16 +22,14 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.pageYOffset;
-      
+    
       if (currentScrollPosition > 850) {
-        if (previousScrollPosition > currentScrollPosition) {
-          setIsVisible(true);
-          
-        } else {
-          setIsVisible(false);
-          // handleShowLinks(true)
-        }
+        setIsVisible(previousScrollPosition > currentScrollPosition);
+        setShowLinks(false);
+      } else {
+        setIsVisible(true);
       }
+    
       previousScrollPosition = currentScrollPosition;
     };
 
