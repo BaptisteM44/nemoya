@@ -13,7 +13,7 @@ const ScrollImg = () => {
     const mq = window.matchMedia("(min-width: 1025px)");
     if (mq.matches) {
       const elements = [".page-grid1", ".page-grid2", ".page-grid3"];
-      const yPercents = [50, 40, -50];
+      const yPercents = [50, 40, -20];
       const duration = 1;
 
       for (let i = 0; i < elements.length; i++) {

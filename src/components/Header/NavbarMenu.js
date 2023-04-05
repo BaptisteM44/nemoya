@@ -44,7 +44,7 @@ const NavbarMenu = () => {
                 <div className={`slide-bar ${showSlideBar ? "show" : ""}`}>
                     <div className="slide-bar-content">
                         <Link className="slide-link firstHover" to="/Services/SiteInternet">Site Internet</Link>
-                        <Link className="slide-link firstHover" to="/Services/Reseauxsociaux">Réseaux Sociaux</Link>
+                        <Link className="slide-link firstHover" to="/Services/Reseauxsociaux">Médias Sociaux</Link>
                         <Link className="slide-link firstHover" to="/Services/Branding">Branding</Link>
                         <div className="slide-slogan">
                           <p>Votre succès notre intérêt </p>

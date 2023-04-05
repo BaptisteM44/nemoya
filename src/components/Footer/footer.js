@@ -18,8 +18,8 @@ function Footer() {
                             </div>
                             <div className="contact-credits">
                                 <div className="contact-credits-content">
-                                    <a href="https://www.instagram.com/nemoya.fr/">Instagram</a>
-                                    <a href="https://www.instagram.com/nemoya.fr/">Linkedin</a>
+                                    <a href="https://www.instagram.com/nemoya.studio/" rel="noreferrer" target="_blank">Instagram</a>
+                                    {/* <a href="#" rel="noreferrer" target="_blank">Linkedin</a> */}
                                 </div>
                             </div>
                             <div className="footer">
@@ -29,7 +29,7 @@ function Footer() {
                                             <h2>Agence de Marketing Digital</h2>    
                                         </div>
                                         <div className="credits-entreprise">
-                                            <p>NOMEYA</p>
+                                            <p>NEMOYA</p>
                                         </div>
                                     </div>
                                     <div className="footer-slogan-content">

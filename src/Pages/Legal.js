@@ -10,27 +10,25 @@ function Legal() {
           <div className="legale-content-parag">
             <h2>Mentions Légales</h2>
             <br />
-            <p>Nom de l'entreprise :</p>
-            <p>Adresse du siège social :</p>
-            <p>Numéro de téléphone :</p>
-            <p>Adresse e-mail :</p>
+            <p>Nom de l'entreprise : Nemoya</p>
+            <p>Adresse du siège social : RUE DU CLOS RIVIERE / ST SEBASTIEN SUR LOIRE / 44230</p>
+            <p>Numéro de téléphone :06 27 29 32 82</p>
+            <p>Adresse e-mail : contact@nemoya.fr</p>
             <br />
-            <p>Directeur de publication :</p>
+            <p>Directeur de publication :Julien REMADA-DIEHL</p>
             <p>Nom :</p>
-            <p>Adresse e-mail :</p>
+            <p>Adresse e-mail : j.diehl@nemoya.fr</p>
             <br />
-            <p>Hébergeur du site :</p>
-            <p>Nom :</p>
-            <p>Adresse :</p>
-            <p>Numéro de téléphone :</p>
-            <p>Adresse e-mail :</p>
+            <p>Hébergeur du site : Hostinger</p>
+            <p>Adresse : HOSTINGER INTERNATIONAL LTD, 61 Lordou Vironos Street, 6023 Larnaca, Chypre</p>
+            <p>Joignable: https://www.hostinger.fr/contact</p>
             <br />
-            <p>Nom de domaine :</p>
-            <p>Propriétaire :</p>
-            <p>Adresse :</p>
+            <p>Nom de domaine :https://www.nemoya.fr/</p>
+            <p>Propriétaire : Julien REMADA-DIEHL</p>
+            <p>Adresse :RUE DU CLOS RIVIERE / ST SEBASTIEN SUR LOIRE / 44230</p>
             <br />
-            <p>Numéro d'identification de l'entreprise :</p>
-            <p>Registre du Commerce et des Sociétés (RCS) :</p>
+            <p>Numéro d'identification de l'entreprise : 828 192 864 00027</p>
+            <p>Registre du Commerce et des Sociétés (RCS) : Nantes</p>
             <br />
             <p>Cookies :</p>
             <p>Nous tenons à vous informer que notre site web ne collecte pas de cookies. Nous ne stockons pas d'informations personnelles sur nos visiteurs, à l'exception des informations que vous nous fournissez volontairement via nos formulaires de contact ou d'inscription. Nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles conformément aux lois en vigueur en matière de protection des données. Si vous avez des questions ou des préoccupations concernant la manière dont nous traitons vos données personnelles, veuillez nous contacter en utilisant le formulaire de contact sur notre site web.</p>

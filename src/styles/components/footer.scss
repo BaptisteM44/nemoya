@@ -15,7 +15,6 @@
 }
 
 .footer{
-    padding-top: 9em;
     display: flex;
 }
 .footer-credits{
@@ -57,6 +56,7 @@
     width: 60%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     .contact-email,
     .contact-num{
         font-size: $size8;
@@ -65,7 +65,6 @@
         }
     }
     .contact-credits{
-        padding-top: 12vh;
         .contact-credits-content{
             display: flex;
             flex-direction: column;

@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
-import Mediasociaux from '../assets/img/Macimg.png'
+import Mediasociaux from '../assets/img/imgSousPages/imgWeb.webp'
 import Mac from '../assets/img/Macimg.png'
 import Iphone from '../assets/img/iphone.png'
 import {ReactComponent as SEO} from '../assets/img/seo.svg'
@@ -18,7 +18,7 @@ const Informations = () => {
             <div className="information-title">
                 <Fade top>
                     <h2>
-                        Nous gérons toutes sortes de services informatiques qui promettent votre succès
+                        Nous réalisons votre stratégie digitale
                         <span className="point">.</span>
                     </h2>    
                 </Fade>
