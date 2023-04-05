@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/pages/equipe.scss'
-import Julien from '../assets/img/ju.jpg'
+import Julien from '../assets/img/ju.webp'
 
 import Footer from '../components/Footer/footer'
 import Navbar from '../components/Header/Navbar';

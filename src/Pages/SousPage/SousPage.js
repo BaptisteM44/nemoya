@@ -6,10 +6,10 @@ import Footer from '../../components/Footer/footer'
 import Navbar from '../../components/Header/Navbar';
 import { data } from '../../components/Data';
 
-import grid1 from '../../assets/img/grid1.png'
-import grid2 from '../../assets/img/grid2.png'
-import grid3 from '../../assets/img/grid3.png'
-import grid4 from '../../assets/img/grid4.png'
+import grid1 from '../../assets/img/grid1.webp'
+import grid2 from '../../assets/img/grid2.webp'
+import grid3 from '../../assets/img/grid3.webp'
+import grid4 from '../../assets/img/grid4.webp'
 
 function SousPage() {
   const { id } = useParams();

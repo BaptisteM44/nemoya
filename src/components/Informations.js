@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
 import Mediasociaux from '../assets/img/imgSousPages/imgWeb.webp'
-import Mac from '../assets/img/Macimg.png'
-import Iphone from '../assets/img/iphone.png'
+import Mac from '../assets/img/Macimg.webp'
+import Iphone from '../assets/img/iphone.webp'
 import {ReactComponent as SEO} from '../assets/img/seo.svg'
 import {ReactComponent as Conception} from '../assets/img/conception.svg'
 import {ReactComponent as Responsive} from '../assets/img/responsive.svg'

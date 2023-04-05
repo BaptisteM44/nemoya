@@ -1,4 +1,4 @@
-import imgBranding from '../assets/img/imgSousPages/imgBranding.webp'
+import imgBranding from '../assets/img/Macimg.webp'
 import imgBranding1 from '../assets/img/imgSousPages/imgBranding1.svg'
 import imgBranding2 from '../assets/img/imgSousPages/imgBranding2.svg'
 import imgBranding3 from '../assets/img/imgSousPages/imgBranding3.svg'
