@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/pages/equipe.scss'
 import Julien from '../assets/img/ju.webp'
+import Elisa from '../assets/img/Elisa.webp'
 
 import Footer from '../components/Footer/footer'
 import Navbar from '../components/Header/Navbar';
@@ -36,7 +37,7 @@ function Equipe() {
                 </Fade>
                 <Fade delay={1600} bottom cascade>
                     <div className="equipe-img">
-                        <img src="https://media.istockphoto.com/id/1369508766/fr/photo/belle-femme-latine-%C3%A0-succ%C3%A8s-souriante.jpg?s=612x612&w=0&k=20&c=pYpyqpy7vQP529g3Pxtn-VaZo3skT7RmSLb8ReHMIDs=" alt="Elisa" />
+                        <img src={Elisa} alt="Elisa" />
                         <div className="equipe-img-text">
                             <h3>Elisa</h3>
                             <p>Le talent d’elisa, c’est la créativité. C’est elle, qui réalisera votre branding et gèrera vos réseaux sociaux. Apprêtez-vous à voir vos followers décoller ?</p>

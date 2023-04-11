@@ -14,27 +14,7 @@ const Navbar = () => {
   const handleShowLinks = () => {
     setShowLinks(!showLinks)
   }
-
-
   const [isVisible, setIsVisible] = useState(true);
-  // let previousScrollPosition = 0;
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const currentScrollPosition = window.pageYOffset;
-    
-  //     if (currentScrollPosition > 850) {
-  //       setIsVisible(previousScrollPosition > currentScrollPosition);
-  //       setShowLinks(false);
-  //     } else {
-  //       setIsVisible(true);
-  //     }
-  //     previousScrollPosition = currentScrollPosition;
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
   const previousScrollPosition = useRef(0);
 
 useEffect(() => {
@@ -64,16 +44,12 @@ useEffect(() => {
                 <Link className="firstHover" to="/Equipe">Équipe</Link>
                 <Link className="link-contact" to="/Contact">Contact</Link>
                 <div className="credits">
-                <button className="credits-link" onClick={() => window.open("https://www.instagram.com/nemoya.studio/", "_blank")} aria-label="Notre compte Instagram"><Instagram /></button>
-<button className="credits-link" onClick={() => window.open("https://www.linkedin.com/feed/", "_blank")} aria-label="Notre compte Linkedin"><Linkedin /></button>
-
-                  {/* <a href="https://www.instagram.com/nemoya.studio/"  rel="noreferrer" target="_blank" aria-label="Notre compte Instagram"><Instagram /></a>
-                  <a href="https://www.linkedin.com/feed/" rel="noreferrer" target="_blank" aria-label="Notre compte Linkedin"><Linkedin /></a> */}
+                  <button className="credits-link" onClick={() => window.open("https://www.instagram.com/nemoya.studio/", "_blank")} aria-label="Notre compte Instagram"><Instagram /></button>
+                  <button className="credits-link" onClick={() => window.open("https://www.linkedin.com/feed/", "_blank")} aria-label="Notre compte Linkedin"><Linkedin /></button>
                 </div>
               </div>  
             </Fade>
-            
-            <button className={`navbar_burger ${isVisible ? "" : "hidden"}  `}onClick={handleShowLinks}>
+            <button title="navbar" className={`navbar_burger ${isVisible ? "" : "hidden"}`} onClick={handleShowLinks}>
               <span className="burger-bar"></span>
             </button>
           </header>

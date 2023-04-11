@@ -86,17 +86,17 @@ function SousPage() {
         <div className="sousPage-title2-content">
           <h3 className="title2-content">nos réalisations</h3>
         </div>
-      <div class="sousPage-grid-parent">
-        <div class="sousPage-grid grid1">
+      <div className="sousPage-grid-parent">
+        <div className="sousPage-grid grid1">
           <img loading="lazy" src={grid1} alt="img1" />
         </div>
-        <div class="sousPage-grid grid2">
+        <div className="sousPage-grid grid2">
           <img loading="lazy" src={grid2} alt="img1" />
         </div>
-        <div class="sousPage-grid grid3">
+        <div className="sousPage-grid grid3">
           <img loading="lazy" src={grid3} alt="img1" />
         </div>
-        <div class="sousPage-grid grid4">
+        <div className="sousPage-grid grid4">
           <img loading="lazy" src={grid4} alt="img1" />
         </div>
       </div>

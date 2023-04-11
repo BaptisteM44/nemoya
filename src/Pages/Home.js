@@ -3,6 +3,7 @@ import '../styles/index.scss'
 
 import Favicon from '../assets/img/favicon.webp'
 import Julien from '../assets/img/ju.webp'
+import Elisa from '../assets/img/Elisa.webp'
 
 import ScrollImg from '../components/Utils/ScrollImg'
 import Footer from '../components/Footer/footer'
@@ -118,7 +119,7 @@ function Home() {
               </div>
             </div>
             <div className="page-grid2 page-grid-content">
-              <img src="https://media.istockphoto.com/id/1369508766/fr/photo/belle-femme-latine-%C3%A0-succ%C3%A8s-souriante.jpg?s=612x612&w=0&k=20&c=pYpyqpy7vQP529g3Pxtn-VaZo3skT7RmSLb8ReHMIDs=" alt="Elisa" loading="lazy" width="300" height="200" />
+              <img src={Elisa} alt="Elisa" loading="lazy" width="300" height="200" />
               <div className="page-who">
                 <h3>Elisa</h3>
                 <p>Gestion des réseaux et création de contenus</p>

@@ -39,17 +39,18 @@ const NavbarMenu = () => {
     
     return (
         <>
-            <a className="firstHover" onClick={handleAboutClick} >Services</a>
+            <a className="firstHover" onClick={handleAboutClick}>Services</a>
+
             {showSlideBar && (
                 <div className={`slide-bar ${showSlideBar ? "show" : ""}`}>
                     <div className="slide-bar-content">
-                        <Link className="slide-link firstHover" to="/Services/SiteInternet">Site Internet</Link>
-                        <Link className="slide-link firstHover" to="/Services/Reseauxsociaux">Médias Sociaux</Link>
-                        <Link className="slide-link firstHover" to="/Services/Branding">Branding</Link>
-                        <div className="slide-slogan">
-                          <p>Votre succès notre intérêt </p>
-                          <img src={Favicon} alt="logo nemoya" />
-                        </div>
+                      <Link className="slide-link firstHover" to="/Services/SiteInternet" >Site Internet</Link>
+                      <Link className="slide-link firstHover" to="/Services/Reseauxsociaux" >Médias Sociaux</Link>
+                      <Link className="slide-link firstHover" to="/Services/Branding">Branding</Link>
+                      <div className="slide-slogan">
+                        <p>Votre succès notre intérêt </p>
+                        <img src={Favicon} alt="logo nemoya" />
+                      </div>
                     </div>
                     <p className="slide-button" onClick={() => setShowSlideBar(false)}>Fermer</p>
                     

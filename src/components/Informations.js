@@ -27,7 +27,7 @@ const Informations = () => {
                 <div className="informations-content">
                     <div className="informations-content-bloc">
                         <div className="content-bloc-img">
-                            <img className="bloc-img" src={Mac} alt="ordinateur" loading="lazy" height="500px" width="800px" />    
+                            <img className="bloc-img" src={Mac} alt="ordinateur" loading="lazy" height="300px" width="500px" />    
                         </div>
                         
                     </div>
@@ -52,7 +52,7 @@ const Informations = () => {
                                 <p>Planification et design pour une expérience utilisateur optimale</p>
                             </div>
                             <div className="bloc">
-                                <img src={Iphone} alt="Iphone" loading="lazy" width="50px" height="90px" />
+                                <img src={Iphone} alt="Iphone" loading="lazy" width="50px" height="88px" />
                                 <h2>UI/UX</h2>
                                 <p>Créer une expérience utilisateur intuitive et agréable</p>
                             </div>
@@ -84,14 +84,14 @@ const Informations = () => {
                 <div className="informations-content">
                     <div className="informations-content-bloc">
                         <div className="content-bloc-img">
-                            <img className="bloc-img" src={Mediasociaux} alt="ordinateur" loading="lazy" height="500px" width="800px" />
+                            <img className="bloc-img" src={Mediasociaux} alt="ordinateur" loading="lazy" height="300px" width="500px" />
                         </div> 
                     </div>
                     <article className="informations-content-article">
                         <h2>Médias sociaux</h2>
                         <p>Notre équipe établit votre stratégie créative digitale. Nous adaptons votre communication actuelle par la création de publications et/ou snack content sur tous vos réseaux. </p>
                     </article>
-                    <Link className="arrow-circle" to="/Services/ReseauxSociaux">
+                    <Link className="arrow-circle" to="/Services/Reseauxsociaux">
                         <div className="text-arrow2">Médias</div>
                         <div className="arrow">⟶</div>
                     </Link>

@@ -41,7 +41,7 @@
           opacity: 0.8;
         }
       }
-      a {
+      .firstHover {
         position: relative;
         color: $primary-color;
         text-decoration: none;
@@ -95,7 +95,7 @@
       position: absolute;
       bottom: 10em;
       width: 6em;
-      a {
+      .firstHover {
         color: $primary-color;
         text-decoration: none;
         margin: 1em 0;

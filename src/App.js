@@ -1,6 +1,5 @@
-import React, { useEffect, useLayoutEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { gsap } from 'gsap';
 
 import './styles/_settings.scss'
 import Home from './Pages/Home';
@@ -8,6 +7,7 @@ import Contact from './Pages/Contact';
 import Equipe from './Pages/Equipe';
 import SousPage from './Pages/SousPage/SousPage';
 import Legal from './Pages/Legal'
+
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -18,23 +18,6 @@ const Wrapper = ({children}) => {
 }
 
 function Index() {
-
-
-  const location = useLocation();
-  
-  useEffect(() => {
-    gsap.to('.page', {
-        duration: 0.5,
-        opacity: 0,
-        onComplete: () => {
-            gsap.to('.page', {
-                duration: 0.5,
-                opacity: 1,
-            });
-        },
-    });
-}, [location]);
-
   return (
     <>
       <Wrapper>
