@@ -1,0 +1,40 @@
+@import '../settings';
+
+.page-blog{
+    padding: 150px 150px 0px;
+    height: auto;
+    color: $fourth-color;
+    .header-blog{
+        .header-title{
+            text-align: center;
+            h2{
+                font-size: $size8;
+                padding-bottom: 20px;
+            }
+            p{
+                font-size: $size5;
+            }
+        }
+    }
+    .blog-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10vh 0;
+    }
+}
+
+@media (max-width: $breakpoint-big) {
+}
+@media (max-width: $breakpoint-large-computer) {
+}
+@media (max-width: $breakpoint-computer) {
+}
+@media (max-width: $breakpoint-tablet) {
+
+}
+@media (max-width: $breakpoint-phone) {
+    .page-blog{
+        padding: 150px 2em 0px;
+    }
+}

@@ -9,49 +9,49 @@
   font-family: 'Futura PT Book';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Book"), url("./fonts/futura-pt/FuturaCyrillicBook.woff") format("woff");
+  src: local("Futura PT Book"), url("./fonts/futura-1/FuturaPTBook.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Light';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Light"), url("./fonts/futura-pt/FuturaCyrillicLight.woff") format("woff");
+  src: local("Futura PT Light"), url("./fonts/futura-1/FuturaPTLight.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Medium';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Medium"), url("./fonts/futura-pt/FuturaCyrillicMedium.woff") format("woff");
+  src: local("Futura PT Medium"), url("./fonts/futura-1/FuturaPTMedium.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Demi';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Demi"), url("./fonts/futura-pt/FuturaCyrillicDemi.woff") format("woff");
+  src: local("Futura PT Demi"), url("./fonts/futura-1/FuturaPTDemi.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Heavy';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Heavy"), url("./fonts/futura-pt/FuturaCyrillicHeavy.woff") format("woff");
+  src: local("Futura PT Heavy"), url("./fonts/futura-1/FuturaPTHeavy.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Bold';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Bold"), url("./fonts/futura-pt/FuturaCyrillicBold.woff") format("woff");
+  src: local("Futura PT Bold"), url("./fonts/futura-1/FuturaPTBold.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Extra Bold';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Extra Bold"), url("./fonts/futura-pt/FuturaCyrillicExtraBold.woff") format("woff");
+  src: local("Futura PT Extra Bold"), url("./fonts/futura-1/FuturaPTCondExtraBold.otf") format("woff");
 }
 
 * {
@@ -66,13 +66,27 @@
   scroll-behavior: smooth;
   font-family: 'Futura PT Light';
   box-sizing: border-box;
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: auto;
 }
 
-#nav,
+::-moz-selection {
+  background-color: #b75d32;
+  color: #f2f2f2;
+}
+
+::selection {
+  background-color: #b75d32;
+  color: #f2f2f2;
+}
+
 section {
   padding-left: 16rem;
   padding-right: 16rem;
+}
+
+#nav {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 p, h1, h2, h3, span {
@@ -103,7 +117,7 @@ h2, h3 {
   content: "";
   top: 100%;
   left: 0;
-  width: 100%;
+  width: 30%;
   height: 2px;
   background: #b75d32;
   -webkit-transform: scaleX(0);
@@ -114,22 +128,31 @@ h2, h3 {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .navbar,
+.page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@media (max-width: 1024px) {
   section {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 
-.slide-bar-content {
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+@media (min-width: 1024px) and (max-width: 1600px) {
+  section {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
 }
 
 .slide-bar {
@@ -138,7 +161,7 @@ h2, h3 {
   top: 0;
   right: 0;
   width: 600px;
-  height: 1200px;
+  height: 100vh;
   background-color: #f2f2f2;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -146,13 +169,6 @@ h2, h3 {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-
-.slide-bar img {
-  position: absolute;
-  height: 120px;
-  top: 800px;
-  right: 250px;
 }
 
 .slide-bar,
@@ -163,9 +179,16 @@ h2, h3 {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   overflow: hidden;
   position: fixed;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .slide-bar-content {
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   padding-top: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,8 +202,9 @@ h2, h3 {
 }
 
 .slide-bar-content .slide-link {
+  width: 10em;
   padding-top: 1em;
-  font-size: 3.052rem;
+  font-size: 1.953rem;
 }
 
 .slide-button {
@@ -199,9 +223,50 @@ h2, h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 12em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 6em;
+}
+
+.slide-slogan p {
+  font-size: 1.25rem;
+}
+
+.slide-slogan img {
+  height: 90px;
+  width: 90px;
+}
+
+@media (max-width: 600px) {
+  .slide-bar-content {
+    padding-top: 4em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slide-bar-content .slide-link {
+    font-size: 1.25rem;
+    padding-top: 0em;
+  }
+  .slide-bar {
+    width: 100%;
+  }
+  .slide-slogan {
+    padding-top: 5em;
+    font-size: 0.8rem;
+  }
+  .slide-slogan p {
+    font-size: 1rem;
+  }
+  .slide-slogan img {
+    margin-top: 1em;
+    height: 60px;
+    width: 60px;
+  }
 }
 /*# sourceMappingURL=NavbarMenu.css.map */

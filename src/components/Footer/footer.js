@@ -11,7 +11,7 @@ function Footer() {
                         <Form />
                         <div className="contact-info">
                             <div className="contact-num">
-                                <a href="tel:+33102030405">06 24 23 42 33</a> 
+                                <a href="tel:+33102030405">06 27 29 32 82</a> 
                             </div>
                             <div className="contact-email">
                                 <a href="mailto:xxxx@xx.xx">contact@nemoya.fr</a> 
@@ -19,7 +19,7 @@ function Footer() {
                             <div className="contact-credits">
                                 <div className="contact-credits-content">
                                     <a href="https://www.instagram.com/nemoya.studio/" rel="noreferrer" target="_blank">Instagram</a>
-                                    {/* <a href="#" rel="noreferrer" target="_blank">Linkedin</a> */}
+                                    <a href="https://www.linkedin.com/company/nemoyastudio/" rel="noreferrer" target="_blank">Linkedin</a>
                                 </div>
                             </div>
                             <div className="footer">

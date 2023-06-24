@@ -107,9 +107,11 @@
   }
   .credits{
     display: flex;
-    a{
+    .credits-link{
+      background-color: transparent;
       svg{
         height: 40px;
+        margin-top: 1em;
       }
     }
   }

@@ -1,14 +1,13 @@
 @import '../styles/pages/services.scss';
 @import '../styles/pages/contact.scss';
 @import '../styles/pages/home.scss';
+@import '../styles/pages/equipe.scss';
+@import '../styles/pages/legal.scss';
+@import '../styles/pages/sousPage.scss';
+
 @import '../styles/components/Navbar.scss';
 @import '../styles/components/footer.scss';
+@import '../styles/components/chiffres.scss';
 @import '../styles/components/Form.scss';
-
-// .page {
-//     position: fixed;
-//     width: 100%;
-//     height: 100%;
-//     transition: all 1s ease-in-out;
-//     transform-origin: center;
-//   }
+@import '../styles/components/Informations.scss';
+@import '../styles/components/NavbarMenu.scss';

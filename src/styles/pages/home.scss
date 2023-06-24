@@ -2,9 +2,11 @@
 .page-presentation{
     font-family: "GallientRegular";
     height: 100vh;
-    background: url(../../assets/img/background2.svg) no-repeat center center fixed;
-    background-size: contain;
-    background-position: bottom;
+    // background: url(../../assets/img/background.webp) no-repeat center center fixed;
+    // background-size: contain;
+    // background-position: bottom;
+    // object-fit: contain;
+    // background-color: $third-color;
     .favicon{
         position: absolute;
         top: 0.4rem;
@@ -209,6 +211,7 @@
             width: 90%;
             object-fit: cover;    
             border-radius: 10px;
+            filter: grayscale(1);
         }
         .page-who{
             display: flex;

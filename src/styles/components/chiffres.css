@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'GallientRegular';
+  src: local("GallientRegular"), url("/styles/fonts/GallientRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Book"), url("./fonts/futura-1/FuturaPTBook.otf") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Light"), url("./fonts/futura-1/FuturaPTLight.otf") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Medium"), url("./fonts/futura-1/FuturaPTMedium.otf") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Demi';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Demi"), url("./fonts/futura-1/FuturaPTDemi.otf") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Heavy"), url("./fonts/futura-1/FuturaPTHeavy.otf") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Bold"), url("./fonts/futura-1/FuturaPTBold.otf") format("woff");
+}
+
+@font-face {
+  font-family: 'Futura PT Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Extra Bold"), url("./fonts/futura-1/FuturaPTCondExtraBold.otf") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Futura PT Light';
+  box-sizing: border-box;
+  -webkit-font-smoothing: auto;
+}
+
+::-moz-selection {
+  background-color: #b75d32;
+  color: #f2f2f2;
+}
+
+::selection {
+  background-color: #b75d32;
+  color: #f2f2f2;
+}
+
+section {
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+
+#nav {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+p, h1, h2, h3, span {
+  color: #343434;
+}
+
+p, span {
+  font-family: 'Futura PT Light';
+}
+
+h1 {
+  font-family: 'Futura PT Heavy';
+}
+
+h2, h3 {
+  font-family: 'Futura PT Medium';
+}
+
+.firstHover:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.firstHover::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 30%;
+  height: 2px;
+  background: #b75d32;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  cursor: pointer;
+}
+
+.page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  section {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+}
+
+.page-chiffres {
+  background-color: #343434;
+  height: 50vh;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -15em;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.chiffres {
+  width: 700px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.chiffres .chiffres-content {
+  position: relative;
+  width: auto;
+}
+
+.chiffres .chiffres-content .pourcentage {
+  color: #b75d32;
+  font-size: 1.953rem;
+}
+
+.chiffres .chiffres-content h2 {
+  color: #f2f2f2;
+  font-size: 4.768rem;
+}
+
+.chiffres .chiffres-content h3 {
+  color: #f2f2f2;
+  font-size: 1.953rem;
+}
+
+.chiffres .chiffres-content p,
+.chiffres .chiffres-content span {
+  font-size: 1.25rem;
+  color: #FFF;
+}
+
+.bar::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -6em;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .page-chiffres {
+    margin-bottom: 0em;
+    height: auto;
+  }
+  .chiffres {
+    width: 100%;
+  }
+  .chiffres .chiffres-content {
+    text-align: center;
+    width: 210px;
+    padding: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-chiffres {
+    height: auto;
+  }
+  .chiffres {
+    padding: 2em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .chiffres .chiffres-content {
+    padding: 1em;
+  }
+  .chiffres .chiffres-content .pourcentage {
+    font-size: 1.563rem;
+  }
+  .chiffres .chiffres-content h2 {
+    font-size: 3.815rem;
+  }
+  .chiffres .chiffres-content h3 {
+    font-size: 1.563rem;
+  }
+  .chiffres .chiffres-content p,
+  .chiffres .chiffres-content span {
+    font-size: 1rem;
+  }
+  .bar::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    right: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/*# sourceMappingURL=chiffres.css.map */

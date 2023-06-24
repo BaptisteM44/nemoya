@@ -5,8 +5,10 @@ import './styles/_settings.scss'
 import Home from './Pages/Home';
 import Contact from './Pages/Contact';
 import Equipe from './Pages/Equipe';
+import Article from './components/Article'
 import SousPage from './Pages/SousPage/SousPage';
 import Legal from './Pages/Legal'
+import Blog from './Pages/Blog'
 
 
 const Wrapper = ({children}) => {
@@ -27,6 +29,8 @@ function Index() {
             <Route path="/Equipe" element={<Equipe className="page" />} />
             <Route path="/Contact" element={<Contact className="page" />} />
             <Route path="/Legal" element={<Legal className="page" />} />
+            <Route path="/Blog" element={<Blog className="page" />} />
+            <Route path="/Article/:id" element={<Article className="page" />} />
         </Routes>
       </Wrapper>
     </>

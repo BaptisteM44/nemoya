@@ -39,7 +39,7 @@ const NavbarMenu = () => {
     
     return (
         <>
-            <a className="firstHover" onClick={handleAboutClick}>Services</a>
+            <span className="firstHover" onClick={handleAboutClick}>Services</span>
 
             {showSlideBar && (
                 <div className={`slide-bar ${showSlideBar ? "show" : ""}`}>

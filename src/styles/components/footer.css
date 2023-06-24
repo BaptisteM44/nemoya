@@ -9,49 +9,49 @@
   font-family: 'Futura PT Book';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Book"), url("./fonts/futura-pt/FuturaCyrillicBook.woff") format("woff");
+  src: local("Futura PT Book"), url("./fonts/futura-1/FuturaPTBook.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Light';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Light"), url("./fonts/futura-pt/FuturaCyrillicLight.woff") format("woff");
+  src: local("Futura PT Light"), url("./fonts/futura-1/FuturaPTLight.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Medium';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Medium"), url("./fonts/futura-pt/FuturaCyrillicMedium.woff") format("woff");
+  src: local("Futura PT Medium"), url("./fonts/futura-1/FuturaPTMedium.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Demi';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Demi"), url("./fonts/futura-pt/FuturaCyrillicDemi.woff") format("woff");
+  src: local("Futura PT Demi"), url("./fonts/futura-1/FuturaPTDemi.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Heavy';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Heavy"), url("./fonts/futura-pt/FuturaCyrillicHeavy.woff") format("woff");
+  src: local("Futura PT Heavy"), url("./fonts/futura-1/FuturaPTHeavy.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Bold';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Bold"), url("./fonts/futura-pt/FuturaCyrillicBold.woff") format("woff");
+  src: local("Futura PT Bold"), url("./fonts/futura-1/FuturaPTBold.otf") format("woff");
 }
 
 @font-face {
   font-family: 'Futura PT Extra Bold';
   font-style: normal;
   font-weight: normal;
-  src: local("Futura PT Extra Bold"), url("./fonts/futura-pt/FuturaCyrillicExtraBold.woff") format("woff");
+  src: local("Futura PT Extra Bold"), url("./fonts/futura-1/FuturaPTCondExtraBold.otf") format("woff");
 }
 
 * {
@@ -66,13 +66,27 @@
   scroll-behavior: smooth;
   font-family: 'Futura PT Light';
   box-sizing: border-box;
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: auto;
 }
 
-#nav,
+::-moz-selection {
+  background-color: #b75d32;
+  color: #f2f2f2;
+}
+
+::selection {
+  background-color: #b75d32;
+  color: #f2f2f2;
+}
+
 section {
   padding-left: 16rem;
   padding-right: 16rem;
+}
+
+#nav {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 p, h1, h2, h3, span {
@@ -103,7 +117,7 @@ h2, h3 {
   content: "";
   top: 100%;
   left: 0;
-  width: 100%;
+  width: 30%;
   height: 2px;
   background: #b75d32;
   -webkit-transform: scaleX(0);
@@ -114,24 +128,42 @@ h2, h3 {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .navbar,
+.page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@media (max-width: 1024px) {
   section {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  section {
+    padding-left: 6em;
+    padding-right: 6em;
   }
 }
 
 .page-contact {
-  height: 100vh;
+  height: auto;
   background-color: #f2f2f2;
+  padding-top: 20em;
 }
 
 .contact-title-content {
   width: 50vw;
-  padding-top: 10em;
+  padding-top: 8em;
 }
 
 .contact-title-content .contact-title {
@@ -143,9 +175,6 @@ h2, h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .footer-credits {
@@ -197,27 +226,44 @@ h2, h3 {
 }
 
 .footer-credits .footer-slogan-content .slogan2023 {
-  font-size: 0.64rem;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.footer-credits .footer-slogan-content .slogan2023 a {
+  color: #343434;
 }
 
 .contact-info {
   padding-left: 10em;
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact-info .contact-email,
 .contact-info .contact-num {
   font-size: 2.441rem;
-  margin: 0 auto;
 }
 
 .contact-info .contact-email a,
 .contact-info .contact-num a {
   color: #343434;
-}
-
-.contact-info .contact-credits {
-  padding-top: 16vh;
 }
 
 .contact-info .contact-credits .contact-credits-content {
@@ -238,16 +284,17 @@ h2, h3 {
   color: #343434;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .page-contact {
-    padding-top: 1em;
+    height: auto;
+    padding-top: 4em;
   }
   .contact-title-content {
     width: 100%;
-    padding-top: 5em;
+    padding-top: 2em;
   }
   .contact-title-content .contact-title {
-    font-size: 1.953rem;
+    font-size: 1.563rem;
   }
   .contact-info {
     padding: 1em 0;
@@ -281,6 +328,21 @@ h2, h3 {
   }
   .footer-credits .footer-slogan-content .slogan2023 {
     font-size: 0.512rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-credits .footer-slogan-content .slogan2023 a {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-contact {
+    text-align: center;
+  }
+  .footer-credits {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=footer.css.map */

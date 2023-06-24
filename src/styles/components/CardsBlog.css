@@ -1,0 +1,44 @@
+.card-link {
+  padding: 20px 0;
+}
+
+.card-link .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  width: 300px;
+}
+
+.card-link .card h2 {
+  color: black;
+  margin: 0;
+}
+
+.card-link .card p {
+  color: gray;
+}
+
+.card-link .card img {
+  width: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-link .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=CardsBlog.css.map */

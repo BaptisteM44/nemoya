@@ -1,9 +1,10 @@
 import React from 'react';
-import '../styles/index.scss'
+import '../styles/pages/home.scss';
 
 import Favicon from '../assets/img/favicon.webp'
 import Julien from '../assets/img/ju.webp'
 import Elisa from '../assets/img/Elisa.webp'
+import Baptiste from '../assets/img/Baptiste.webp'
 
 import ScrollImg from '../components/Utils/ScrollImg'
 import Footer from '../components/Footer/footer'
@@ -112,21 +113,21 @@ function Home() {
           <div className="page-parent">
           <ScrollImg />
             <div className="page-grid1 page-grid-content">
-              <img  src={Julien}  alt="Julien" loading="lazy" width="300" height="200" />
+              <img  src={Julien}  alt="Portrait Julien" loading="lazy" width="300" height="200" />
               <div className="page-who">
                 <h3>Julien</h3>
                 <p>Fondateur et gestion de l'identité visuelle</p>
               </div>
             </div>
             <div className="page-grid2 page-grid-content">
-              <img src={Elisa} alt="Elisa" loading="lazy" width="300" height="200" />
+              <img src={Elisa} alt="Portrait Elisa" loading="lazy" width="300" height="200" />
               <div className="page-who">
                 <h3>Elisa</h3>
                 <p>Gestion des réseaux et création de contenus</p>
               </div>
             </div>
             <div className="page-grid3 page-grid-content">
-              <img src="https://media.istockphoto.com/id/1319763895/fr/photo/homme-m%C3%BBr-m%C3%A9lang%C3%A9-de-course-de-sourire-sur-le-fond-gris.jpg?s=612x612&w=0&k=20&c=A0t2vzsA3771bizeoxt2a3OLdgBbm5_wZn1rk3MxHsk=" alt="Baptiste" loading="lazy" width="300" height="200" />
+              <img src={Baptiste} alt="Portrait Baptiste" loading="lazy" width="300" height="200" />
               <div className="page-who">
                 <h3>Baptiste</h3>
                 <p>Développeur Web</p>

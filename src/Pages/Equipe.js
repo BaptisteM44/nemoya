@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/pages/equipe.scss'
 import Julien from '../assets/img/ju.webp'
 import Elisa from '../assets/img/Elisa.webp'
+import Baptiste from '../assets/img/Baptiste.webp'
 
 import Footer from '../components/Footer/footer'
 import Navbar from '../components/Header/Navbar';
@@ -28,7 +29,7 @@ function Equipe() {
             <div className="equipe-img-content">
                 <Fade delay={1300} left cascade>
                     <div className="equipe-img">
-                        <img src={Julien} alt="Julien" />
+                        <img src={Julien} alt="Portrait Julien" />
                         <div className="equipe-img-text">
                             <h3>Julien</h3>
                             <p>La spécialité de Julien, hormis celle de nous avoir réunis, c’est la réalisation et la gestion de vos publicités. C’est lui, qui va doubler votre chiffre d’affaires.</p>
@@ -37,7 +38,7 @@ function Equipe() {
                 </Fade>
                 <Fade delay={1600} bottom cascade>
                     <div className="equipe-img">
-                        <img src={Elisa} alt="Elisa" />
+                        <img src={Elisa} alt="Portrait Elisa" />
                         <div className="equipe-img-text">
                             <h3>Elisa</h3>
                             <p>Le talent d’elisa, c’est la créativité. C’est elle, qui réalisera votre branding et gèrera vos réseaux sociaux. Apprêtez-vous à voir vos followers décoller ?</p>
@@ -46,7 +47,7 @@ function Equipe() {
                 </Fade>
                 <Fade delay={1900} right cascade>
                     <div className="equipe-img">
-                        <img src="https://media.istockphoto.com/id/1319763895/fr/photo/homme-m%C3%BBr-m%C3%A9lang%C3%A9-de-course-de-sourire-sur-le-fond-gris.jpg?s=612x612&w=0&k=20&c=A0t2vzsA3771bizeoxt2a3OLdgBbm5_wZn1rk3MxHsk=" alt="Baptiste" />
+                        <img src={Baptiste} alt="Portrait Baptiste" />
                         <div className="equipe-img-text">
                             <h3>Baptiste</h3>
                             <p>L’expertise de Baptiste, c’est le développement  de vos sites web , quelle que soit l’ampleur de votre projet, il y arrivera. Grâce à lui, vos clients passeront des heures sur votre site.</p>
