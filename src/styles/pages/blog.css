@@ -185,4 +185,10 @@ h2, h3 {
           justify-content: space-evenly;
   padding: 10vh 0;
 }
+
+@media (max-width: 600px) {
+  .page-blog {
+    padding: 150px 2em 0px;
+  }
+}
 /*# sourceMappingURL=blog.css.map */

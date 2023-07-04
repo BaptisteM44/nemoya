@@ -24,7 +24,7 @@ const ScrollImg = () => {
             trigger: ".page-nous",
             scrub: true,
             start: "top 500px",
-            end: "center 200px", 
+            end: "center 200px",
             toggleActions: "play none none",
             markers: false
           }
@@ -43,7 +43,7 @@ const ScrollImg = () => {
           trigger: ".page-chiffres",
           scrub: true,
           start: "top center",
-          end: "bottom 200px", 
+          end: "bottom 200px",
           toggleActions: "play none none",
           markers: false
         }
@@ -51,24 +51,21 @@ const ScrollImg = () => {
 
       gsap.to(".page-contact", {
         marginTop: "-7em",
-        paddingTop: "-6em",
+        paddingTop: "-12em",
         duration: 10,
         scrollTrigger: {
-          trigger: ".page-chiffres",
+          trigger: ".page-contact",
           scrub: true,
-          start: "center center",
-          end: "bottom 200px", 
+          start: "top center",
+          end: "bottom bottom",
           toggleActions: "play none none",
           markers: false
         }
       });
     }
   }, []);
-  
-    return (
-        <>
-        </>
-    );
-  }
+
+  return <></>;
+}
 
 export default ScrollImg;
