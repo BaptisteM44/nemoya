@@ -45,4 +45,38 @@
     }
     
   }
-  
+  @media (max-width: $breakpoint-big) {
+  }
+  @media (max-width: $breakpoint-large-computer) {
+  }
+  @media (max-width: $breakpoint-computer) {
+  }
+  @media (max-width: $breakpoint-tablet) {
+    .article {
+      padding: 100px 2em 0px;
+      .article-side {
+        flex-direction: column;
+      }
+      .article-content {
+        width: 100%;
+      }
+      .article-sideright {
+        width: 100%;
+        text-align: center;
+        img {
+          padding-top: 0;
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+      .article-date {
+        order: 1;
+      }
+      .article-content > *:not(.article-date) {
+        order: 2;
+      }
+      .article-sideright {
+        order: 3;
+      }
+    }
+  }

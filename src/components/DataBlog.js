@@ -2,7 +2,7 @@ import firstarticle from '../assets/img/firstarticle.webp'
 
 export const DataBlog = [
       {
-        id: "Branding",
+        id: "SiteWeb",
         title: "Aujourd'hui, avoir un site internet est un élément clé de toute stratégie de marketing digital efficace",
         imgTitle: firstarticle,
         paragTitle: "Aujourd'hui, avoir un site internet est un élément clé de toute stratégie de marketing digital efficace. C'est un moyen puissant de se connecter avec les clients potentiels, de présenter son entreprise et de vendre ses produits ou services. Si vous êtes une entreprise ambitieuse, il est d'autant plus important d'avoir un site internet professionnel pour montrer votre expertise et aider les clients à mieux comprendre vos services. La création d'un site internet peut sembler intimidante, mais cela peut être facile si vous suivez quelques étapes clés. Dans cet article, nous allons vous donner quelques conseils pour vous aider à créer un site internet pour votre entreprise.",

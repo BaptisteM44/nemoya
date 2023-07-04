@@ -4,15 +4,28 @@ import { DataBlog } from '../components/DataBlog'; // Remplacez par le chemin de
 import '../styles/components/Article.scss'
 import Navbar from '../components/Header/Navbar';
 import Footer from '../components/Footer/footer';
+import gsap from 'gsap';
+
 const Article = () => {
+  
   const [article, setArticle] = useState(null);
   const { id } = useParams();
-
+  
   useEffect(() => {
     const foundArticle = DataBlog.find((item) => item.id === id);
     setArticle(foundArticle);
   }, [id]);
 
+  useEffect(() => {
+    const tl = gsap.timeline();
+  
+    tl.from('.article-title', { opacity: 0, y: -20, duration: 0.8 })
+      .from('.article-date', { opacity: 0, y: -20, duration: 0.8 }, '-=0.3')
+      .from( '.article-parag', { opacity: 0, y: 20, duration: 0.8, stagger: 0.2 }, '-=0.3')
+      .from( '.article-subtitle', { opacity: 0, y: 20, duration: 0.8, stagger: 0.3 }, '-=0.3');
+
+  }, []);
+  
   if (!article) return null;
 
   return (
@@ -31,27 +44,24 @@ const Article = () => {
             </svg>
             {article.date}
           </p>
-          <p>{article.paragTitle}</p>
-          <h3>{article.parag1title}</h3>
-          <p>{article.parag1}</p>
-          <h3>{article.parag2title}</h3>
-          <p>{article.parag2}</p>
-          <h3>{article.parag3title}</h3>
-          <p>{article.parag3}</p>
-          <h3>{article.parag4title}</h3>
-          <p>{article.parag4}</p>
-          <h3>{article.parag5title}</h3>
-          <p>{article.parag5}</p>
-          <p>{article.paragA}</p>
+          <p className="article-parag">{article.paragTitle}</p>
+          <h3 className="article-subtitle">{article.parag1title}</h3>
+          <p className="article-parag">{article.parag1}</p>
+          <h3 className="article-subtitle">{article.parag2title}</h3>
+          <p className="article-parag">{article.parag2}</p>
+          <h3 className="article-subtitle">{article.parag3title}</h3>
+          <p className="article-parag">{article.parag3}</p>
+          <h3 className="article-subtitle">{article.parag4title}</h3>
+          <p className="article-parag">{article.parag4}</p>
+          <h3 className="article-subtitle">{article.parag5title}</h3>
+          <p className="article-parag">{article.parag5}</p>
+          <p className="article-parag">{article.paragA}</p>
           <p className="article-conclusion">{article.conclusion}</p>
         </div>
         <div className="article-sideright">
           <img src={article.imgTitle} alt="imgDroite" />
         </div> 
       </div>
-      
-      {/* Ajoutez d'autres éléments tels que title1, imgTitle1, parag1, etc. */}
-    
     <Footer />
     </div>
   );
